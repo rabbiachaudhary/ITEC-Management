@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="AddCommittee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="AddDuties.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Addevent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="AddResults.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="AddTransaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Duties.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Events.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ITECedi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="LeaderBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MemberinCom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ParticpantDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="RegisterParticipants.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="RegTypesNDFees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="SignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="AdminDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="StudentDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="TrackFees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View Committees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
