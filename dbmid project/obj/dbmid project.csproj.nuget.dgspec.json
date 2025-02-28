@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\2nd semester\\db\\full project\\dbmid project\\dbmid project\\dbmid project.csproj": {}
+    "C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\dbmid project.csproj": {}
   },
   "projects": {
-    "D:\\2nd semester\\db\\full project\\dbmid project\\dbmid project\\dbmid project.csproj": {
+    "C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\dbmid project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\2nd semester\\db\\full project\\dbmid project\\dbmid project\\dbmid project.csproj",
+        "projectUniqueName": "C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\dbmid project.csproj",
         "projectName": "dbmid project",
-        "projectPath": "D:\\2nd semester\\db\\full project\\dbmid project\\dbmid project\\dbmid project.csproj",
+        "projectPath": "C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\dbmid project.csproj",
         "packagesPath": "C:\\Users\\This PC\\.nuget\\packages\\",
-        "outputPath": "D:\\2nd semester\\db\\full project\\dbmid project\\dbmid project\\obj\\",
+        "outputPath": "C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

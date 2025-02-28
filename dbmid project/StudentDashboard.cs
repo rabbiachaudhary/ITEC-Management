@@ -67,5 +67,13 @@ namespace dbmid_project
         {
             OpenFormInPanel(new ITECedi());
         }
+
+        private void linkLabel11_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+            Login l = new Login();
+            this.Hide();
+            l.Show();
+        }
     }
 }
