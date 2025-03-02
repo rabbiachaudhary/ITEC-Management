@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{9FE57561-147B-4A74-A4F8-C6BD7F8B4D3F}|dbmid project\\dbmid project.csproj|solutionrelative:dbmid project\\studentdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9FE57561-147B-4A74-A4F8-C6BD7F8B4D3F}|dbmid project\\dbmid project.csproj|c:\\users\\this pc\\desktop\\dbrepo\\dbmid project\\studentdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{9FE57561-147B-4A74-A4F8-C6BD7F8B4D3F}|dbmid project\\dbmid project.csproj|C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\studentdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{9FE57561-147B-4A74-A4F8-C6BD7F8B4D3F}|dbmid project\\dbmid project.csproj|solutionrelative:dbmid project\\studentdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -15,7 +15,7 @@
       "RelativeMoniker": "D:0:0:{9FE57561-147B-4A74-A4F8-C6BD7F8B4D3F}|dbmid project\\dbmid project.csproj|solutionrelative:dbmid project\\admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9FE57561-147B-4A74-A4F8-C6BD7F8B4D3F}|dbmid project\\dbmid project.csproj|c:\\users\\this pc\\desktop\\dbrepo\\dbmid project\\admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{9FE57561-147B-4A74-A4F8-C6BD7F8B4D3F}|dbmid project\\dbmid project.csproj|C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{9FE57561-147B-4A74-A4F8-C6BD7F8B4D3F}|dbmid project\\dbmid project.csproj|solutionrelative:dbmid project\\admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -50,8 +50,7 @@
               "ToolTip": "C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\StudentDashboard.cs [Design]",
               "RelativeToolTip": "dbmid project\\StudentDashboard.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-28T17:41:57.978Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-02-28T17:41:57.978Z"
             },
             {
               "$type": "Document",
@@ -75,8 +74,7 @@
               "ToolTip": "C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\AdminDashboard.cs [Design]",
               "RelativeToolTip": "dbmid project\\AdminDashboard.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-28T17:37:19.517Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-02-28T17:37:19.517Z"
             }
           ]
         }
