@@ -42,7 +42,6 @@
             label1 = new Label();
             pictureBox1 = new PictureBox();
             panel3 = new Panel();
-            linkLabel11 = new LinkLabel();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -50,7 +49,6 @@
             // panel1
             // 
             panel1.BackColor = Color.SteelBlue;
-            panel1.Controls.Add(linkLabel11);
             panel1.Controls.Add(panel2);
             panel1.Controls.Add(linkLabel8);
             panel1.Controls.Add(linkLabel16);
@@ -267,27 +265,6 @@
             panel3.Size = new Size(996, 1164);
             panel3.TabIndex = 1;
             // 
-            // linkLabel11
-            // 
-            linkLabel11.ActiveLinkColor = Color.MidnightBlue;
-            linkLabel11.AutoSize = true;
-            linkLabel11.BackColor = Color.Transparent;
-            linkLabel11.DisabledLinkColor = Color.Black;
-            linkLabel11.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            linkLabel11.LinkBehavior = LinkBehavior.NeverUnderline;
-            linkLabel11.LinkColor = Color.Black;
-            linkLabel11.Location = new Point(3, 752);
-            linkLabel11.MinimumSize = new Size(375, 23);
-            linkLabel11.Name = "linkLabel11";
-            linkLabel11.Padding = new Padding(50, 0, 0, 0);
-            linkLabel11.Size = new Size(375, 23);
-            linkLabel11.TabIndex = 35;
-            linkLabel11.TabStop = true;
-            linkLabel11.Text = "LOGOUT";
-            linkLabel11.TextAlign = ContentAlignment.MiddleLeft;
-            linkLabel11.VisitedLinkColor = Color.Black;
-            linkLabel11.LinkClicked += linkLabel11_LinkClicked;
-            // 
             // StudentDashboard
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -321,6 +298,5 @@
         private LinkLabel linkLabel8;
         private Panel panel2;
         private Panel panel3;
-        private LinkLabel linkLabel11;
     }
 }

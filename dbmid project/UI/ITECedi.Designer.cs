@@ -40,6 +40,7 @@
             label5 = new Label();
             label3 = new Label();
             label4 = new Label();
+            button2 = new Button();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -62,7 +63,7 @@
             label2.AutoSize = true;
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(256, 134);
+            label2.Location = new Point(253, 105);
             label2.Name = "label2";
             label2.Size = new Size(213, 31);
             label2.TabIndex = 2;
@@ -71,11 +72,11 @@
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "ITEC 2025" });
-            comboBox1.Location = new Point(501, 134);
+            comboBox1.Location = new Point(499, 105);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(209, 28);
             comboBox1.TabIndex = 3;
+            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // panel1
             // 
@@ -105,6 +106,7 @@
             button1.TabIndex = 16;
             button1.Text = "Done";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // textBox3
             // 
@@ -183,7 +185,7 @@
             label4.AutoSize = true;
             label4.BackColor = Color.SteelBlue;
             label4.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(-8, 224);
+            label4.Location = new Point(-8, 255);
             label4.Margin = new Padding(7, 0, 7, 0);
             label4.MinimumSize = new Size(1002, 70);
             label4.Name = "label4";
@@ -191,6 +193,21 @@
             label4.TabIndex = 6;
             label4.Text = "Add New Editions";
             label4.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // button2
+            // 
+            button2.AutoEllipsis = true;
+            button2.BackColor = Color.Navy;
+            button2.FlatStyle = FlatStyle.Popup;
+            button2.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button2.ForeColor = Color.White;
+            button2.Location = new Point(374, 172);
+            button2.Name = "button2";
+            button2.Size = new Size(209, 51);
+            button2.TabIndex = 17;
+            button2.Text = "Select";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // ITECedi
             // 
@@ -200,6 +217,7 @@
             BackgroundImage = Properties.Resources.OIP__4_;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(984, 997);
+            Controls.Add(button2);
             Controls.Add(label4);
             Controls.Add(panel1);
             Controls.Add(comboBox1);
@@ -207,6 +225,7 @@
             Controls.Add(label1);
             Name = "ITECedi";
             Text = "ITECedi";
+            Load += ITECedi_Load_1;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ResumeLayout(false);
@@ -227,5 +246,6 @@
         private TextBox textBox1;
         private TextBox textBox3;
         private Button button1;
+        private Button button2;
     }
 }

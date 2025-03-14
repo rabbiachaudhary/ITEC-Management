@@ -38,6 +38,7 @@
             comboBox2 = new ComboBox();
             label4 = new Label();
             textBox1 = new TextBox();
+            button2 = new Button();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -93,6 +94,7 @@
             // panel1
             // 
             panel1.AutoScroll = true;
+            panel1.Controls.Add(button2);
             panel1.Controls.Add(label3);
             panel1.Controls.Add(comboBox2);
             panel1.Controls.Add(label4);
@@ -154,6 +156,20 @@
             textBox1.Size = new Size(250, 34);
             textBox1.TabIndex = 10;
             // 
+            // button2
+            // 
+            button2.AutoEllipsis = true;
+            button2.BackColor = Color.Navy;
+            button2.FlatStyle = FlatStyle.Popup;
+            button2.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button2.ForeColor = Color.White;
+            button2.Location = new Point(167, 327);
+            button2.Name = "button2";
+            button2.Size = new Size(209, 51);
+            button2.TabIndex = 20;
+            button2.Text = "Add";
+            button2.UseVisualStyleBackColor = false;
+            // 
             // MemberinCom
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -186,5 +202,6 @@
         private ComboBox comboBox2;
         private Label label4;
         private TextBox textBox1;
+        private Button button2;
     }
 }

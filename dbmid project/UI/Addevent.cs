@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using dbmid_project.BL;
 
 namespace dbmid_project
 {
@@ -21,7 +22,19 @@ namespace dbmid_project
         {
 
             AdminDashboard mainForm = (AdminDashboard)this.ParentForm;
-            mainForm.OpenFormInPanel(new ParticpantDetails());   
+            mainForm.OpenFormInPanel(new ParticpantDetails());
+
+            string name=textBox1.Text;
+            string venue = comboBox2.SelectedItem.ToString();
+            string category = comboBox1.SelectedItem.ToString();
+            DateTime date = monthCalendar1.SelectionStart;
+            string description = textBox2.Text;
+
+        }
+
+        private void Addevent_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

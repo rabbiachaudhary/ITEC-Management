@@ -252,6 +252,7 @@
             MinimizeBox = false;
             Name = "Addevent";
             Text = "Add events";
+            Load += Addevent_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ResumeLayout(false);

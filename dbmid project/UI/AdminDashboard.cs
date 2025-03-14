@@ -27,7 +27,7 @@ namespace dbmid_project
 
         private void linkLabel12_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            OpenFormInPanel(new Duties());
+
         }
 
         private void label7_Click(object sender, EventArgs e)
@@ -110,14 +110,12 @@ namespace dbmid_project
 
         private void linkLabel16_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            OpenFormInPanel(new LeaderBoard());
+
         }
 
-        private void linkLabel11_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
-            Login l=new Login();
-            this.Hide();
-            l.Show();
+
         }
     }
 }

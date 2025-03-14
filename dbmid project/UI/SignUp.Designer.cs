@@ -30,13 +30,13 @@
         {
             label6 = new Label();
             panel1 = new Panel();
+            comboBox1 = new ComboBox();
             label4 = new Label();
             button1 = new Button();
             linkLabel1 = new LinkLabel();
             textBox10 = new TextBox();
             textBox9 = new TextBox();
             textBox8 = new TextBox();
-            textBox7 = new TextBox();
             textBox4 = new TextBox();
             label3 = new Label();
             panel1.SuspendLayout();
@@ -57,19 +57,29 @@
             // panel1
             // 
             panel1.BackColor = Color.SteelBlue;
+            panel1.Controls.Add(comboBox1);
             panel1.Controls.Add(label4);
             panel1.Controls.Add(button1);
             panel1.Controls.Add(linkLabel1);
             panel1.Controls.Add(textBox10);
             panel1.Controls.Add(textBox9);
             panel1.Controls.Add(textBox8);
-            panel1.Controls.Add(textBox7);
             panel1.Controls.Add(textBox4);
             panel1.Controls.Add(label3);
             panel1.Location = new Point(275, 169);
             panel1.Name = "panel1";
             panel1.Size = new Size(796, 525);
             panel1.TabIndex = 4;
+            panel1.Paint += panel1_Paint;
+            // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "Admin", "Faculty", "Student ", "Sponsor" });
+            comboBox1.Location = new Point(87, 393);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(288, 28);
+            comboBox1.TabIndex = 25;
             // 
             // label4
             // 
@@ -94,7 +104,7 @@
             button1.TabIndex = 23;
             button1.Text = "SignUp";
             button1.UseVisualStyleBackColor = false;
-            button1.Click += this.Signup_Button;
+            button1.Click += Signup_Button;
             // 
             // linkLabel1
             // 
@@ -147,17 +157,6 @@
             textBox8.TextAlign = HorizontalAlignment.Center;
             textBox8.UseSystemPasswordChar = true;
             // 
-            // textBox7
-            // 
-            textBox7.Location = new Point(87, 394);
-            textBox7.MaximumSize = new Size(500, 70);
-            textBox7.MinimumSize = new Size(150, 35);
-            textBox7.Name = "textBox7";
-            textBox7.PlaceholderText = "Role";
-            textBox7.Size = new Size(288, 35);
-            textBox7.TabIndex = 16;
-            textBox7.TextAlign = HorizontalAlignment.Center;
-            // 
             // textBox4
             // 
             textBox4.Location = new Point(87, 121);
@@ -206,9 +205,9 @@
         private TextBox textBox10;
         private TextBox textBox9;
         private TextBox textBox8;
-        private TextBox textBox7;
         private LinkLabel linkLabel1;
         private Button button1;
         private Label label4;
+        private ComboBox comboBox1;
     }
 }

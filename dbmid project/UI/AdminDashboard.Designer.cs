@@ -52,7 +52,6 @@
             label1 = new Label();
             pictureBox1 = new PictureBox();
             pnlContent = new Panel();
-            linkLabel11 = new LinkLabel();
             sidebrpnl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -60,7 +59,6 @@
             // sidebrpnl
             // 
             sidebrpnl.BackColor = Color.SteelBlue;
-            sidebrpnl.Controls.Add(linkLabel11);
             sidebrpnl.Controls.Add(linkLabel6);
             sidebrpnl.Controls.Add(linkLabel15);
             sidebrpnl.Controls.Add(linkLabel16);
@@ -474,6 +472,7 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 5;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // pnlContent
             // 
@@ -484,27 +483,6 @@
             pnlContent.Name = "pnlContent";
             pnlContent.Size = new Size(1002, 1164);
             pnlContent.TabIndex = 5;
-            // 
-            // linkLabel11
-            // 
-            linkLabel11.ActiveLinkColor = Color.MidnightBlue;
-            linkLabel11.AutoSize = true;
-            linkLabel11.BackColor = Color.Transparent;
-            linkLabel11.DisabledLinkColor = Color.Black;
-            linkLabel11.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            linkLabel11.LinkBehavior = LinkBehavior.NeverUnderline;
-            linkLabel11.LinkColor = Color.Black;
-            linkLabel11.Location = new Point(10, 1058);
-            linkLabel11.MinimumSize = new Size(375, 23);
-            linkLabel11.Name = "linkLabel11";
-            linkLabel11.Padding = new Padding(50, 0, 0, 0);
-            linkLabel11.Size = new Size(375, 23);
-            linkLabel11.TabIndex = 34;
-            linkLabel11.TabStop = true;
-            linkLabel11.Text = "LOGOUT";
-            linkLabel11.TextAlign = ContentAlignment.MiddleLeft;
-            linkLabel11.VisitedLinkColor = Color.Black;
-            linkLabel11.LinkClicked += linkLabel11_LinkClicked;
             // 
             // AdminDashboard
             // 
@@ -553,6 +531,5 @@
         private ComboBox comboBox1;
         private LinkLabel linkLabel15;
         private LinkLabel linkLabel6;
-        private LinkLabel linkLabel11;
     }
 }

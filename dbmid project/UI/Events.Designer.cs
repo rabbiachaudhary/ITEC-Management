@@ -29,22 +29,21 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            ListViewItem listViewItem2 = new ListViewItem("");
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Events));
             listView1 = new ListView();
             Event = new ColumnHeader();
             date = new ColumnHeader();
             Venue = new ColumnHeader();
             Action = new ColumnHeader();
-            label1 = new Label();
-            textBox1 = new TextBox();
-            pictureBox1 = new PictureBox();
+            contextMenuStrip1 = new ContextMenuStrip(components);
             viewDetailsToolStripMenuItem = new ToolStripMenuItem();
             updateToolStripMenuItem = new ToolStripMenuItem();
             deleteToolStripMenuItem = new ToolStripMenuItem();
-            contextMenuStrip1 = new ContextMenuStrip(components);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            label1 = new Label();
+            textBox1 = new TextBox();
+            pictureBox1 = new PictureBox();
             contextMenuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // listView1
@@ -53,7 +52,6 @@
             listView1.ContextMenuStrip = contextMenuStrip1;
             listView1.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             listView1.FullRowSelect = true;
-            listView1.Items.AddRange(new ListViewItem[] { listViewItem2 });
             listView1.Location = new Point(53, 212);
             listView1.MultiSelect = false;
             listView1.Name = "listView1";
@@ -66,24 +64,49 @@
             // Event
             // 
             Event.Text = "Event";
-            Event.Width = 250;
+            Event.Width = 280;
             // 
             // date
             // 
             date.Text = "Date";
             date.TextAlign = HorizontalAlignment.Center;
-            date.Width = 250;
+            date.Width = 265;
             // 
             // Venue
             // 
             Venue.Text = "Venue";
             Venue.TextAlign = HorizontalAlignment.Center;
-            Venue.Width = 250;
+            Venue.Width = 280;
             // 
             // Action
             // 
             Action.Text = "Actions";
-            Action.Width = 100;
+            Action.Width = 40;
+            // 
+            // contextMenuStrip1
+            // 
+            contextMenuStrip1.ImageScalingSize = new Size(20, 20);
+            contextMenuStrip1.Items.AddRange(new ToolStripItem[] { viewDetailsToolStripMenuItem, updateToolStripMenuItem, deleteToolStripMenuItem });
+            contextMenuStrip1.Name = "contextMenuStrip1";
+            contextMenuStrip1.Size = new Size(161, 76);
+            // 
+            // viewDetailsToolStripMenuItem
+            // 
+            viewDetailsToolStripMenuItem.Name = "viewDetailsToolStripMenuItem";
+            viewDetailsToolStripMenuItem.Size = new Size(160, 24);
+            viewDetailsToolStripMenuItem.Text = "View Details";
+            // 
+            // updateToolStripMenuItem
+            // 
+            updateToolStripMenuItem.Name = "updateToolStripMenuItem";
+            updateToolStripMenuItem.Size = new Size(160, 24);
+            updateToolStripMenuItem.Text = "Update";
+            // 
+            // deleteToolStripMenuItem
+            // 
+            deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
+            deleteToolStripMenuItem.Size = new Size(160, 24);
+            deleteToolStripMenuItem.Text = "Delete";
             // 
             // label1
             // 
@@ -119,31 +142,6 @@
             pictureBox1.TabIndex = 4;
             pictureBox1.TabStop = false;
             // 
-            // viewDetailsToolStripMenuItem
-            // 
-            viewDetailsToolStripMenuItem.Name = "viewDetailsToolStripMenuItem";
-            viewDetailsToolStripMenuItem.Size = new Size(210, 24);
-            viewDetailsToolStripMenuItem.Text = "View Details";
-            // 
-            // updateToolStripMenuItem
-            // 
-            updateToolStripMenuItem.Name = "updateToolStripMenuItem";
-            updateToolStripMenuItem.Size = new Size(210, 24);
-            updateToolStripMenuItem.Text = "Update";
-            // 
-            // deleteToolStripMenuItem
-            // 
-            deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            deleteToolStripMenuItem.Size = new Size(210, 24);
-            deleteToolStripMenuItem.Text = "Delete";
-            // 
-            // contextMenuStrip1
-            // 
-            contextMenuStrip1.ImageScalingSize = new Size(20, 20);
-            contextMenuStrip1.Items.AddRange(new ToolStripItem[] { viewDetailsToolStripMenuItem, updateToolStripMenuItem, deleteToolStripMenuItem });
-            contextMenuStrip1.Name = "contextMenuStrip1";
-            contextMenuStrip1.Size = new Size(161, 76);
-            // 
             // Events
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -159,8 +157,9 @@
             Controls.Add(listView1);
             Name = "Events";
             Text = "Form2";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            Load += Events_Load;
             contextMenuStrip1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
