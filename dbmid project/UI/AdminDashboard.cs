@@ -144,7 +144,7 @@ namespace dbmid_project
             }
             else
             {
-                OpenFormInPanel(new View_Committees());
+                OpenFormInPanel(new MemberinCom());
             }
         }
 

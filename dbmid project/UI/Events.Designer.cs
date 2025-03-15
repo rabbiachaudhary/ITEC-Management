@@ -34,7 +34,6 @@
             Event = new ColumnHeader();
             date = new ColumnHeader();
             Venue = new ColumnHeader();
-            Action = new ColumnHeader();
             contextMenuStrip1 = new ContextMenuStrip(components);
             viewDetailsToolStripMenuItem = new ToolStripMenuItem();
             updateToolStripMenuItem = new ToolStripMenuItem();
@@ -42,20 +41,22 @@
             label1 = new Label();
             textBox1 = new TextBox();
             pictureBox1 = new PictureBox();
+            button1 = new Button();
+            button2 = new Button();
             contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // listView1
             // 
-            listView1.Columns.AddRange(new ColumnHeader[] { Event, date, Venue, Action });
+            listView1.Columns.AddRange(new ColumnHeader[] { Event, date, Venue });
             listView1.ContextMenuStrip = contextMenuStrip1;
             listView1.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             listView1.FullRowSelect = true;
-            listView1.Location = new Point(53, 212);
+            listView1.Location = new Point(82, 220);
             listView1.MultiSelect = false;
             listView1.Name = "listView1";
-            listView1.Size = new Size(868, 732);
+            listView1.Size = new Size(830, 732);
             listView1.TabIndex = 0;
             listView1.UseCompatibleStateImageBehavior = false;
             listView1.View = View.Details;
@@ -77,11 +78,6 @@
             Venue.Text = "Venue";
             Venue.TextAlign = HorizontalAlignment.Center;
             Venue.Width = 280;
-            // 
-            // Action
-            // 
-            Action.Text = "Actions";
-            Action.Width = 40;
             // 
             // contextMenuStrip1
             // 
@@ -124,23 +120,51 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(227, 102);
+            textBox1.Location = new Point(82, 102);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
             textBox1.PlaceholderText = "Search By Event Name";
-            textBox1.Size = new Size(563, 51);
+            textBox1.Size = new Size(494, 51);
             textBox1.TabIndex = 3;
             textBox1.TextAlign = HorizontalAlignment.Center;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(163, 102);
+            pictureBox1.Location = new Point(550, 102);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(68, 51);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 4;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.Navy;
+            button1.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.ForeColor = SystemColors.ButtonHighlight;
+            button1.Location = new Point(658, 102);
+            button1.Name = "button1";
+            button1.Size = new Size(124, 51);
+            button1.TabIndex = 5;
+            button1.Text = "Update An Event";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.Navy;
+            button2.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button2.ForeColor = SystemColors.ButtonHighlight;
+            button2.Location = new Point(788, 102);
+            button2.Name = "button2";
+            button2.Size = new Size(124, 51);
+            button2.TabIndex = 6;
+            button2.Text = "Delete An Event";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // Events
             // 
@@ -151,6 +175,8 @@
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(984, 997);
             ContextMenuStrip = contextMenuStrip1;
+            Controls.Add(button2);
+            Controls.Add(button1);
             Controls.Add(pictureBox1);
             Controls.Add(textBox1);
             Controls.Add(label1);
@@ -170,7 +196,6 @@
         private ColumnHeader Event;
         private ColumnHeader date;
         private ColumnHeader Venue;
-        private ColumnHeader Action;
         private Label label1;
         private TextBox textBox1;
         private PictureBox pictureBox1;
@@ -178,5 +203,7 @@
         private ToolStripMenuItem viewDetailsToolStripMenuItem;
         private ToolStripMenuItem updateToolStripMenuItem;
         private ToolStripMenuItem deleteToolStripMenuItem;
+        private Button button1;
+        private Button button2;
     }
 }

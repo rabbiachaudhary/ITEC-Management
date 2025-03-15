@@ -53,6 +53,7 @@ namespace dbmid_project
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
             int year = int.Parse(textBox2.Text);
             string theme = textBox1.Text;
             string description = textBox3.Text;

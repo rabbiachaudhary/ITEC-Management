@@ -17,5 +17,35 @@ namespace dbmid_project.DL
             SqlHelper.executeDML(query);
             MessageBox.Show("Committee added successfully");
         }
+
+
+        public static void Update(string newn,string com)
+        {
+            string idcom = "select committee_id from committees where committee_name='{0}'";
+            idcom = string.Format(idcom, com);
+
+            int id = SqlHelper.GetRole(idcom);
+
+            string sql = "update committees set committee_name='{0}' WHERE committee_id={1} ";
+            sql = string.Format(sql, newn, id);
+
+            SqlHelper.executeDML(sql);
+        }
+
+
+        public static void Delete(string com)
+        {
+            string idcom = "select committee_id from committees where committee_name='{0}'";
+            idcom = string.Format(idcom, com);
+            
+            int id = SqlHelper.GetRole(idcom);
+
+
+            MessageBox.Show(id.ToString());
+
+            string sql = "delete from committees where committee_id={0}";
+            sql = string.Format(sql, id);
+            SqlHelper.executeDML(sql);
+        }
     }
 }

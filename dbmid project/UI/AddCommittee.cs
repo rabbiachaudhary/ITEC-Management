@@ -30,8 +30,40 @@ namespace dbmid_project
         private void button2_Click(object sender, EventArgs e)
         {
 
-            AdminDashboard a = (AdminDashboard)this.ParentForm;
-            a.OpenFormInPanel(new MemberinCom());
+            string com = comboBox2.SelectedItem.ToString();
+            string act = comboBox1.SelectedItem.ToString();
+
+            textBox2.Visible = false;
+            label4.Visible = false;
+            if (act == "Update")
+            {
+                textBox2.Visible = true;
+                label4.Visible = true;
+                string newn = textBox2.Text;
+
+                CommitteeDL.Update(newn,com);
+
+                MessageBox.Show("Updated");
+
+
+            }
+            else if (act == "Delete")
+            {
+
+                textBox2.Visible = false;
+                label4.Visible = false;
+                CommitteeDL.Delete(com);
+                MessageBox.Show("deleted");
+
+            }
+            else
+            {
+                MessageBox.Show("Select Action");
+            }
+
+            LoadCategories();
+
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -46,6 +78,7 @@ namespace dbmid_project
             CommitteeBL c = new CommitteeBL(id, name);
 
             CommitteeDL.AddCommittee(c);
+            LoadCategories();
 
         }
 
@@ -57,9 +90,9 @@ namespace dbmid_project
             string itecid = "select itec_id from itec_editions where year={0}";
             itecid = string.Format(itecid, year);
             int id = SqlHelper.GetRole(itecid);
-            string sql = "select event_name from itec_events where itec_id={0}";
+            string sql = "select committee_name from committees where itec_id={0}";
             sql = string.Format(sql, id);
-            List<string> categories = SqlHelper.LoadIN_ComboBox(sql, "event_name");
+            List<string> categories = SqlHelper.LoadIN_ComboBox(sql, "committee_name");
 
             foreach (string category in categories)
             {
@@ -70,6 +103,15 @@ namespace dbmid_project
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click_2(object sender, EventArgs e)
+        {
         }
     }
 }

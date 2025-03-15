@@ -321,7 +321,7 @@
             linkLabel9.Size = new Size(375, 23);
             linkLabel9.TabIndex = 21;
             linkLabel9.TabStop = true;
-            linkLabel9.Text = "Add Committee ";
+            linkLabel9.Text = "Committees ";
             linkLabel9.TextAlign = ContentAlignment.MiddleLeft;
             linkLabel9.VisitedLinkColor = Color.Black;
             linkLabel9.LinkClicked += linkLabel9_LinkClicked;
@@ -341,7 +341,7 @@
             linkLabel8.Size = new Size(375, 23);
             linkLabel8.TabIndex = 20;
             linkLabel8.TabStop = true;
-            linkLabel8.Text = "Edit Committees";
+            linkLabel8.Text = "Committee Members";
             linkLabel8.TextAlign = ContentAlignment.MiddleLeft;
             linkLabel8.VisitedLinkColor = Color.Black;
             linkLabel8.LinkClicked += linkLabel8_LinkClicked;

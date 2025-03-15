@@ -41,9 +41,9 @@
             textBox2 = new TextBox();
             button1 = new Button();
             panel1 = new Panel();
-            mySqlCommand1 = new MySql.Data.MySqlClient.MySqlCommand();
-            label6 = new Label();
             comboBox3 = new ComboBox();
+            label6 = new Label();
+            mySqlCommand1 = new MySql.Data.MySqlClient.MySqlCommand();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -188,7 +188,7 @@
             button1.FlatStyle = FlatStyle.Popup;
             button1.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.ForeColor = Color.White;
-            button1.Location = new Point(399, 874);
+            button1.Location = new Point(399, 843);
             button1.Name = "button1";
             button1.Size = new Size(209, 51);
             button1.TabIndex = 15;
@@ -216,13 +216,17 @@
             panel1.Padding = new Padding(30);
             panel1.Size = new Size(561, 685);
             panel1.TabIndex = 17;
+            panel1.Paint += panel1_Paint;
             // 
-            // mySqlCommand1
+            // comboBox3
             // 
-            mySqlCommand1.CacheAge = 0;
-            mySqlCommand1.Connection = null;
-            mySqlCommand1.EnableCaching = false;
-            mySqlCommand1.Transaction = null;
+            comboBox3.AllowDrop = true;
+            comboBox3.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            comboBox3.FormattingEnabled = true;
+            comboBox3.Location = new Point(147, 627);
+            comboBox3.Name = "comboBox3";
+            comboBox3.Size = new Size(255, 36);
+            comboBox3.TabIndex = 16;
             // 
             // label6
             // 
@@ -238,15 +242,12 @@
             label6.Text = "Committee:";
             label6.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // comboBox3
+            // mySqlCommand1
             // 
-            comboBox3.AllowDrop = true;
-            comboBox3.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            comboBox3.FormattingEnabled = true;
-            comboBox3.Location = new Point(147, 627);
-            comboBox3.Name = "comboBox3";
-            comboBox3.Size = new Size(255, 36);
-            comboBox3.TabIndex = 16;
+            mySqlCommand1.CacheAge = 0;
+            mySqlCommand1.Connection = null;
+            mySqlCommand1.EnableCaching = false;
+            mySqlCommand1.Transaction = null;
             // 
             // Addevent
             // 
