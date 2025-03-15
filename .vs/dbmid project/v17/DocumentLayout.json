@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\This PC\\Desktop\\dbrepo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9FE57561-147B-4A74-A4F8-C6BD7F8B4D3F}|dbmid project\\dbmid project.csproj|c:\\users\\this pc\\desktop\\dbrepo\\dbmid project\\studentdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FE57561-147B-4A74-A4F8-C6BD7F8B4D3F}|dbmid project\\dbmid project.csproj|solutionrelative:dbmid project\\studentdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\StudentDashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:dbmid project\\StudentDashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9FE57561-147B-4A74-A4F8-C6BD7F8B4D3F}|dbmid project\\dbmid project.csproj|C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\studentdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9FE57561-147B-4A74-A4F8-C6BD7F8B4D3F}|dbmid project\\dbmid project.csproj|solutionrelative:dbmid project\\studentdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\studentdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:dbmid project\\studentdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9FE57561-147B-4A74-A4F8-C6BD7F8B4D3F}|dbmid project\\dbmid project.csproj|c:\\users\\this pc\\desktop\\dbrepo\\dbmid project\\admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FE57561-147B-4A74-A4F8-C6BD7F8B4D3F}|dbmid project\\dbmid project.csproj|solutionrelative:dbmid project\\admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\AdminDashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:dbmid project\\AdminDashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9FE57561-147B-4A74-A4F8-C6BD7F8B4D3F}|dbmid project\\dbmid project.csproj|C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9FE57561-147B-4A74-A4F8-C6BD7F8B4D3F}|dbmid project\\dbmid project.csproj|solutionrelative:dbmid project\\admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:dbmid project\\admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -36,10 +36,8 @@
               "RelativeDocumentMoniker": "dbmid project\\StudentDashboard.cs",
               "ToolTip": "C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\StudentDashboard.cs",
               "RelativeToolTip": "dbmid project\\StudentDashboard.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEsAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-28T17:42:44.918Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-28T17:42:44.918Z"
             },
             {
               "$type": "Document",
@@ -60,10 +58,8 @@
               "RelativeDocumentMoniker": "dbmid project\\AdminDashboard.cs",
               "ToolTip": "C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\AdminDashboard.cs",
               "RelativeToolTip": "dbmid project\\AdminDashboard.cs",
-              "ViewState": "AgIAAGQAAAAAAAAAAIAwwHQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-28T17:38:56.59Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-28T17:38:56.59Z"
             },
             {
               "$type": "Document",

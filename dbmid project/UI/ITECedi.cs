@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using dbmid_project.BL;
 using dbmid_project.DL;
-using MessagingSystem;
+using sqlhelper;
 using MySql.Data.MySqlClient;
 
 namespace dbmid_project
@@ -64,7 +64,7 @@ namespace dbmid_project
         {
             comboBox1.Items.Clear();
             string sql = "select year from itec_editions";
-            List<string> categories = SqlHelper.LoadIN_ComboBox(sql);
+            List<string> categories = SqlHelper.LoadIN_ComboBox(sql,"year");
 
             foreach (string category in categories)
             {
@@ -75,7 +75,7 @@ namespace dbmid_project
         private void button2_Click(object sender, EventArgs e)
         {
              year=int.Parse( comboBox1.SelectedItem.ToString());
-
+            MessageBox.Show("edition selected " + year);
 
         }
 

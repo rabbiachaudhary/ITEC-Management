@@ -6,20 +6,22 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using MySql.Data.MySqlClient;
-namespace MessagingSystem
+namespace sqlhelper
 {
     public class SqlHelper
     {
         public static string constring = "Server = localhost;Uid=root;Pwd=662373+azra-azra;Database=midprojectdb";
-        public static void executeDML(string dml)
+        public static void executeDML(string query)
         {
-            MySqlConnection con = new MySqlConnection(constring);
-            con.Open();
-            MySqlCommand cmd = new MySqlCommand(dml, con);
-            cmd.ExecuteNonQuery();
-            con.Close();
-
-
+            using (var conn = new MySqlConnection(constring))
+            {
+                conn.Open();
+                using (var cmd = new MySqlCommand(query, conn))
+                {
+                    cmd.ExecuteNonQuery();
+                    conn.Close(); // Ensure the connection is closed
+                }
+            }
         }
 
         public static DataTable getDataTable(string sql)
@@ -51,7 +53,7 @@ namespace MessagingSystem
         }
 
 
-        public static List<string> LoadIN_ComboBox(string sql)
+        public static List<string> LoadIN_ComboBox(string sql, string s)
         {
             List<string> items = new List<string>();
             MySqlConnection connection = new MySqlConnection(constring);
@@ -60,7 +62,7 @@ namespace MessagingSystem
             MySqlDataReader reader = cmd.ExecuteReader();
             while (reader.Read())
             {
-                items.Add(reader["year"].ToString()); 
+                items.Add(reader[s].ToString()); 
             }
             reader.Close();
             connection.Close();

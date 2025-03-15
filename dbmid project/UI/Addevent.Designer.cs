@@ -40,9 +40,10 @@
             comboBox2 = new ComboBox();
             textBox2 = new TextBox();
             button1 = new Button();
-            button2 = new Button();
             panel1 = new Panel();
             mySqlCommand1 = new MySql.Data.MySqlClient.MySqlCommand();
+            label6 = new Label();
+            comboBox3 = new ComboBox();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -121,7 +122,7 @@
             label5.AutoSize = true;
             label5.BackColor = Color.Transparent;
             label5.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(172, 573);
+            label5.Location = new Point(172, 699);
             label5.MinimumSize = new Size(200, 30);
             label5.Name = "label5";
             label5.Padding = new Padding(20, 0, 0, 0);
@@ -174,7 +175,7 @@
             // textBox2
             // 
             textBox2.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox2.Location = new Point(147, 607);
+            textBox2.Location = new Point(147, 733);
             textBox2.Multiline = true;
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(255, 136);
@@ -187,7 +188,7 @@
             button1.FlatStyle = FlatStyle.Popup;
             button1.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.ForeColor = Color.White;
-            button1.Location = new Point(579, 846);
+            button1.Location = new Point(399, 874);
             button1.Name = "button1";
             button1.Size = new Size(209, 51);
             button1.TabIndex = 15;
@@ -195,23 +196,11 @@
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
-            // button2
-            // 
-            button2.AutoEllipsis = true;
-            button2.BackColor = Color.Navy;
-            button2.FlatStyle = FlatStyle.Popup;
-            button2.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.ForeColor = Color.White;
-            button2.Location = new Point(227, 846);
-            button2.Name = "button2";
-            button2.Size = new Size(209, 51);
-            button2.TabIndex = 16;
-            button2.Text = "Add Committees";
-            button2.UseVisualStyleBackColor = false;
-            // 
             // panel1
             // 
             panel1.AutoScroll = true;
+            panel1.Controls.Add(comboBox3);
+            panel1.Controls.Add(label6);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(textBox1);
             panel1.Controls.Add(label3);
@@ -225,7 +214,7 @@
             panel1.Location = new Point(227, 110);
             panel1.Name = "panel1";
             panel1.Padding = new Padding(30);
-            panel1.Size = new Size(561, 716);
+            panel1.Size = new Size(561, 685);
             panel1.TabIndex = 17;
             // 
             // mySqlCommand1
@@ -234,6 +223,30 @@
             mySqlCommand1.Connection = null;
             mySqlCommand1.EnableCaching = false;
             mySqlCommand1.Transaction = null;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.BackColor = Color.Transparent;
+            label6.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.Location = new Point(172, 593);
+            label6.MinimumSize = new Size(200, 30);
+            label6.Name = "label6";
+            label6.Padding = new Padding(20, 0, 0, 0);
+            label6.Size = new Size(200, 31);
+            label6.TabIndex = 15;
+            label6.Text = "Committee:";
+            label6.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // comboBox3
+            // 
+            comboBox3.AllowDrop = true;
+            comboBox3.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            comboBox3.FormattingEnabled = true;
+            comboBox3.Location = new Point(147, 627);
+            comboBox3.Name = "comboBox3";
+            comboBox3.Size = new Size(255, 36);
+            comboBox3.TabIndex = 16;
             // 
             // Addevent
             // 
@@ -244,7 +257,6 @@
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(984, 997);
             Controls.Add(panel1);
-            Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(label1);
             Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -273,8 +285,9 @@
         private ComboBox comboBox2;
         private TextBox textBox2;
         private Button button1;
-        private Button button2;
         private Panel panel1;
         private MySql.Data.MySqlClient.MySqlCommand mySqlCommand1;
+        private ComboBox comboBox3;
+        private Label label6;
     }
 }

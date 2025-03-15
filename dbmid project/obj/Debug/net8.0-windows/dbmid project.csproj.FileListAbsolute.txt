@@ -104,3 +104,4 @@ D:\2nd semester\db\full project\dbmid project\dbmid project\obj\Debug\net8.0-win
 D:\2nd semester\db\full project\dbmid project\dbmid project\obj\Debug\net8.0-windows\dbmid project.pdb
 D:\2nd semester\db\full project\dbmid project\dbmid project\obj\Debug\net8.0-windows\dbmid project.genruntimeconfig.cache
 D:\2nd semester\db\full project\dbmid project\dbmid project\obj\Debug\net8.0-windows\ref\dbmid project.dll
+D:\2nd semester\db\full project\dbmid project\dbmid project\obj\Debug\net8.0-windows\dbmid_project.Venues.resources

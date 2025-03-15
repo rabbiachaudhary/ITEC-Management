@@ -38,7 +38,14 @@ namespace dbmid_project
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
 
-            OpenFormInPanel(new Events());
+            if (ITECedi.GetItec_Year() == 0)
+            {
+                MessageBox.Show("Select ITEC edition first");
+            }
+            else
+            {
+                OpenFormInPanel(new Events());
+            }
         }
         public void OpenFormInPanel(Form form)
         {
@@ -52,7 +59,14 @@ namespace dbmid_project
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            OpenFormInPanel(new Addevent());
+            if (ITECedi.GetItec_Year() == 0)
+            {
+                MessageBox.Show("Select ITEC edition first");
+            }
+            else
+            {
+                OpenFormInPanel(new Addevent());
+            }
 
         }
 
@@ -63,49 +77,111 @@ namespace dbmid_project
 
         private void linkLabel5_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            OpenFormInPanel(new RegisterParticipants());
+            if (ITECedi.GetItec_Year() == 0)
+            {
+                MessageBox.Show("Select ITEC edition first");
+            }
+            else
+            {
+                OpenFormInPanel(new RegisterParticipants());
+            }
 
         }
 
         private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            OpenFormInPanel(new RegTypesNDFees());
+            if (ITECedi.GetItec_Year() == 0)
+            {
+                MessageBox.Show("Select ITEC edition first");
+            }
+            else
+            {
+                OpenFormInPanel(new RegTypesNDFees());
+            }
         }
 
         private void linkLabel15_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
-            OpenFormInPanel(new ITECedi());
+            if (ITECedi.GetItec_Year() == 0)
+            {
+                MessageBox.Show("Select ITEC edition first");
+            }
+            else
+            {
+                OpenFormInPanel(new ITECedi());
+            }
         }
 
         private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            OpenFormInPanel(new ParticpantDetails());
+            if (ITECedi.GetItec_Year() == 0)
+            {
+                MessageBox.Show("Select ITEC edition first");
+            }
+            else
+            {
+                OpenFormInPanel(new ParticpantDetails());
+            }
         }
 
         private void linkLabel9_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            OpenFormInPanel(new AddCommittee());
+            if (ITECedi.GetItec_Year() == 0)
+            {
+                MessageBox.Show("Select ITEC edition first");
+            }
+            else
+            {
+                OpenFormInPanel(new AddCommittee());
+            }
         }
 
         private void linkLabel8_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            OpenFormInPanel(new View_Committees());
+            if (ITECedi.GetItec_Year() == 0)
+            {
+                MessageBox.Show("Select ITEC edition first");
+            }
+            else
+            {
+                OpenFormInPanel(new View_Committees());
+            }
         }
 
         private void linkLabel6_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            OpenFormInPanel(new AddDuties());
+            if (ITECedi.GetItec_Year() == 0)
+            {
+                MessageBox.Show("Select ITEC edition first");
+            }
+            else
+            {
+                OpenFormInPanel(new AddDuties());
+            }
         }
 
         private void linkLabel10_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            OpenFormInPanel(new AddTransaction());
+            if (ITECedi.GetItec_Year() == 0)
+            {
+                MessageBox.Show("Select ITEC edition first");
+            }
+            else
+            {
+                OpenFormInPanel(new AddTransaction());
+            }
         }
 
         private void linkLabel14_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            OpenFormInPanel(new AddResults());
+            if (ITECedi.GetItec_Year() == 0)
+            {
+                MessageBox.Show("Select ITEC edition first");
+            }
+            else
+            {
+                OpenFormInPanel(new AddResults());
+            }
         }
 
         private void linkLabel16_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -114,6 +190,23 @@ namespace dbmid_project
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void linkLabel11_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            if (ITECedi.GetItec_Year() == 0)
+            {
+                MessageBox.Show("Select ITEC edition first");
+            }
+            else
+            {
+                OpenFormInPanel(new Venues());
+            }
+        }
+
+        private void pnlContent_Paint(object sender, PaintEventArgs e)
         {
 
         }

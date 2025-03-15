@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             sidebrpnl = new Panel();
+            linkLabel11 = new LinkLabel();
             linkLabel6 = new LinkLabel();
             linkLabel15 = new LinkLabel();
             linkLabel16 = new LinkLabel();
@@ -59,6 +60,7 @@
             // sidebrpnl
             // 
             sidebrpnl.BackColor = Color.SteelBlue;
+            sidebrpnl.Controls.Add(linkLabel11);
             sidebrpnl.Controls.Add(linkLabel6);
             sidebrpnl.Controls.Add(linkLabel15);
             sidebrpnl.Controls.Add(linkLabel16);
@@ -85,6 +87,26 @@
             sidebrpnl.Name = "sidebrpnl";
             sidebrpnl.Size = new Size(365, 1164);
             sidebrpnl.TabIndex = 4;
+            // 
+            // linkLabel11
+            // 
+            linkLabel11.ActiveLinkColor = Color.MidnightBlue;
+            linkLabel11.AutoSize = true;
+            linkLabel11.DisabledLinkColor = Color.Black;
+            linkLabel11.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            linkLabel11.LinkBehavior = LinkBehavior.NeverUnderline;
+            linkLabel11.LinkColor = Color.Black;
+            linkLabel11.Location = new Point(10, 398);
+            linkLabel11.MinimumSize = new Size(375, 23);
+            linkLabel11.Name = "linkLabel11";
+            linkLabel11.Padding = new Padding(50, 0, 0, 0);
+            linkLabel11.Size = new Size(375, 23);
+            linkLabel11.TabIndex = 34;
+            linkLabel11.TabStop = true;
+            linkLabel11.Text = "Venues";
+            linkLabel11.TextAlign = ContentAlignment.MiddleLeft;
+            linkLabel11.VisitedLinkColor = Color.Black;
+            linkLabel11.LinkClicked += linkLabel11_LinkClicked;
             // 
             // linkLabel6
             // 
@@ -114,7 +136,7 @@
             linkLabel15.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             linkLabel15.LinkBehavior = LinkBehavior.NeverUnderline;
             linkLabel15.LinkColor = Color.Black;
-            linkLabel15.Location = new Point(10, 294);
+            linkLabel15.Location = new Point(10, 269);
             linkLabel15.MinimumSize = new Size(375, 23);
             linkLabel15.Name = "linkLabel15";
             linkLabel15.Padding = new Padding(50, 0, 0, 0);
@@ -299,7 +321,7 @@
             linkLabel9.Size = new Size(375, 23);
             linkLabel9.TabIndex = 21;
             linkLabel9.TabStop = true;
-            linkLabel9.Text = "Add Committee to an event";
+            linkLabel9.Text = "Add Committee ";
             linkLabel9.TextAlign = ContentAlignment.MiddleLeft;
             linkLabel9.VisitedLinkColor = Color.Black;
             linkLabel9.LinkClicked += linkLabel9_LinkClicked;
@@ -405,7 +427,7 @@
             linkLabel2.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             linkLabel2.LinkBehavior = LinkBehavior.NeverUnderline;
             linkLabel2.LinkColor = Color.Black;
-            linkLabel2.Location = new Point(11, 400);
+            linkLabel2.Location = new Point(10, 368);
             linkLabel2.MinimumSize = new Size(375, 23);
             linkLabel2.Name = "linkLabel2";
             linkLabel2.Padding = new Padding(50, 0, 0, 0);
@@ -425,7 +447,7 @@
             linkLabel1.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             linkLabel1.LinkBehavior = LinkBehavior.NeverUnderline;
             linkLabel1.LinkColor = Color.Black;
-            linkLabel1.Location = new Point(11, 367);
+            linkLabel1.Location = new Point(10, 339);
             linkLabel1.MinimumSize = new Size(375, 23);
             linkLabel1.Name = "linkLabel1";
             linkLabel1.Padding = new Padding(50, 0, 0, 0);
@@ -442,7 +464,7 @@
             label4.AutoSize = true;
             label4.BackColor = Color.DodgerBlue;
             label4.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(-2, 433);
+            label4.Location = new Point(-2, 429);
             label4.MinimumSize = new Size(375, 23);
             label4.Name = "label4";
             label4.Size = new Size(375, 23);
@@ -455,7 +477,7 @@
             label1.AutoSize = true;
             label1.BackColor = Color.DodgerBlue;
             label1.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(0, 326);
+            label1.Location = new Point(0, 300);
             label1.MinimumSize = new Size(375, 23);
             label1.Name = "label1";
             label1.Size = new Size(375, 23);
@@ -466,9 +488,9 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.Screenshot_2025_02_24_215708;
-            pictureBox1.Location = new Point(24, 25);
+            pictureBox1.Location = new Point(33, 26);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(307, 249);
+            pictureBox1.Size = new Size(307, 233);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 5;
             pictureBox1.TabStop = false;
@@ -483,6 +505,7 @@
             pnlContent.Name = "pnlContent";
             pnlContent.Size = new Size(1002, 1164);
             pnlContent.TabIndex = 5;
+            pnlContent.Paint += pnlContent_Paint;
             // 
             // AdminDashboard
             // 
@@ -531,5 +554,6 @@
         private ComboBox comboBox1;
         private LinkLabel linkLabel15;
         private LinkLabel linkLabel6;
+        private LinkLabel linkLabel11;
     }
 }

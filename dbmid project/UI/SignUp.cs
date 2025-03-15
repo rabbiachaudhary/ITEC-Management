@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using dbmid_project.BL;
 using dbmid_project.DL;
-using MessagingSystem;
+using sqlhelper;
 using MySql.Data.MySqlClient;
 using static System.Net.Mime.MediaTypeNames;
 using System.Text.RegularExpressions;

@@ -67,6 +67,7 @@
             panel1.Padding = new Padding(30);
             panel1.Size = new Size(561, 533);
             panel1.TabIndex = 18;
+            panel1.Paint += panel1_Paint;
             // 
             // label3
             // 
@@ -123,6 +124,7 @@
             button1.TabIndex = 16;
             button1.Text = "Save";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // label2
             // 
