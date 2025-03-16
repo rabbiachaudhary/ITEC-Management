@@ -78,7 +78,7 @@
             label9.AutoSize = true;
             label9.BackColor = Color.Transparent;
             label9.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label9.Location = new Point(374, 97);
+            label9.Location = new Point(388, 103);
             label9.MinimumSize = new Size(200, 30);
             label9.Name = "label9";
             label9.Padding = new Padding(20, 0, 0, 0);
@@ -92,7 +92,7 @@
             comboBox5.AllowDrop = true;
             comboBox5.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             comboBox5.FormattingEnabled = true;
-            comboBox5.Location = new Point(353, 148);
+            comboBox5.Location = new Point(359, 149);
             comboBox5.MaximumSize = new Size(250, 0);
             comboBox5.MinimumSize = new Size(250, 0);
             comboBox5.Name = "comboBox5";
@@ -106,13 +106,13 @@
             button2.FlatStyle = FlatStyle.Popup;
             button2.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button2.ForeColor = Color.White;
-            button2.Location = new Point(374, 205);
+            button2.Location = new Point(384, 206);
             button2.Name = "button2";
             button2.Size = new Size(209, 51);
             button2.TabIndex = 21;
             button2.Text = "Delete";
             button2.UseVisualStyleBackColor = false;
-            button2.Click += this.button2_Click;
+            button2.Click += button2_Click;
             // 
             // panel1
             // 
@@ -169,6 +169,7 @@
             button1.TabIndex = 20;
             button1.Text = "Update";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // label3
             // 
@@ -235,6 +236,7 @@
             Controls.Add(label1);
             Name = "ComMembersCRUD";
             Text = "ComMembersCRUD";
+            Load += ComMembersCRUD_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ResumeLayout(false);

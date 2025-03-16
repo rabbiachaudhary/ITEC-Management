@@ -249,6 +249,7 @@
             Controls.Add(label1);
             Name = "MemberinCom";
             Text = "MemberinCom";
+            Load += MemberinCom_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ResumeLayout(false);

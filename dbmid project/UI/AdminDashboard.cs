@@ -96,7 +96,7 @@ namespace dbmid_project
             }
             else
             {
-                OpenFormInPanel(new RegTypesNDFees());
+                OpenFormInPanel(new Registration());
             }
         }
 

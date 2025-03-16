@@ -54,6 +54,7 @@ namespace dbmid_project
             string date = monthCalendar1.SelectionStart.ToString("yyyy-MM-dd");
             string description = textBox2.Text;
             string Committee = comboBox3.SelectedItem.ToString();
+            int fees=int.Parse(textBox3.Text);
             EventsBL events = new EventsBL(name, category, description, date, venue, Committee);
 
             EventsDL.AddEvent(events);
@@ -101,6 +102,11 @@ namespace dbmid_project
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
         {
 
         }

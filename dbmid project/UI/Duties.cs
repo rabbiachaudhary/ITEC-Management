@@ -16,5 +16,19 @@ namespace dbmid_project
         {
             InitializeComponent();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+            AdminDashboard a = (AdminDashboard)this.ParentForm;
+            a.OpenFormInPanel(new DutyCRUD("dlt"));
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            AdminDashboard a = (AdminDashboard)this.ParentForm;
+            a.OpenFormInPanel(new DutyCRUD("update"));
+        }
     }
 }

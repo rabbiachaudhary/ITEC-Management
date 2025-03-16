@@ -14,7 +14,6 @@ namespace dbmid_project.BL
         public string Date;
         public string venue;
         public string committee;
-
         public EventsBL(string a, string b, string c, string d, string e, string f)
         {
             this.eventName = a;

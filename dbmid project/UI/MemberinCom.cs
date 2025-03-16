@@ -20,7 +20,7 @@ namespace dbmid_project
         {
             InitializeComponent();
             LoadCommittees();
-
+            LoadDataInListView();
             LoadRoles();
         }
 
@@ -37,16 +37,15 @@ namespace dbmid_project
         private void LoadDataInListView()
         {
             int year = ITECedi.GetItec_Year();
-            string query = "select name, role_id from committee_members where itec_id={0} and committe_id={1}";
+            string query = "select name, value from committee_members cm join lookup l on cm.role_id=l.lookup_id ";
             query = string.Format(query, year);
             DataTable dt = SqlHelper.getDataTable(query);
             listView1.Items.Clear();
             foreach (DataRow row in dt.Rows)
             {
-                ListViewItem item = new ListViewItem(row["event_name"].ToString());
+                ListViewItem item = new ListViewItem(row["name"].ToString());
 
-                item.SubItems.Add(row["event_date"].ToString());
-                item.SubItems.Add(row["venue_od"].ToString());
+                item.SubItems.Add(row["value"].ToString());
                 listView1.Items.Add(item);
 
             }
@@ -105,8 +104,13 @@ namespace dbmid_project
         {
 
             AdminDashboard a = (AdminDashboard)this.ParentForm;
-            a.OpenFormInPanel(new UpdateEvent("dlt"));
+            a.OpenFormInPanel(new ComMembersCRUD("dlt"));
 
+
+        }
+
+        private void MemberinCom_Load(object sender, EventArgs e)
+        {
 
         }
     }

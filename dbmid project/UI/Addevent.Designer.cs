@@ -44,6 +44,8 @@
             comboBox3 = new ComboBox();
             label6 = new Label();
             mySqlCommand1 = new MySql.Data.MySqlClient.MySqlCommand();
+            label8 = new Label();
+            textBox3 = new TextBox();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -122,7 +124,7 @@
             label5.AutoSize = true;
             label5.BackColor = Color.Transparent;
             label5.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(172, 699);
+            label5.Location = new Point(172, 799);
             label5.MinimumSize = new Size(200, 30);
             label5.Name = "label5";
             label5.Padding = new Padding(20, 0, 0, 0);
@@ -175,7 +177,7 @@
             // textBox2
             // 
             textBox2.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox2.Location = new Point(147, 733);
+            textBox2.Location = new Point(147, 850);
             textBox2.Multiline = true;
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(255, 136);
@@ -199,6 +201,8 @@
             // panel1
             // 
             panel1.AutoScroll = true;
+            panel1.Controls.Add(textBox3);
+            panel1.Controls.Add(label8);
             panel1.Controls.Add(comboBox3);
             panel1.Controls.Add(label6);
             panel1.Controls.Add(label2);
@@ -214,7 +218,7 @@
             panel1.Location = new Point(227, 110);
             panel1.Name = "panel1";
             panel1.Padding = new Padding(30);
-            panel1.Size = new Size(561, 685);
+            panel1.Size = new Size(561, 998);
             panel1.TabIndex = 17;
             panel1.Paint += panel1_Paint;
             // 
@@ -248,6 +252,29 @@
             mySqlCommand1.Connection = null;
             mySqlCommand1.EnableCaching = false;
             mySqlCommand1.Transaction = null;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.BackColor = Color.Transparent;
+            label8.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label8.Location = new Point(158, 699);
+            label8.MinimumSize = new Size(200, 30);
+            label8.Name = "label8";
+            label8.Padding = new Padding(20, 0, 0, 0);
+            label8.Size = new Size(223, 31);
+            label8.TabIndex = 17;
+            label8.Text = "Registration Fees:";
+            label8.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // textBox3
+            // 
+            textBox3.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            textBox3.Location = new Point(147, 750);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(255, 34);
+            textBox3.TabIndex = 18;
+            textBox3.TextChanged += textBox3_TextChanged;
             // 
             // Addevent
             // 
@@ -290,5 +317,7 @@
         private MySql.Data.MySqlClient.MySqlCommand mySqlCommand1;
         private ComboBox comboBox3;
         private Label label6;
+        private TextBox textBox3;
+        private Label label8;
     }
 }

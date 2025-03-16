@@ -374,7 +374,7 @@
             linkLabel5.Size = new Size(375, 23);
             linkLabel5.TabIndex = 16;
             linkLabel5.TabStop = true;
-            linkLabel5.Text = "Register Participants";
+            linkLabel5.Text = "Add Participants";
             linkLabel5.TextAlign = ContentAlignment.MiddleLeft;
             linkLabel5.VisitedLinkColor = Color.Black;
             linkLabel5.LinkClicked += linkLabel5_LinkClicked;
@@ -394,7 +394,7 @@
             linkLabel4.Size = new Size(375, 23);
             linkLabel4.TabIndex = 15;
             linkLabel4.TabStop = true;
-            linkLabel4.Text = "Registrations Type and Fees";
+            linkLabel4.Text = "Register to events";
             linkLabel4.TextAlign = ContentAlignment.MiddleLeft;
             linkLabel4.VisitedLinkColor = Color.Black;
             linkLabel4.LinkClicked += linkLabel4_LinkClicked;

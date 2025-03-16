@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace dbmid_project
 {
-    public partial class RegTypesNDFees : Form
+    public partial class DutyCRUD : Form
     {
-        public RegTypesNDFees()
+        public DutyCRUD()
         {
             InitializeComponent();
         }

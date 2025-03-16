@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using dbmid_project.BL;
 using sqlhelper;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace dbmid_project.DL
 {
