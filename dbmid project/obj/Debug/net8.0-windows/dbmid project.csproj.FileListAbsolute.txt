@@ -131,7 +131,6 @@ C:\Users\This PC\Desktop\dbrepo\dbmid project\bin\Debug\net8.0-windows\runtimes\
 C:\Users\This PC\Desktop\dbrepo\dbmid project\bin\Debug\net8.0-windows\runtimes\win-x64\native\krbcc64.dll
 C:\Users\This PC\Desktop\dbrepo\dbmid project\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 C:\Users\This PC\Desktop\dbrepo\dbmid project\obj\Debug\net8.0-windows\dbmid project.csproj.AssemblyReference.cache
-C:\Users\This PC\Desktop\dbrepo\dbmid project\obj\Debug\net8.0-windows\dbmid_project.DutyCRUD.resources
 C:\Users\This PC\Desktop\dbrepo\dbmid project\obj\Debug\net8.0-windows\dbmid_project.Properties.Resources.resources
 C:\Users\This PC\Desktop\dbrepo\dbmid project\obj\Debug\net8.0-windows\dbmid_project.AddCommittee.resources
 C:\Users\This PC\Desktop\dbrepo\dbmid project\obj\Debug\net8.0-windows\dbmid_project.AddDuties.resources

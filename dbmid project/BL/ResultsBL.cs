@@ -25,6 +25,6 @@ namespace dbmid_project.BL
             this.position = d;
             this.score = e;
             this.remarks = f;
-        }s
+        }
     }
 }

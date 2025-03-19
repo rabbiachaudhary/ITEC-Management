@@ -22,14 +22,13 @@ namespace dbmid_project
         {
 
             AdminDashboard a = (AdminDashboard)this.ParentForm;
-            a.OpenFormInPanel(new DutyCRUD("dlt"));
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
 
-            AdminDashboard a = (AdminDashboard)this.ParentForm;
-            a.OpenFormInPanel(new DutyCRUD("update"));
+
 
         }
 
@@ -61,11 +60,16 @@ namespace dbmid_project
 
                 // Update the status in the database
                 string query = $"UPDATE duties SET status_id = (select lookup_id from lookup where value='{0}') WHERE committee_id=(select committee_id from committees where committee_name='{1}'";
-                query=string.Format(query, newStatus,committeeName);
+                query = string.Format(query, newStatus, committeeName);
                 SqlHelper.executeDML(query);
 
                 MessageBox.Show($"Status updated to {newStatus} for {committeeName}");
             }
+        }
+
+        private void Duties_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

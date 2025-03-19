@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using dbmid_project.BL;
+using dbmid_project.DL;
 using sqlhelper;
 
 namespace dbmid_project
@@ -36,7 +38,8 @@ namespace dbmid_project
             string position = comboBox1.SelectedItem.ToString();
             float score=float.Parse(textBox2.Text);
             string remarks=textBox3.Text;
-
+            ResultsBL r=new ResultsBL(eventn,participant,team, position, score, remarks);
+            ResultsDL.AddResults(r);
         }
 
         private void LoadEvents()
