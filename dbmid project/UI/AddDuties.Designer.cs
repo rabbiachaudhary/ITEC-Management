@@ -30,6 +30,8 @@
         {
             label1 = new Label();
             panel1 = new Panel();
+            comboBox3 = new ComboBox();
+            label3 = new Label();
             comboBox2 = new ComboBox();
             monthCalendar1 = new MonthCalendar();
             textBox2 = new TextBox();
@@ -39,8 +41,6 @@
             label4 = new Label();
             label2 = new Label();
             button1 = new Button();
-            label3 = new Label();
-            comboBox3 = new ComboBox();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -77,6 +77,33 @@
             panel1.Size = new Size(561, 727);
             panel1.TabIndex = 19;
             panel1.Paint += panel1_Paint;
+            // 
+            // comboBox3
+            // 
+            comboBox3.AllowDrop = true;
+            comboBox3.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            comboBox3.FormattingEnabled = true;
+            comboBox3.Items.AddRange(new object[] { "Pending", "In Progress", "Completed" });
+            comboBox3.Location = new Point(151, 658);
+            comboBox3.MaximumSize = new Size(250, 0);
+            comboBox3.MinimumSize = new Size(250, 0);
+            comboBox3.Name = "comboBox3";
+            comboBox3.Size = new Size(250, 36);
+            comboBox3.TabIndex = 27;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
+            label3.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Location = new Point(174, 618);
+            label3.MinimumSize = new Size(200, 30);
+            label3.Name = "label3";
+            label3.Padding = new Padding(20, 0, 0, 0);
+            label3.Size = new Size(200, 31);
+            label3.TabIndex = 26;
+            label3.Text = "Status:";
+            label3.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // comboBox2
             // 
@@ -147,6 +174,7 @@
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(250, 36);
             comboBox1.TabIndex = 21;
+            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // label4
             // 
@@ -190,33 +218,6 @@
             button1.Text = "Save";
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.BackColor = Color.Transparent;
-            label3.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(174, 618);
-            label3.MinimumSize = new Size(200, 30);
-            label3.Name = "label3";
-            label3.Padding = new Padding(20, 0, 0, 0);
-            label3.Size = new Size(200, 31);
-            label3.TabIndex = 26;
-            label3.Text = "Status:";
-            label3.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // comboBox3
-            // 
-            comboBox3.AllowDrop = true;
-            comboBox3.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            comboBox3.FormattingEnabled = true;
-            comboBox3.Items.AddRange(new object[] { "Pending", "In Progress", "Completed" });
-            comboBox3.Location = new Point(151, 658);
-            comboBox3.MaximumSize = new Size(250, 0);
-            comboBox3.MinimumSize = new Size(250, 0);
-            comboBox3.Name = "comboBox3";
-            comboBox3.Size = new Size(250, 36);
-            comboBox3.TabIndex = 27;
             // 
             // AddDuties
             // 

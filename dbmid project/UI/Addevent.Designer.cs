@@ -41,11 +41,11 @@
             textBox2 = new TextBox();
             button1 = new Button();
             panel1 = new Panel();
+            textBox3 = new TextBox();
+            label8 = new Label();
             comboBox3 = new ComboBox();
             label6 = new Label();
             mySqlCommand1 = new MySql.Data.MySqlClient.MySqlCommand();
-            label8 = new Label();
-            textBox3 = new TextBox();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -218,9 +218,32 @@
             panel1.Location = new Point(227, 110);
             panel1.Name = "panel1";
             panel1.Padding = new Padding(30);
-            panel1.Size = new Size(561, 998);
+            panel1.Size = new Size(561, 706);
             panel1.TabIndex = 17;
             panel1.Paint += panel1_Paint;
+            // 
+            // textBox3
+            // 
+            textBox3.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            textBox3.Location = new Point(147, 750);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(255, 34);
+            textBox3.TabIndex = 18;
+            textBox3.TextChanged += textBox3_TextChanged;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.BackColor = Color.Transparent;
+            label8.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label8.Location = new Point(158, 699);
+            label8.MinimumSize = new Size(200, 30);
+            label8.Name = "label8";
+            label8.Padding = new Padding(20, 0, 0, 0);
+            label8.Size = new Size(223, 31);
+            label8.TabIndex = 17;
+            label8.Text = "Registration Fees:";
+            label8.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // comboBox3
             // 
@@ -252,29 +275,6 @@
             mySqlCommand1.Connection = null;
             mySqlCommand1.EnableCaching = false;
             mySqlCommand1.Transaction = null;
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.BackColor = Color.Transparent;
-            label8.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label8.Location = new Point(158, 699);
-            label8.MinimumSize = new Size(200, 30);
-            label8.Name = "label8";
-            label8.Padding = new Padding(20, 0, 0, 0);
-            label8.Size = new Size(223, 31);
-            label8.TabIndex = 17;
-            label8.Text = "Registration Fees:";
-            label8.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // textBox3
-            // 
-            textBox3.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox3.Location = new Point(147, 750);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(255, 34);
-            textBox3.TabIndex = 18;
-            textBox3.TextChanged += textBox3_TextChanged;
             // 
             // Addevent
             // 

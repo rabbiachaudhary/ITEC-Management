@@ -37,16 +37,16 @@
             Event = new ColumnHeader();
             Deadine = new ColumnHeader();
             status = new ColumnHeader();
-            textBox1 = new TextBox();
-            pictureBox1 = new PictureBox();
             contextMenuStrip1 = new ContextMenuStrip(components);
             viewDetailsToolStripMenuItem = new ToolStripMenuItem();
             updateToolStripMenuItem = new ToolStripMenuItem();
             deleteToolStripMenuItem = new ToolStripMenuItem();
+            textBox1 = new TextBox();
+            pictureBox1 = new PictureBox();
             button1 = new Button();
             button2 = new Button();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             contextMenuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -66,6 +66,7 @@
             // listView1
             // 
             listView1.Columns.AddRange(new ColumnHeader[] { cname, Event, Deadine, status });
+            listView1.ContextMenuStrip = contextMenuStrip1;
             listView1.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             listView1.FullRowSelect = true;
             listView1.Items.AddRange(new ListViewItem[] { listViewItem1 });
@@ -102,6 +103,35 @@
             status.TextAlign = HorizontalAlignment.Center;
             status.Width = 190;
             // 
+            // contextMenuStrip1
+            // 
+            contextMenuStrip1.ImageScalingSize = new Size(20, 20);
+            contextMenuStrip1.Items.AddRange(new ToolStripItem[] { viewDetailsToolStripMenuItem, updateToolStripMenuItem, deleteToolStripMenuItem });
+            contextMenuStrip1.Name = "contextMenuStrip1";
+            contextMenuStrip1.Size = new Size(211, 104);
+            contextMenuStrip1.Opening += contextMenuStrip1_Opening;
+            contextMenuStrip1.ItemClicked += contextMenuStrip1_ItemClicked;
+            // 
+            // viewDetailsToolStripMenuItem
+            // 
+            viewDetailsToolStripMenuItem.Name = "viewDetailsToolStripMenuItem";
+            viewDetailsToolStripMenuItem.Size = new Size(210, 24);
+            viewDetailsToolStripMenuItem.Text = "Pending";
+            viewDetailsToolStripMenuItem.Click += viewDetailsToolStripMenuItem_Click;
+            // 
+            // updateToolStripMenuItem
+            // 
+            updateToolStripMenuItem.Name = "updateToolStripMenuItem";
+            updateToolStripMenuItem.Size = new Size(210, 24);
+            updateToolStripMenuItem.Text = "In Progress";
+            // 
+            // deleteToolStripMenuItem
+            // 
+            deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
+            deleteToolStripMenuItem.Size = new Size(210, 24);
+            deleteToolStripMenuItem.Text = "Completed";
+            deleteToolStripMenuItem.Click += deleteToolStripMenuItem_Click;
+            // 
             // textBox1
             // 
             textBox1.Location = new Point(121, 111);
@@ -121,31 +151,6 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 7;
             pictureBox1.TabStop = false;
-            // 
-            // contextMenuStrip1
-            // 
-            contextMenuStrip1.ImageScalingSize = new Size(20, 20);
-            contextMenuStrip1.Items.AddRange(new ToolStripItem[] { viewDetailsToolStripMenuItem, updateToolStripMenuItem, deleteToolStripMenuItem });
-            contextMenuStrip1.Name = "contextMenuStrip1";
-            contextMenuStrip1.Size = new Size(161, 76);
-            // 
-            // viewDetailsToolStripMenuItem
-            // 
-            viewDetailsToolStripMenuItem.Name = "viewDetailsToolStripMenuItem";
-            viewDetailsToolStripMenuItem.Size = new Size(160, 24);
-            viewDetailsToolStripMenuItem.Text = "View Details";
-            // 
-            // updateToolStripMenuItem
-            // 
-            updateToolStripMenuItem.Name = "updateToolStripMenuItem";
-            updateToolStripMenuItem.Size = new Size(160, 24);
-            updateToolStripMenuItem.Text = "Update";
-            // 
-            // deleteToolStripMenuItem
-            // 
-            deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            deleteToolStripMenuItem.Size = new Size(160, 24);
-            deleteToolStripMenuItem.Text = "Delete";
             // 
             // button1
             // 
@@ -189,8 +194,8 @@
             Controls.Add(label1);
             Name = "Duties";
             Text = "Duties";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             contextMenuStrip1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }

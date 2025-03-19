@@ -21,6 +21,7 @@ namespace dbmid_project
             InitializeComponent();
 
             LoadCom();
+
             LoadMembers();
         }
 
@@ -49,11 +50,10 @@ namespace dbmid_project
 
         private void LoadMembers()
         {
-            string com = comboBox2.SelectedItem.ToString();
             int year = ITECedi.GetItec_Year();
             comboBox1.Items.Clear();
-            string sql = "select name from committee_members where committee_id=(select committee_id from committees where committee_name='{0}'";
-            sql = string.Format(sql, com);
+            string sql = "select name from committee_members";
+            sql = string.Format(sql);
             List<string> categories = SqlHelper.LoadIN_ComboBox(sql, "name");
 
             foreach (string category in categories)
@@ -64,14 +64,18 @@ namespace dbmid_project
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string com= comboBox2.SelectedItem.ToString();
-            string member= comboBox1.SelectedItem.ToString();
+            string com = comboBox2.SelectedItem.ToString();
+            string member = comboBox1.SelectedItem.ToString();
             string desc = textBox2.Text;
             string date = monthCalendar1.SelectionStart.ToString("yyyy-MM-dd");
             string status = comboBox3.SelectedItem.ToString();
-            DutiesBL d=new DutiesBL(com,member,desc,date,status);
+            DutiesBL d = new DutiesBL(com, member, desc, date, status);
             DutiesDL.AddDuties(d);
         }
 
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

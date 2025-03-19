@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace dbmid_project.BL
 {
-    internal class DutiesDL
+    internal class DutiesBL
     {
         public string committee;
         public string member;
         public string taskdesc;
         public string date;
         public string status;
-        public DutiesDL(string a, string b, string c, string d, string e)
+        public DutiesBL(string a, string b, string c, string d, string e)
         {
             this.committee = a;
             this.member = b;

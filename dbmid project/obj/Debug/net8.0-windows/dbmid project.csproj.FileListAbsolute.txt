@@ -108,3 +108,4 @@ D:\2nd semester\db\full project\dbmid project\dbmid project\obj\Debug\net8.0-win
 D:\2nd semester\db\full project\dbmid project\dbmid project\obj\Debug\net8.0-windows\dbmid_project.ComMembersCRUD.resources
 D:\2nd semester\db\full project\dbmid project\dbmid project\obj\Debug\net8.0-windows\dbmid_project.ParticipantCRUD.resources
 D:\2nd semester\db\full project\dbmid project\dbmid project\obj\Debug\net8.0-windows\dbmid_project.Registration.resources
+D:\2nd semester\db\full project\dbmid project\dbmid project\obj\Debug\net8.0-windows\dbmid_project.DutyCRUD.resources

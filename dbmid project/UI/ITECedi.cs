@@ -59,6 +59,10 @@ namespace dbmid_project
             string description = textBox3.Text;
             ITECeditionBL itec = new ITECeditionBL(year, theme, description);
             ITECeditionDL.AddEdition(itec);
+
+            LoadCategories();
+
+
         }
 
         private void LoadCategories()
