@@ -75,15 +75,20 @@ namespace dbmid_project
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string eventn=comboBox2.SelectedItem.ToString();
-            string parti= comboBox1.SelectedItem.ToString();
-            string status=comboBox3.SelectedItem.ToString();
-            
-            int amount=int.Parse(textBox1.Text);
+            string eventn = comboBox2.SelectedItem.ToString();
+            string parti = comboBox1.SelectedItem.ToString();
+            string status = comboBox3.SelectedItem.ToString();
+
+            int amount = int.Parse(textBox1.Text);
 
 
-            RegisterPartcipantsBL b=new RegisterPartcipantsBL(parti,eventn,status,amount);
+            RegisterPartcipantsBL b = new RegisterPartcipantsBL(parti, eventn, status, amount);
             RegisterParticipantDL.Register(b);
+        }
+
+        private void Registration_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

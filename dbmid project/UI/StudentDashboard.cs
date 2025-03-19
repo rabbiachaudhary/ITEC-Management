@@ -67,5 +67,10 @@ namespace dbmid_project
         {
             OpenFormInPanel(new ITECedi());
         }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

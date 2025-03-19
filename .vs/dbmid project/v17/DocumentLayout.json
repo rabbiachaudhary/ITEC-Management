@@ -3,6 +3,58 @@
   "WorkspaceRootPath": "C:\\Users\\This PC\\Desktop\\dbrepo\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9FE57561-147B-4A74-A4F8-C6BD7F8B4D3F}|dbmid project\\dbmid project.csproj|c:\\users\\this pc\\desktop\\dbrepo\\dbmid project\\bl\\resultsbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FE57561-147B-4A74-A4F8-C6BD7F8B4D3F}|dbmid project\\dbmid project.csproj|solutionrelative:dbmid project\\bl\\resultsbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FE57561-147B-4A74-A4F8-C6BD7F8B4D3F}|dbmid project\\dbmid project.csproj|c:\\users\\this pc\\desktop\\dbrepo\\dbmid project\\ui\\addresults.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FE57561-147B-4A74-A4F8-C6BD7F8B4D3F}|dbmid project\\dbmid project.csproj|solutionrelative:dbmid project\\ui\\addresults.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FE57561-147B-4A74-A4F8-C6BD7F8B4D3F}|dbmid project\\dbmid project.csproj|c:\\users\\this pc\\desktop\\dbrepo\\dbmid project\\dl\\resultsdl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FE57561-147B-4A74-A4F8-C6BD7F8B4D3F}|dbmid project\\dbmid project.csproj|solutionrelative:dbmid project\\dl\\resultsdl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FE57561-147B-4A74-A4F8-C6BD7F8B4D3F}|dbmid project\\dbmid project.csproj|c:\\users\\this pc\\desktop\\dbrepo\\dbmid project\\ui\\addresults.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9FE57561-147B-4A74-A4F8-C6BD7F8B4D3F}|dbmid project\\dbmid project.csproj|solutionrelative:dbmid project\\ui\\addresults.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FE57561-147B-4A74-A4F8-C6BD7F8B4D3F}|dbmid project\\dbmid project.csproj|c:\\users\\this pc\\desktop\\dbrepo\\dbmid project\\ui\\addtransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FE57561-147B-4A74-A4F8-C6BD7F8B4D3F}|dbmid project\\dbmid project.csproj|solutionrelative:dbmid project\\ui\\addtransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FE57561-147B-4A74-A4F8-C6BD7F8B4D3F}|dbmid project\\dbmid project.csproj|c:\\users\\this pc\\desktop\\dbrepo\\dbmid project\\dl\\transactionsdl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FE57561-147B-4A74-A4F8-C6BD7F8B4D3F}|dbmid project\\dbmid project.csproj|solutionrelative:dbmid project\\dl\\transactionsdl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FE57561-147B-4A74-A4F8-C6BD7F8B4D3F}|dbmid project\\dbmid project.csproj|c:\\users\\this pc\\desktop\\dbrepo\\dbmid project\\ui\\registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FE57561-147B-4A74-A4F8-C6BD7F8B4D3F}|dbmid project\\dbmid project.csproj|solutionrelative:dbmid project\\ui\\registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FE57561-147B-4A74-A4F8-C6BD7F8B4D3F}|dbmid project\\dbmid project.csproj|c:\\users\\this pc\\desktop\\dbrepo\\dbmid project\\ui\\registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9FE57561-147B-4A74-A4F8-C6BD7F8B4D3F}|dbmid project\\dbmid project.csproj|solutionrelative:dbmid project\\ui\\registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FE57561-147B-4A74-A4F8-C6BD7F8B4D3F}|dbmid project\\dbmid project.csproj|c:\\users\\this pc\\desktop\\dbrepo\\dbmid project\\dl\\usersdl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FE57561-147B-4A74-A4F8-C6BD7F8B4D3F}|dbmid project\\dbmid project.csproj|solutionrelative:dbmid project\\dl\\usersdl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FE57561-147B-4A74-A4F8-C6BD7F8B4D3F}|dbmid project\\dbmid project.csproj|c:\\users\\this pc\\desktop\\dbrepo\\dbmid project\\ui\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FE57561-147B-4A74-A4F8-C6BD7F8B4D3F}|dbmid project\\dbmid project.csproj|solutionrelative:dbmid project\\ui\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FE57561-147B-4A74-A4F8-C6BD7F8B4D3F}|dbmid project\\dbmid project.csproj|c:\\users\\this pc\\desktop\\dbrepo\\dbmid project\\ui\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9FE57561-147B-4A74-A4F8-C6BD7F8B4D3F}|dbmid project\\dbmid project.csproj|solutionrelative:dbmid project\\ui\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FE57561-147B-4A74-A4F8-C6BD7F8B4D3F}|dbmid project\\dbmid project.csproj|c:\\users\\this pc\\desktop\\dbrepo\\dbmid project\\ui\\studentdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FE57561-147B-4A74-A4F8-C6BD7F8B4D3F}|dbmid project\\dbmid project.csproj|solutionrelative:dbmid project\\ui\\studentdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FE57561-147B-4A74-A4F8-C6BD7F8B4D3F}|dbmid project\\dbmid project.csproj|c:\\users\\this pc\\desktop\\dbrepo\\dbmid project\\ui\\studentdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9FE57561-147B-4A74-A4F8-C6BD7F8B4D3F}|dbmid project\\dbmid project.csproj|solutionrelative:dbmid project\\ui\\studentdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\StudentDashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:dbmid project\\StudentDashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -26,11 +78,177 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "usersDL.cs",
+              "DocumentMoniker": "C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\DL\\usersDL.cs",
+              "RelativeDocumentMoniker": "dbmid project\\DL\\usersDL.cs",
+              "ToolTip": "C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\DL\\usersDL.cs",
+              "RelativeToolTip": "dbmid project\\DL\\usersDL.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAYwC4AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T11:05:55.498Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ResultsDL.cs",
+              "DocumentMoniker": "C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\DL\\ResultsDL.cs",
+              "RelativeDocumentMoniker": "dbmid project\\DL\\ResultsDL.cs",
+              "ToolTip": "C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\DL\\ResultsDL.cs",
+              "RelativeToolTip": "dbmid project\\DL\\ResultsDL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T14:30:44.681Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ResultsBL.cs",
+              "DocumentMoniker": "C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\BL\\ResultsBL.cs",
+              "RelativeDocumentMoniker": "dbmid project\\BL\\ResultsBL.cs",
+              "ToolTip": "C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\BL\\ResultsBL.cs",
+              "RelativeToolTip": "dbmid project\\BL\\ResultsBL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T14:30:17.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TransactionsDL.cs",
+              "DocumentMoniker": "C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\DL\\TransactionsDL.cs",
+              "RelativeDocumentMoniker": "dbmid project\\DL\\TransactionsDL.cs",
+              "ToolTip": "C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\DL\\TransactionsDL.cs",
+              "RelativeToolTip": "dbmid project\\DL\\TransactionsDL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T13:53:15.151Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AddResults.cs",
+              "DocumentMoniker": "C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\UI\\AddResults.cs",
+              "RelativeDocumentMoniker": "dbmid project\\UI\\AddResults.cs",
+              "ToolTip": "C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\UI\\AddResults.cs",
+              "RelativeToolTip": "dbmid project\\UI\\AddResults.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAQwCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T13:51:44.166Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AddResults.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\UI\\AddResults.cs",
+              "RelativeDocumentMoniker": "dbmid project\\UI\\AddResults.cs",
+              "ToolTip": "C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\UI\\AddResults.cs [Design]",
+              "RelativeToolTip": "dbmid project\\UI\\AddResults.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T12:43:15.636Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AddTransaction.cs",
+              "DocumentMoniker": "C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\UI\\AddTransaction.cs",
+              "RelativeDocumentMoniker": "dbmid project\\UI\\AddTransaction.cs",
+              "ToolTip": "C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\UI\\AddTransaction.cs",
+              "RelativeToolTip": "dbmid project\\UI\\AddTransaction.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAswCkAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T11:11:15.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Registration.cs",
+              "DocumentMoniker": "C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\UI\\Registration.cs",
+              "RelativeDocumentMoniker": "dbmid project\\UI\\Registration.cs",
+              "ToolTip": "C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\UI\\Registration.cs",
+              "RelativeToolTip": "dbmid project\\UI\\Registration.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwFEAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T11:04:05.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Registration.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\UI\\Registration.cs",
+              "RelativeDocumentMoniker": "dbmid project\\UI\\Registration.cs",
+              "ToolTip": "C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\UI\\Registration.cs [Design]",
+              "RelativeToolTip": "dbmid project\\UI\\Registration.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T11:04:02.77Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SignUp.cs",
+              "DocumentMoniker": "C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\UI\\SignUp.cs",
+              "RelativeDocumentMoniker": "dbmid project\\UI\\SignUp.cs",
+              "ToolTip": "C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\UI\\SignUp.cs",
+              "RelativeToolTip": "dbmid project\\UI\\SignUp.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAFwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T11:03:59.15Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SignUp.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\UI\\SignUp.cs",
+              "RelativeDocumentMoniker": "dbmid project\\UI\\SignUp.cs",
+              "ToolTip": "C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\UI\\SignUp.cs [Design]",
+              "RelativeToolTip": "dbmid project\\UI\\SignUp.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T11:03:55.187Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "StudentDashboard.cs",
+              "DocumentMoniker": "C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\UI\\StudentDashboard.cs",
+              "RelativeDocumentMoniker": "dbmid project\\UI\\StudentDashboard.cs",
+              "ToolTip": "C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\UI\\StudentDashboard.cs",
+              "RelativeToolTip": "dbmid project\\UI\\StudentDashboard.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T11:03:47.5Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "StudentDashboard.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\UI\\StudentDashboard.cs",
+              "RelativeDocumentMoniker": "dbmid project\\UI\\StudentDashboard.cs",
+              "ToolTip": "C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\UI\\StudentDashboard.cs [Design]",
+              "RelativeToolTip": "dbmid project\\UI\\StudentDashboard.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T11:03:35.33Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "StudentDashboard.cs",
               "DocumentMoniker": "C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\StudentDashboard.cs",
               "RelativeDocumentMoniker": "dbmid project\\StudentDashboard.cs",
@@ -41,7 +259,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 14,
               "Title": "StudentDashboard.cs [Design]",
               "DocumentMoniker": "C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\StudentDashboard.cs",
               "RelativeDocumentMoniker": "dbmid project\\StudentDashboard.cs",
@@ -52,7 +270,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 15,
               "Title": "AdminDashboard.cs",
               "DocumentMoniker": "C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\AdminDashboard.cs",
               "RelativeDocumentMoniker": "dbmid project\\AdminDashboard.cs",
@@ -63,7 +281,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 16,
               "Title": "AdminDashboard.cs [Design]",
               "DocumentMoniker": "C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\AdminDashboard.cs",
               "RelativeDocumentMoniker": "dbmid project\\AdminDashboard.cs",

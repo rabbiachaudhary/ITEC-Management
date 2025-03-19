@@ -190,6 +190,7 @@
             Controls.Add(label6);
             Name = "SignUp";
             Text = "Form2";
+            Load += SignUp_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ResumeLayout(false);

@@ -207,6 +207,7 @@
             Controls.Add(label1);
             Name = "Registration";
             Text = "RegTypesNDFees";
+            Load += Registration_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ResumeLayout(false);

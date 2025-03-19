@@ -365,6 +365,7 @@
             button1.TabIndex = 21;
             button1.Text = "Save";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // AddTransaction
             // 
@@ -378,6 +379,7 @@
             Controls.Add(label1);
             Name = "AddTransaction";
             Text = "AddIcome";
+            Load += AddTransaction_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ResumeLayout(false);

@@ -41,7 +41,7 @@ namespace dbmid_project
                 label4.Visible = true;
                 string newn = textBox2.Text;
 
-                CommitteeDL.Update(newn,com);
+                CommitteeDL.Update(newn, com);
 
                 MessageBox.Show("Updated");
 
@@ -112,6 +112,11 @@ namespace dbmid_project
 
         private void button2_Click_2(object sender, EventArgs e)
         {
+        }
+
+        private void AddCommittee_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

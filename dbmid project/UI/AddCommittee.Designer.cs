@@ -234,6 +234,7 @@
             Controls.Add(label1);
             Name = "AddCommittee";
             Text = "AddCommittee";
+            Load += AddCommittee_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ResumeLayout(false);

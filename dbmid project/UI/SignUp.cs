@@ -87,5 +87,10 @@ namespace dbmid_project
         {
 
         }
+
+        private void SignUp_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

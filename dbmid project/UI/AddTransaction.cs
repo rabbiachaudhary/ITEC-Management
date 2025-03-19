@@ -7,7 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using dbmid_project.BL;
 using sqlhelper;
+using dbmid_project.DL;
 
 namespace dbmid_project
 {
@@ -20,6 +22,8 @@ namespace dbmid_project
             Events();
 
             LoadType();
+
+            LoadEntityTypes();
 
         }
 
@@ -61,6 +65,25 @@ namespace dbmid_project
             }
         }
 
+        private void LoadEntityTypes()
+        {
+            comboBox3.Items.Clear();
+            comboBox4.Items.Clear();
+
+            string sql = "select value from lookup where category='EntityTypes'";
+            sql = string.Format(sql);
+            List<string> categories = SqlHelper.LoadIN_ComboBox(sql, "value");
+
+            foreach (string category in categories)
+            {
+                comboBox3.Items.Add(category);
+                comboBox4.Items.Add(category);
+
+            }
+        }
+
+
+
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -69,6 +92,27 @@ namespace dbmid_project
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void AddTransaction_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string eventn = comboBox2.SelectedItem.ToString();
+            string Finance = comboBox1.SelectedItem.ToString();
+            float amount=float.Parse(textBox1.Text);
+            string description = textBox2.Text;
+            string date = monthCalendar1.ToString();
+            string sname=textBox3.Text;
+            string stype=comboBox3.SelectedItem.ToString();
+            string rname=textBox4.Text;
+            string rtype=comboBox4.Text;
+            TransactionsBL t=new TransactionsBL(eventn,Finance,amount, description, date, sname, stype, rname,rtype);
+
+            TransactionsDL.AddTransaction(t);
         }
     }
 }

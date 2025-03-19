@@ -264,6 +264,7 @@
             panel3.Name = "panel3";
             panel3.Size = new Size(996, 1164);
             panel3.TabIndex = 1;
+            panel3.Paint += panel3_Paint;
             // 
             // StudentDashboard
             // 

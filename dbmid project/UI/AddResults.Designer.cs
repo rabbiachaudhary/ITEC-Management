@@ -30,17 +30,19 @@
         {
             label1 = new Label();
             panel1 = new Panel();
+            textBox3 = new TextBox();
+            textBox2 = new TextBox();
+            label6 = new Label();
+            label5 = new Label();
+            comboBox1 = new ComboBox();
             textBox1 = new TextBox();
             label2 = new Label();
             label4 = new Label();
             label3 = new Label();
             comboBox2 = new ComboBox();
-            comboBox1 = new ComboBox();
-            label5 = new Label();
-            label6 = new Label();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
             button1 = new Button();
+            label7 = new Label();
+            comboBox3 = new ComboBox();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -61,6 +63,8 @@
             // panel1
             // 
             panel1.AutoScroll = true;
+            panel1.Controls.Add(comboBox3);
+            panel1.Controls.Add(label7);
             panel1.Controls.Add(textBox3);
             panel1.Controls.Add(textBox2);
             panel1.Controls.Add(label6);
@@ -71,11 +75,72 @@
             panel1.Controls.Add(label4);
             panel1.Controls.Add(label3);
             panel1.Controls.Add(comboBox2);
-            panel1.Location = new Point(212, 165);
+            panel1.Location = new Point(212, 109);
             panel1.Name = "panel1";
             panel1.Padding = new Padding(30, 30, 30, 100);
-            panel1.Size = new Size(561, 563);
+            panel1.Size = new Size(561, 619);
             panel1.TabIndex = 21;
+            // 
+            // textBox3
+            // 
+            textBox3.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            textBox3.Location = new Point(151, 524);
+            textBox3.MaximumSize = new Size(250, 40);
+            textBox3.MinimumSize = new Size(250, 0);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(250, 34);
+            textBox3.TabIndex = 25;
+            // 
+            // textBox2
+            // 
+            textBox2.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            textBox2.Location = new Point(151, 434);
+            textBox2.MaximumSize = new Size(250, 40);
+            textBox2.MinimumSize = new Size(250, 0);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(250, 34);
+            textBox2.TabIndex = 24;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.BackColor = Color.Transparent;
+            label6.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.Location = new Point(175, 488);
+            label6.MinimumSize = new Size(200, 30);
+            label6.Name = "label6";
+            label6.Padding = new Padding(20, 0, 0, 0);
+            label6.Size = new Size(200, 31);
+            label6.TabIndex = 23;
+            label6.Text = "Remarks:";
+            label6.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.BackColor = Color.Transparent;
+            label5.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.Location = new Point(175, 400);
+            label5.MinimumSize = new Size(200, 30);
+            label5.Name = "label5";
+            label5.Padding = new Padding(20, 0, 0, 0);
+            label5.Size = new Size(200, 31);
+            label5.TabIndex = 22;
+            label5.Text = "Score:";
+            label5.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // comboBox1
+            // 
+            comboBox1.AllowDrop = true;
+            comboBox1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "Winner", "Finalist", "Runner-Up", "Participant" });
+            comboBox1.Location = new Point(151, 268);
+            comboBox1.MaximumSize = new Size(250, 0);
+            comboBox1.MinimumSize = new Size(250, 0);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(250, 36);
+            comboBox1.TabIndex = 21;
             // 
             // textBox1
             // 
@@ -142,67 +207,6 @@
             comboBox2.Size = new Size(250, 36);
             comboBox2.TabIndex = 18;
             // 
-            // comboBox1
-            // 
-            comboBox1.AllowDrop = true;
-            comboBox1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Winner", "Finalist", "Runner-Up", "Participant" });
-            comboBox1.Location = new Point(151, 268);
-            comboBox1.MaximumSize = new Size(250, 0);
-            comboBox1.MinimumSize = new Size(250, 0);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(250, 36);
-            comboBox1.TabIndex = 21;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.BackColor = Color.Transparent;
-            label5.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(175, 325);
-            label5.MinimumSize = new Size(200, 30);
-            label5.Name = "label5";
-            label5.Padding = new Padding(20, 0, 0, 0);
-            label5.Size = new Size(200, 31);
-            label5.TabIndex = 22;
-            label5.Text = "Score:";
-            label5.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.BackColor = Color.Transparent;
-            label6.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.Location = new Point(175, 413);
-            label6.MinimumSize = new Size(200, 30);
-            label6.Name = "label6";
-            label6.Padding = new Padding(20, 0, 0, 0);
-            label6.Size = new Size(200, 31);
-            label6.TabIndex = 23;
-            label6.Text = "Remarks:";
-            label6.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // textBox2
-            // 
-            textBox2.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox2.Location = new Point(151, 359);
-            textBox2.MaximumSize = new Size(250, 40);
-            textBox2.MinimumSize = new Size(250, 0);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(250, 34);
-            textBox2.TabIndex = 24;
-            // 
-            // textBox3
-            // 
-            textBox3.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox3.Location = new Point(151, 447);
-            textBox3.MaximumSize = new Size(250, 40);
-            textBox3.MinimumSize = new Size(250, 0);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(250, 34);
-            textBox3.TabIndex = 25;
-            // 
             // button1
             // 
             button1.AutoEllipsis = true;
@@ -216,6 +220,34 @@
             button1.TabIndex = 26;
             button1.Text = "Save";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.BackColor = Color.Transparent;
+            label7.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label7.Location = new Point(175, 316);
+            label7.MinimumSize = new Size(200, 30);
+            label7.Name = "label7";
+            label7.Padding = new Padding(20, 0, 0, 0);
+            label7.Size = new Size(200, 31);
+            label7.TabIndex = 26;
+            label7.Text = "Team:";
+            label7.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // comboBox3
+            // 
+            comboBox3.AllowDrop = true;
+            comboBox3.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            comboBox3.FormattingEnabled = true;
+            comboBox3.Items.AddRange(new object[] { "Winner", "Finalist", "Runner-Up", "Participant" });
+            comboBox3.Location = new Point(151, 350);
+            comboBox3.MaximumSize = new Size(250, 0);
+            comboBox3.MinimumSize = new Size(250, 0);
+            comboBox3.Name = "comboBox3";
+            comboBox3.Size = new Size(250, 36);
+            comboBox3.TabIndex = 27;
             // 
             // AddResults
             // 
@@ -250,5 +282,7 @@
         private Label label5;
         private ComboBox comboBox1;
         private Button button1;
+        private ComboBox comboBox3;
+        private Label label7;
     }
 }

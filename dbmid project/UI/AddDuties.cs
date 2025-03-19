@@ -77,5 +77,10 @@ namespace dbmid_project
         {
 
         }
+
+        private void AddDuties_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
