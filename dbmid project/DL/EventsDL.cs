@@ -12,6 +12,10 @@ namespace dbmid_project.DL
     {
         public static void AddEvent(EventsBL e)
         {
+
+
+
+
             int year = ITECedi.GetItec_Year();
             string sql = "select itec_id from itec_editions where year={0}";
             sql=string.Format(sql, year);
@@ -31,10 +35,22 @@ namespace dbmid_project.DL
             sqlVenue = string.Format(sqlVenue, e.venue);
             int venue_id=SqlHelper.GetRole(sqlVenue);
 
-            string query = "INSERT INTO itec_events (itec_id,event_name,event_category_id,description,event_date,venue_id,committee_id) VALUES ({0}, '{1}', {2},'{3}','{4}',{5},{6})";
-            query = string.Format(query,itec_id,e.eventName,category_id,e.description,e.Date,venue_id, com_id);
-            SqlHelper.executeDML(query);
-            MessageBox.Show("Event added successfully");
+
+
+            string exist = "Count(*) From Itec_events where itec_id={0} and event_name='{1}'";
+            exist = string.Format(exist, itec_id, e.eventName);
+            int count = SqlHelper.CountRows(exist);
+            if (count > 0)
+            {
+                MessageBox.Show("This Event Already Exists");
+            }
+            else
+            {
+                string query = "INSERT INTO itec_events (itec_id,event_name,event_category_id,description,event_date,venue_id,committee_id) VALUES ({0}, '{1}', {2},'{3}','{4}',{5},{6})";
+                query = string.Format(query, itec_id, e.eventName, category_id, e.description, e.Date, venue_id, com_id);
+                SqlHelper.executeDML(query);
+                MessageBox.Show("Event added successfully");
+            }
         }
         
         public static void DeleteEvent(string e)

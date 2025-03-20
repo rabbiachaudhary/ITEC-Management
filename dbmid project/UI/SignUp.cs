@@ -22,6 +22,8 @@ namespace dbmid_project
         public SignUp()
         {
             InitializeComponent();
+
+            LoadRoles();
         }
         private void Signup_Button(object sender, EventArgs e)
         {
@@ -92,5 +94,20 @@ namespace dbmid_project
         {
 
         }
+
+
+        private void LoadRoles()
+
+        {
+            comboBox1.Items.Clear();
+            string sql = "select value from lookup where category='UserRoles'";
+            List<string> categories = SqlHelper.LoadIN_ComboBox(sql, "value");
+
+            foreach (string category in categories)
+            {
+                comboBox1.Items.Add(category); // Direct ComboBox me add
+            }
+        }
+
     }
 }

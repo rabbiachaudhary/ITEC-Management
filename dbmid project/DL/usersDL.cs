@@ -40,35 +40,50 @@ namespace dbmid_project.DL
 
         public static string RegisterUser(usersBL user)
         {
-            try
-            {
-                if (user.password == user.cpass)
-                {
-                    int id = GetId(user.role);
-                    string query = "INSERT INTO users (username, email, password_hash, role_id) VALUES ('{0}', '{1}', '{2}', '{3}')";
-                    query = string.Format(query, user.username, user.email, user.password, id);
-                    SqlHelper.executeDML(query);
-                    MessageBox.Show("User registered successfully!");
-                    if (id == 1)
-                    {
-                        return "Admin";
-                    }
-                    if (id == -1)
-                    {
-                        return "Invalid role!";
-                    }
-                    return "stu";
 
-                }
-                return "password dont match";
-            }
-            catch (MySqlException ex)
+            string exist = "Count(*) From users where username='{0}'";
+            exist = string.Format(exist, user.username);
+            int count = SqlHelper.CountRows(exist);
+            if (count > 0)
             {
-                if (ex.Number == 1062)
+                MessageBox.Show("This username already exits try a different one");
+                return "existx";
+            }
+
+            else
+            {
+
+
+                try
                 {
-                    return "This Username already exists";
+                    if (user.password == user.cpass)
+                    {
+                        int id = GetId(user.role);
+                        string query = "INSERT INTO users (username, email, password_hash, role_id) VALUES ('{0}', '{1}', '{2}', '{3}')";
+                        query = string.Format(query, user.username, user.email, user.password, id);
+                        SqlHelper.executeDML(query);
+                        MessageBox.Show("User registered successfully!");
+                        if (id == 1)
+                        {
+                            return "Admin";
+                        }
+                        if (id == -1)
+                        {
+                            return "Invalid role!";
+                        }
+                        return "stu";
+
+                    }
+                    return "password dont match";
                 }
-                return "try again";
+                catch (MySqlException ex)
+                {
+                    if (ex.Number == 1062)
+                    {
+                        return "This Username already exists";
+                    }
+                    return "try again";
+                }
             }
         }
 

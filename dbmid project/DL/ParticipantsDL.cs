@@ -19,11 +19,23 @@ namespace dbmid_project.DL
         {
             int year = ITECedi.GetItec_Year();
 
-            string query = "insert into participants(itec_id, name, email,contact,institute, role_id)   select (select itec_id from itec_editions where year={0}), '{1}','{2}','{3}','{4}',(Select role_id from roles where role_name='{5}')";
-            query = string.Format(query, year,p.name, p.email , p.contact,p.institute, p.role);
-            MessageBox.Show(query);
-            SqlHelper.executeDML(query);
-            MessageBox.Show("Participant added successfully");
+            string exist = "Count(*) From participants where itec_id=(select itec_id from itec_editions where year={0}) and name='{1}' and email='{2}'";
+            exist = string.Format(exist,year,p.name,p.email );
+            int count = SqlHelper.CountRows(exist);
+            if (count > 0)
+            {
+                MessageBox.Show("This Participant Already Exists");
+            }
+
+            else
+            {
+
+                string query = "insert into participants(itec_id, name, email,contact,institute, role_id)   select (select itec_id from itec_editions where year={0}), '{1}','{2}','{3}','{4}',(Select role_id from roles where role_name='{5}')";
+                query = string.Format(query, year, p.name, p.email, p.contact, p.institute, p.role);
+                MessageBox.Show(query);
+                SqlHelper.executeDML(query);
+                MessageBox.Show("Participant added successfully");
+            }
         }
 
 

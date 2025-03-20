@@ -167,3 +167,5 @@ C:\Users\This PC\Desktop\dbrepo\dbmid project\obj\Debug\net8.0-windows\refint\db
 C:\Users\This PC\Desktop\dbrepo\dbmid project\obj\Debug\net8.0-windows\dbmid project.pdb
 C:\Users\This PC\Desktop\dbrepo\dbmid project\obj\Debug\net8.0-windows\dbmid project.genruntimeconfig.cache
 C:\Users\This PC\Desktop\dbrepo\dbmid project\obj\Debug\net8.0-windows\ref\dbmid project.dll
+C:\Users\This PC\Desktop\dbrepo\dbmid project\obj\Debug\net8.0-windows\dbmid_project.Vendors.resources
+C:\Users\This PC\Desktop\dbrepo\dbmid project\obj\Debug\net8.0-windows\dbmid_project.VendorsCRUD.resources

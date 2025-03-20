@@ -13,6 +13,7 @@ namespace dbmid_project.DL
     {
         public static void AddVendors(VendorsBL v)
         {
+
             string query = "INSERT INTO vendors (vendor_name, contact, service_type) VALUES ('{0}',{1}','{2}')";
             query = string.Format(query, v.name, v.contact, v.type);
             SqlHelper.executeDML(query);

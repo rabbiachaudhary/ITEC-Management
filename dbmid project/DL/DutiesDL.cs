@@ -12,7 +12,6 @@ namespace dbmid_project.DL
     {
         public static void AddDuties(DutiesBL d)
         {
-
             string query = "INSERT INTO duties (committee_id,assigned_to,task_description,deadline, status_id) VALUES ( (select committee_id from committees where committee_name='{0}'),'{1}','{2}' ,'{3}',(select lookup_id from lookup where value='{4}' AND category='DutyStatus') )";
             query = string.Format(query, d.committee, d.member,d.taskdesc, d.date,d.status);
             SqlHelper.executeDML(query);

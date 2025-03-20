@@ -68,5 +68,37 @@ namespace sqlhelper
             connection.Close();
             return items;
         }
+
+
+        public static void InitializeRoles()
+        {
+            string query = "INSERT INTO Roles(role_name) SELECT value from lookup WHERE category='UserRoles'";
+            executeDML(query);
+
+        }
+
+        public static void InitializeEventCategories()
+        {
+            string query = "INSERT INTO Event_categories(category_name) SELECT value from lookup WHERE category='EventCategories'";
+            executeDML(query);
+
+        }
+
+
+        public static int CountRows(string query)
+        {
+            int count = 0;
+
+            using (var conn = new MySqlConnection(constring))
+            {
+                conn.Open();
+                using (var cmd = new MySqlCommand(query, conn))
+                {
+                    count = Convert.ToInt32(cmd.ExecuteScalar());
+                }
+            }
+
+            return count;
+        }
     }
 }

@@ -1,3 +1,5 @@
+using sqlhelper;
+
 namespace dbmid_project
 {
     internal static class Program
@@ -8,9 +10,12 @@ namespace dbmid_project
         [STAThread]
         static void Main()
         {
+
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
+            SqlHelper.InitializeRoles();
+            SqlHelper.InitializeEventCategories();
             Application.Run(new Login());
         }
     }

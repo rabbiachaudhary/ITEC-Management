@@ -12,10 +12,22 @@ namespace dbmid_project.DL
     {
         public static void AddCommittee(CommitteeBL c)
         {
-            string query = "INSERT INTO committees (itec_id, committee_name) VALUES ({0}, '{1}')";
-            query = string.Format(query, c.itecid,c.name);
-            SqlHelper.executeDML(query);
-            MessageBox.Show("Committee added successfully");
+            string exist = "Count(*) From committees where itec_id={0} and committee_name='{1}'";
+            exist = string.Format(exist, c.itecid,c.name);
+            int count = SqlHelper.CountRows(exist);
+            if (count > 0)
+            {
+                MessageBox.Show("This Committee Already Exists");
+            }
+
+            else
+            {
+
+                string query = "INSERT INTO committees (itec_id, committee_name) VALUES ({0}, '{1}')";
+                query = string.Format(query, c.itecid, c.name);
+                SqlHelper.executeDML(query);
+                MessageBox.Show("Committee added successfully");
+            }
         }
 
 

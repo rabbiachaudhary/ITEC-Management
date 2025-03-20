@@ -75,7 +75,7 @@
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Admin", "Faculty", "Student ", "Sponsor" });
+            comboBox1.Items.AddRange(new object[] { "Admin", "Faculty" });
             comboBox1.Location = new Point(87, 393);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(288, 28);
