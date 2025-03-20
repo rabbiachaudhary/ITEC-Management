@@ -37,7 +37,7 @@ namespace dbmid_project.DL
 
 
 
-            string exist = "Count(*) From Itec_events where itec_id={0} and event_name='{1}'";
+            string exist = " SELECT Count(*) From Itec_events where itec_id={0} and event_name='{1}'";
             exist = string.Format(exist, itec_id, e.eventName);
             int count = SqlHelper.CountRows(exist);
             if (count > 0)

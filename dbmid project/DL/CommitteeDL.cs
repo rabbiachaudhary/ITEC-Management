@@ -12,7 +12,7 @@ namespace dbmid_project.DL
     {
         public static void AddCommittee(CommitteeBL c)
         {
-            string exist = "Count(*) From committees where itec_id={0} and committee_name='{1}'";
+            string exist = "SELECT Count(*) From committees where itec_id={0} and committee_name='{1}'";
             exist = string.Format(exist, c.itecid,c.name);
             int count = SqlHelper.CountRows(exist);
             if (count > 0)

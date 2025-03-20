@@ -12,7 +12,7 @@ namespace dbmid_project.DL
     {
         public static void AddEdition(ITECeditionBL ITEC)
         {
-            string exist = "Count(*) From itec_editions where year = {0}";
+            string exist = " SELECT Count(*) From itec_editions where year = {0}";
             exist = string.Format(exist, ITEC.year);
             int count=SqlHelper.CountRows(exist);
             if (count > 0)

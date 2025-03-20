@@ -169,3 +169,5 @@ C:\Users\This PC\Desktop\dbrepo\dbmid project\obj\Debug\net8.0-windows\dbmid pro
 C:\Users\This PC\Desktop\dbrepo\dbmid project\obj\Debug\net8.0-windows\ref\dbmid project.dll
 C:\Users\This PC\Desktop\dbrepo\dbmid project\obj\Debug\net8.0-windows\dbmid_project.Vendors.resources
 C:\Users\This PC\Desktop\dbrepo\dbmid project\obj\Debug\net8.0-windows\dbmid_project.VendorsCRUD.resources
+C:\Users\This PC\Desktop\dbrepo\dbmid project\obj\Debug\net8.0-windows\dbmid_project.TeamParticipant.resources
+C:\Users\This PC\Desktop\dbrepo\dbmid project\obj\Debug\net8.0-windows\dbmid_project.TeamParticipant_FeeDialog.resources

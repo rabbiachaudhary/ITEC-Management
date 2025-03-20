@@ -108,7 +108,7 @@ namespace dbmid_project
             }
             else
             {
-                OpenFormInPanel(new ITECedi());
+                OpenFormInPanel(new TeamParticipant());
             }
         }
 

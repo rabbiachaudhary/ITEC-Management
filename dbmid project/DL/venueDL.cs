@@ -12,7 +12,7 @@ namespace dbmid_project.DL
     {
         public static void AddVenue(venueBL venue)
         {
-            string exist = "Count(*) From venues where venue_name='{0}' ";
+            string exist = "SELECT Count(*) From venues where venue_name='{0}' ";
             exist = string.Format(exist, venue.name);
             int count = SqlHelper.CountRows(exist);
             if (count > 0)

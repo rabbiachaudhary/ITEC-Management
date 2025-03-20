@@ -14,7 +14,7 @@ namespace dbmid_project.DL
         public static void Register(RegisterPartcipantsBL b)
         {
 
-            string exist = "Count(*) From event_participants where event_id=(select event_id from itec_events where event_name='{0}') and participant_id =(select participant_id from participants where name='{1}')";
+            string exist = "SELECT Count(*) From event_participants where event_id=(select event_id from itec_events where event_name='{0}') and participant_id =(select participant_id from participants where name='{1}')";
             exist = string.Format(exist,b.eventn,b.participant);
             int count = SqlHelper.CountRows(exist);
             if (count > 0)

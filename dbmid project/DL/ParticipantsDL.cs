@@ -19,7 +19,7 @@ namespace dbmid_project.DL
         {
             int year = ITECedi.GetItec_Year();
 
-            string exist = "Count(*) From participants where itec_id=(select itec_id from itec_editions where year={0}) and name='{1}' and email='{2}'";
+            string exist = "SELECT Count(*) From participants where itec_id=(select itec_id from itec_editions where year={0}) and name='{1}' and email='{2}'";
             exist = string.Format(exist,year,p.name,p.email );
             int count = SqlHelper.CountRows(exist);
             if (count > 0)

@@ -41,9 +41,10 @@ namespace dbmid_project.DL
         public static string RegisterUser(usersBL user)
         {
 
-            string exist = "Count(*) From users where username='{0}'";
+            string exist = " select Count(*) From users where username='{0}'";
             exist = string.Format(exist, user.username);
             int count = SqlHelper.CountRows(exist);
+            MessageBox.Show(exist + count);
             if (count > 0)
             {
                 MessageBox.Show("This username already exits try a different one");
