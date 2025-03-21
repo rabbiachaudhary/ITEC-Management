@@ -65,5 +65,10 @@ namespace dbmid_project
 
             LoadDataInListView();
         }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -69,7 +69,7 @@ namespace dbmid_project
 
                 }
             }
-            if (selected== "Venue Allocations")
+            if (selected == "Venue Allocations")
             {
                 listView2.Visible = true;
 
@@ -86,7 +86,7 @@ namespace dbmid_project
                 }
             }
 
-            if(selected== "Event Schedule Reports")
+            if (selected == "Event Schedule Reports")
             {
                 listView3.Visible = true;
 
@@ -128,7 +128,7 @@ namespace dbmid_project
                 }
             }
 
-            if(selected== "Financial Reports")
+            if (selected == "Financial Reports")
             {
                 listView5.Visible = true;
 
@@ -167,43 +167,230 @@ namespace dbmid_project
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (listView1.Items.Count > 0)
+
+
+
+
+            if (comboBox2.SelectedItem.ToString() == "Financial Reports")
             {
-                SaveFileDialog sfd = new SaveFileDialog();
-                sfd.Filter = "PDF Files|*.pdf";
-                sfd.FileName = "Report.pdf";
-
-                if (sfd.ShowDialog() == DialogResult.OK)
+                if (listView5.Items.Count > 0)
                 {
-                    Document doc = new Document();
-                    PdfWriter.GetInstance(doc, new FileStream(sfd.FileName, FileMode.Create));
-                    doc.Open();
+                    SaveFileDialog sfd = new SaveFileDialog();
+                    sfd.Filter = "PDF Files|*.pdf";
+                    sfd.FileName = "Report.pdf";
 
-                    PdfPTable table = new PdfPTable(listView1.Columns.Count);
-
-                    // Adding column headers
-                    foreach (ColumnHeader col in listView1.Columns)
+                    if (sfd.ShowDialog() == DialogResult.OK)
                     {
-                        table.AddCell(new Phrase(col.Text));
-                    }
+                        Document doc = new Document();
+                        PdfWriter.GetInstance(doc, new FileStream(sfd.FileName, FileMode.Create));
+                        doc.Open();
 
-                    // Adding row data
-                    foreach (ListViewItem item in listView1.Items)
-                    {
-                        foreach (ListViewItem.ListViewSubItem subItem in item.SubItems)
+                        PdfPTable table = new PdfPTable(listView5.Columns.Count);
+
+                        // Adding column headers
+                        foreach (ColumnHeader col in listView5.Columns)
                         {
-                            table.AddCell(subItem.Text);
+                            table.AddCell(new Phrase(col.Text));
                         }
-                    }
 
-                    doc.Add(table);
-                    doc.Close();
-                    MessageBox.Show("PDF exported successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        // Adding row data
+                        foreach (ListViewItem item in listView5.Items)
+                        {
+                            foreach (ListViewItem.ListViewSubItem subItem in item.SubItems)
+                            {
+                                table.AddCell(subItem.Text);
+                            }
+                        }
+
+                        doc.Add(table);
+                        doc.Close();
+                        MessageBox.Show("PDF exported successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("No data to export!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
-            else
+
+
+
+
+            if (comboBox2.SelectedItem.ToString() == "Committee Assignment Reports")
             {
-                MessageBox.Show("No data to export!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                if (listView4.Items.Count > 0)
+                {
+                    SaveFileDialog sfd = new SaveFileDialog();
+                    sfd.Filter = "PDF Files|*.pdf";
+                    sfd.FileName = "Report.pdf";
+
+                    if (sfd.ShowDialog() == DialogResult.OK)
+                    {
+                        Document doc = new Document();
+                        PdfWriter.GetInstance(doc, new FileStream(sfd.FileName, FileMode.Create));
+                        doc.Open();
+
+                        PdfPTable table = new PdfPTable(listView4.Columns.Count);
+
+                        // Adding column headers
+                        foreach (ColumnHeader col in listView4.Columns)
+                        {
+                            table.AddCell(new Phrase(col.Text));
+                        }
+
+                        // Adding row data
+                        foreach (ListViewItem item in listView4.Items)
+                        {
+                            foreach (ListViewItem.ListViewSubItem subItem in item.SubItems)
+                            {
+                                table.AddCell(subItem.Text);
+                            }
+                        }
+
+                        doc.Add(table);
+                        doc.Close();
+                        MessageBox.Show("PDF exported successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("No data to export!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+
+
+
+
+
+            if (comboBox2.SelectedItem.ToString() == "Event Schedule Reports")
+            {
+                if (listView3.Items.Count > 0)
+                {
+                    SaveFileDialog sfd = new SaveFileDialog();
+                    sfd.Filter = "PDF Files|*.pdf";
+                    sfd.FileName = "Report.pdf";
+
+                    if (sfd.ShowDialog() == DialogResult.OK)
+                    {
+                        Document doc = new Document();
+                        PdfWriter.GetInstance(doc, new FileStream(sfd.FileName, FileMode.Create));
+                        doc.Open();
+
+                        PdfPTable table = new PdfPTable(listView3.Columns.Count);
+
+                        // Adding column headers
+                        foreach (ColumnHeader col in listView3.Columns)
+                        {
+                            table.AddCell(new Phrase(col.Text));
+                        }
+
+                        // Adding row data
+                        foreach (ListViewItem item in listView3.Items)
+                        {
+                            foreach (ListViewItem.ListViewSubItem subItem in item.SubItems)
+                            {
+                                table.AddCell(subItem.Text);
+                            }
+                        }
+
+                        doc.Add(table);
+                        doc.Close();
+                        MessageBox.Show("PDF exported successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("No data to export!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+
+
+
+
+            if (comboBox2.SelectedItem.ToString() == "Venue Allocations")
+            {
+                if (listView2.Items.Count > 0)
+                {
+                    SaveFileDialog sfd = new SaveFileDialog();
+                    sfd.Filter = "PDF Files|*.pdf";
+                    sfd.FileName = "Report.pdf";
+
+                    if (sfd.ShowDialog() == DialogResult.OK)
+                    {
+                        Document doc = new Document();
+                        PdfWriter.GetInstance(doc, new FileStream(sfd.FileName, FileMode.Create));
+                        doc.Open();
+
+                        PdfPTable table = new PdfPTable(listView2.Columns.Count);
+
+                        // Adding column headers
+                        foreach (ColumnHeader col in listView2.Columns)
+                        {
+                            table.AddCell(new Phrase(col.Text));
+                        }
+
+                        // Adding row data
+                        foreach (ListViewItem item in listView2.Items)
+                        {
+                            foreach (ListViewItem.ListViewSubItem subItem in item.SubItems)
+                            {
+                                table.AddCell(subItem.Text);
+                            }
+                        }
+
+                        doc.Add(table);
+                        doc.Close();
+                        MessageBox.Show("PDF exported successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("No data to export!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+
+
+
+            if (comboBox2.SelectedItem.ToString() == "Participants Reports")
+            {
+                if (listView1.Items.Count > 0)
+                {
+                    SaveFileDialog sfd = new SaveFileDialog();
+                    sfd.Filter = "PDF Files|*.pdf";
+                    sfd.FileName = "Report.pdf";
+
+                    if (sfd.ShowDialog() == DialogResult.OK)
+                    {
+                        Document doc = new Document();
+                        PdfWriter.GetInstance(doc, new FileStream(sfd.FileName, FileMode.Create));
+                        doc.Open();
+
+                        PdfPTable table = new PdfPTable(listView1.Columns.Count);
+
+                        // Adding column headers
+                        foreach (ColumnHeader col in listView1.Columns)
+                        {
+                            table.AddCell(new Phrase(col.Text));
+                        }
+
+                        // Adding row data
+                        foreach (ListViewItem item in listView1.Items)
+                        {
+                            foreach (ListViewItem.ListViewSubItem subItem in item.SubItems)
+                            {
+                                table.AddCell(subItem.Text);
+                            }
+                        }
+
+                        doc.Add(table);
+                        doc.Close();
+                        MessageBox.Show("PDF exported successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("No data to export!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
         }
 
@@ -221,8 +408,12 @@ namespace dbmid_project
 
         private void button11_Click(object sender, EventArgs e)
         {
-            
+
         }
 
+        private void listView5_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

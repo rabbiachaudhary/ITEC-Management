@@ -321,6 +321,7 @@
             listView5.TabIndex = 29;
             listView5.UseCompatibleStateImageBehavior = false;
             listView5.View = View.Details;
+            listView5.SelectedIndexChanged += listView5_SelectedIndexChanged;
             // 
             // columnHeader15
             // 

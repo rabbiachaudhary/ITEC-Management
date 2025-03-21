@@ -35,8 +35,8 @@ namespace dbmid_project.DL
 
             if (reporttype== "Event Schedule Reports")
             {
-                query = "select event_name, category_name, description, event_date, venue_name, committee_name from itec_events e " +
-                    "join event_categories ec on e.category_id=ec.category_id " +
+                query = "select event_name, category_name, e.description, event_date, venue_name, committee_name from itec_events e " +
+                    "join event_categories ec on e.event_category_id=ec.event_category_id " +
                     "join venues v on v.venue_id=e.venue_id " +
                     "join committees c on e.committee_id=c.committee_id " +
                     "join itec_editions ie on e.itec_id=ie.itec_id " +
@@ -55,8 +55,8 @@ namespace dbmid_project.DL
 
             if(reporttype== "Financial Reports")
             {
-                query = "select event_name,value,amount,from_entity_type, to_entity_type, description, date_recorded from finances f" +
-                    " join events e on f.event_id=e.event_id " +
+                query = "select event_name,value,amount,from_entity_type, to_entity_type, e.description, date_recorded from finances f" +
+                    " join itec_events e on f.event_id=e.event_id " +
                     "join lookup l on l.lookup_id=f.type_id  " +
                     "join itec_editions ie on f.itec_id = ie.itec_id " +
                     "where year={0}";

@@ -48,6 +48,8 @@ namespace dbmid_project
                 panel1.Visible = false;
 
                 label4.Visible = false;
+                button3.Visible = false;
+                button4.Visible = false;
             }
         }
 

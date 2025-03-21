@@ -174,13 +174,20 @@ namespace dbmid_project
             }
             else
             {
-                OpenFormInPanel(new ITECedi());
+                OpenFormInPanel(new AddResults());
             }
         }
 
         private void linkLabel16_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            if (ITECedi.GetItec_Year() == 0)
+            {
+                MessageBox.Show("Select ITEC edition first");
+            }
+            else
+            {
+                OpenFormInPanel(new Results());
+            }
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -239,6 +246,53 @@ namespace dbmid_project
             else
             {
                 OpenFormInPanel(new ReportsUI());
+            }
+        }
+
+        private void sidebrpnl_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void linkLabel13_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+            if (ITECedi.GetItec_Year() == 0)
+            {
+                MessageBox.Show("Select ITEC edition first");
+            }
+            else
+            {
+                OpenFormInPanel(new Vendors());
+            }
+        }
+
+        private void linkLabel19_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            if (ITECedi.GetItec_Year() == 0)
+            {
+                MessageBox.Show("Select ITEC edition first");
+            }
+            else
+            {
+                OpenFormInPanel(new Sponsors());
+            }
+        }
+
+        private void linkLabel19_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            if (ITECedi.GetItec_Year() == 0)
+            {
+                MessageBox.Show("Select ITEC edition first");
+            }
+            else
+            {
+                OpenFormInPanel(new Sponsors());
             }
         }
     }

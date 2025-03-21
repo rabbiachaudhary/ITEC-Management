@@ -39,28 +39,63 @@ namespace dbmid_project
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            OpenFormInPanel(new Events());
+            if (ITECedi.GetItec_Year() == 0)
+            {
+                MessageBox.Show("Select ITEC edition first");
+            }
+            else
+            {
+                OpenFormInPanel(new Events());
+            }
         }
 
         private void linkLabel5_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            OpenFormInPanel(new RegisterParticipants());
+            if (ITECedi.GetItec_Year() == 0)
+            {
+                MessageBox.Show("Select ITEC edition first");
+            }
+            else
+            {
+                OpenFormInPanel(new RegisterParticipants());
+            }
         }
 
         private void linkLabel12_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            OpenFormInPanel(new Duties());
+            if (ITECedi.GetItec_Year() == 0)
+            {
+                MessageBox.Show("Select ITEC edition first");
+            }
+            else
+            {
+                OpenFormInPanel(new Duties());
+            }
 
         }
 
         private void linkLabel8_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            OpenFormInPanel(new View_Committees());
+            if (ITECedi.GetItec_Year() == 0)
+            {
+                MessageBox.Show("Select ITEC edition first");
+            }
+            else
+            {
+                OpenFormInPanel(new View_Committees());
+            }
         }
 
         private void linkLabel16_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            OpenFormInPanel(new LeaderBoard());
+            if (ITECedi.GetItec_Year() == 0)
+            {
+                MessageBox.Show("Select ITEC edition first");
+            }
+            else
+            {
+                OpenFormInPanel(new Results());
+            }
         }
 
         private void StudentDashboard_Load(object sender, EventArgs e)

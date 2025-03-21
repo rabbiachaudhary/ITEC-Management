@@ -245,3 +245,6 @@ C:\Users\This PC\Desktop\dbrepo\dbmid project\bin\Debug\net8.0-windows\zh-Hant\S
 C:\Users\This PC\Desktop\dbrepo\dbmid project\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
 C:\Users\This PC\Desktop\dbrepo\dbmid project\bin\Debug\net8.0-windows\itextsharp.dll
 C:\Users\This PC\Desktop\dbrepo\dbmid project\obj\Debug\net8.0-windows\dbmid_project.ReportsUI.resources
+C:\Users\This PC\Desktop\dbrepo\dbmid project\obj\Debug\net8.0-windows\dbmid_project.Sponsors.resources
+C:\Users\This PC\Desktop\dbrepo\dbmid project\obj\Debug\net8.0-windows\dbmid_project.SponsorsCRUD.resources
+C:\Users\This PC\Desktop\dbrepo\dbmid project\obj\Debug\net8.0-windows\dbmid_project.Results.resources

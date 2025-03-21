@@ -1,6 +1,6 @@
 ﻿namespace dbmid_project
 {
-    partial class View_Committees
+    partial class Results
     {
         /// <summary>
         /// Required designer variable.
@@ -28,15 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
-            ListViewItem listViewItem1 = new ListViewItem("");
             label1 = new Label();
             listView1 = new ListView();
-            contextMenuStrip1 = new ContextMenuStrip(components);
-            updateToolStripMenuItem = new ToolStripMenuItem();
-            deleteToolStripMenuItem = new ToolStripMenuItem();
+            mname = new ColumnHeader();
+            cap = new ColumnHeader();
+            Location = new ColumnHeader();
             columnHeader1 = new ColumnHeader();
-            contextMenuStrip1.SuspendLayout();
+            columnHeader2 = new ColumnHeader();
             SuspendLayout();
             // 
             // label1
@@ -44,56 +42,55 @@
             label1.AutoSize = true;
             label1.BackColor = Color.SteelBlue;
             label1.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(-6, 0);
+            label1.Location = new Point(-12, -4);
             label1.Margin = new Padding(7, 0, 7, 0);
             label1.MinimumSize = new Size(1002, 70);
             label1.Name = "label1";
             label1.Size = new Size(1002, 70);
             label1.TabIndex = 3;
-            label1.Text = "Committees";
+            label1.Text = "LeaderBoard";
             label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // listView1
             // 
-            listView1.Columns.AddRange(new ColumnHeader[] { columnHeader1 });
-            listView1.ContextMenuStrip = contextMenuStrip1;
-            listView1.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            listView1.FullRowSelect = true;
-            listView1.Items.AddRange(new ListViewItem[] { listViewItem1 });
-            listView1.Location = new Point(291, 137);
-            listView1.MultiSelect = false;
+            listView1.Columns.AddRange(new ColumnHeader[] { mname, cap, Location, columnHeader1, columnHeader2 });
+            listView1.Location = new Point(57, 131);
             listView1.Name = "listView1";
-            listView1.Size = new Size(409, 316);
-            listView1.TabIndex = 4;
+            listView1.Size = new Size(856, 599);
+            listView1.TabIndex = 7;
             listView1.UseCompatibleStateImageBehavior = false;
             listView1.View = View.Details;
-            listView1.SelectedIndexChanged += listView1_SelectedIndexChanged;
             // 
-            // contextMenuStrip1
+            // mname
             // 
-            contextMenuStrip1.ImageScalingSize = new Size(20, 20);
-            contextMenuStrip1.Items.AddRange(new ToolStripItem[] { updateToolStripMenuItem, deleteToolStripMenuItem });
-            contextMenuStrip1.Name = "contextMenuStrip1";
-            contextMenuStrip1.Size = new Size(128, 52);
+            mname.Text = "Event";
+            mname.Width = 150;
             // 
-            // updateToolStripMenuItem
+            // cap
             // 
-            updateToolStripMenuItem.Name = "updateToolStripMenuItem";
-            updateToolStripMenuItem.Size = new Size(127, 24);
-            updateToolStripMenuItem.Text = "Update";
+            cap.Text = "Participant";
+            cap.TextAlign = HorizontalAlignment.Center;
+            cap.Width = 200;
             // 
-            // deleteToolStripMenuItem
+            // Location
             // 
-            deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            deleteToolStripMenuItem.Size = new Size(127, 24);
-            deleteToolStripMenuItem.Text = "Delete";
+            Location.Text = "Position";
+            Location.TextAlign = HorizontalAlignment.Center;
+            Location.Width = 150;
             // 
             // columnHeader1
             // 
-            columnHeader1.Text = "Committee Name";
-            columnHeader1.Width = 400;
+            columnHeader1.Text = "Score";
+            columnHeader1.TextAlign = HorizontalAlignment.Center;
+            columnHeader1.Width = 150;
             // 
-            // View_Committees
+            // columnHeader2
+            // 
+            columnHeader2.Text = "Remarks";
+            columnHeader2.TextAlign = HorizontalAlignment.Center;
+            columnHeader2.Width = 200;
+            // 
+            // Results
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -102,9 +99,8 @@
             ClientSize = new Size(984, 997);
             Controls.Add(listView1);
             Controls.Add(label1);
-            Name = "View_Committees";
-            Text = "View_Committees";
-            contextMenuStrip1.ResumeLayout(false);
+            Name = "Results";
+            Text = "RecordResults";
             ResumeLayout(false);
             PerformLayout();
         }
@@ -113,9 +109,10 @@
 
         private Label label1;
         private ListView listView1;
-        private ContextMenuStrip contextMenuStrip1;
-        private ToolStripMenuItem updateToolStripMenuItem;
-        private ToolStripMenuItem deleteToolStripMenuItem;
+        private ColumnHeader mname;
+        private ColumnHeader cap;
+        private ColumnHeader Location;
         private ColumnHeader columnHeader1;
+        private ColumnHeader columnHeader2;
     }
 }

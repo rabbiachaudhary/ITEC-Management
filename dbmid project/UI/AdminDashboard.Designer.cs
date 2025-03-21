@@ -29,6 +29,11 @@
         private void InitializeComponent()
         {
             sidebrpnl = new Panel();
+            linkLabel19 = new LinkLabel();
+            linkLabel13 = new LinkLabel();
+            label5 = new Label();
+            label10 = new Label();
+            linkLabel18 = new LinkLabel();
             linkLabel17 = new LinkLabel();
             linkLabel11 = new LinkLabel();
             linkLabel6 = new LinkLabel();
@@ -36,7 +41,6 @@
             linkLabel16 = new LinkLabel();
             linkLabel14 = new LinkLabel();
             label9 = new Label();
-            linkLabel13 = new LinkLabel();
             label7 = new Label();
             linkLabel12 = new LinkLabel();
             linkLabel7 = new LinkLabel();
@@ -54,7 +58,6 @@
             label1 = new Label();
             pictureBox1 = new PictureBox();
             pnlContent = new Panel();
-            linkLabel18 = new LinkLabel();
             sidebrpnl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -62,6 +65,10 @@
             // sidebrpnl
             // 
             sidebrpnl.BackColor = Color.SteelBlue;
+            sidebrpnl.Controls.Add(linkLabel19);
+            sidebrpnl.Controls.Add(linkLabel13);
+            sidebrpnl.Controls.Add(label5);
+            sidebrpnl.Controls.Add(label10);
             sidebrpnl.Controls.Add(linkLabel18);
             sidebrpnl.Controls.Add(linkLabel17);
             sidebrpnl.Controls.Add(linkLabel11);
@@ -70,7 +77,6 @@
             sidebrpnl.Controls.Add(linkLabel16);
             sidebrpnl.Controls.Add(linkLabel14);
             sidebrpnl.Controls.Add(label9);
-            sidebrpnl.Controls.Add(linkLabel13);
             sidebrpnl.Controls.Add(label7);
             sidebrpnl.Controls.Add(linkLabel12);
             sidebrpnl.Controls.Add(linkLabel7);
@@ -89,8 +95,95 @@
             sidebrpnl.Controls.Add(pictureBox1);
             sidebrpnl.Location = new Point(1, 1);
             sidebrpnl.Name = "sidebrpnl";
-            sidebrpnl.Size = new Size(365, 1164);
+            sidebrpnl.Size = new Size(365, 1165);
             sidebrpnl.TabIndex = 4;
+            // 
+            // linkLabel19
+            // 
+            linkLabel19.ActiveLinkColor = Color.MidnightBlue;
+            linkLabel19.AutoSize = true;
+            linkLabel19.DisabledLinkColor = Color.Black;
+            linkLabel19.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            linkLabel19.LinkBehavior = LinkBehavior.NeverUnderline;
+            linkLabel19.LinkColor = Color.Black;
+            linkLabel19.Location = new Point(0, 1042);
+            linkLabel19.MinimumSize = new Size(375, 23);
+            linkLabel19.Name = "linkLabel19";
+            linkLabel19.Padding = new Padding(50, 0, 0, 0);
+            linkLabel19.Size = new Size(375, 23);
+            linkLabel19.TabIndex = 41;
+            linkLabel19.TabStop = true;
+            linkLabel19.Text = "Sponsors";
+            linkLabel19.TextAlign = ContentAlignment.MiddleLeft;
+            linkLabel19.VisitedLinkColor = Color.Black;
+            linkLabel19.LinkClicked += linkLabel19_LinkClicked_1;
+            // 
+            // linkLabel13
+            // 
+            linkLabel13.ActiveLinkColor = Color.MidnightBlue;
+            linkLabel13.AutoSize = true;
+            linkLabel13.DisabledLinkColor = Color.Black;
+            linkLabel13.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            linkLabel13.LinkBehavior = LinkBehavior.NeverUnderline;
+            linkLabel13.LinkColor = Color.Black;
+            linkLabel13.Location = new Point(3, 1016);
+            linkLabel13.MinimumSize = new Size(375, 23);
+            linkLabel13.Name = "linkLabel13";
+            linkLabel13.Padding = new Padding(50, 0, 0, 0);
+            linkLabel13.Size = new Size(375, 23);
+            linkLabel13.TabIndex = 42;
+            linkLabel13.TabStop = true;
+            linkLabel13.Text = "Vendors";
+            linkLabel13.TextAlign = ContentAlignment.MiddleLeft;
+            linkLabel13.VisitedLinkColor = Color.Black;
+            linkLabel13.LinkClicked += linkLabel13_LinkClicked;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.BackColor = Color.DodgerBlue;
+            label5.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.Location = new Point(0, 982);
+            label5.MinimumSize = new Size(375, 23);
+            label5.Name = "label5";
+            label5.Size = new Size(375, 23);
+            label5.TabIndex = 39;
+            label5.Text = "Vendors And Sponsors";
+            label5.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.BackColor = Color.DodgerBlue;
+            label10.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label10.Location = new Point(0, 815);
+            label10.MinimumSize = new Size(375, 23);
+            label10.Name = "label10";
+            label10.Size = new Size(375, 23);
+            label10.TabIndex = 38;
+            label10.Text = "Reports";
+            label10.TextAlign = ContentAlignment.MiddleCenter;
+            label10.Click += label10_Click;
+            // 
+            // linkLabel18
+            // 
+            linkLabel18.ActiveLinkColor = Color.MidnightBlue;
+            linkLabel18.AutoSize = true;
+            linkLabel18.DisabledLinkColor = Color.Black;
+            linkLabel18.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            linkLabel18.LinkBehavior = LinkBehavior.NeverUnderline;
+            linkLabel18.LinkColor = Color.Black;
+            linkLabel18.Location = new Point(3, 852);
+            linkLabel18.MinimumSize = new Size(375, 23);
+            linkLabel18.Name = "linkLabel18";
+            linkLabel18.Padding = new Padding(50, 0, 0, 0);
+            linkLabel18.Size = new Size(375, 23);
+            linkLabel18.TabIndex = 36;
+            linkLabel18.TabStop = true;
+            linkLabel18.Text = "Generate Reports";
+            linkLabel18.TextAlign = ContentAlignment.MiddleLeft;
+            linkLabel18.VisitedLinkColor = Color.Black;
+            linkLabel18.LinkClicked += linkLabel18_LinkClicked;
             // 
             // linkLabel17
             // 
@@ -100,7 +193,7 @@
             linkLabel17.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             linkLabel17.LinkBehavior = LinkBehavior.NeverUnderline;
             linkLabel17.LinkColor = Color.Black;
-            linkLabel17.Location = new Point(10, 481);
+            linkLabel17.Location = new Point(0, 447);
             linkLabel17.MinimumSize = new Size(375, 23);
             linkLabel17.Name = "linkLabel17";
             linkLabel17.Padding = new Padding(50, 0, 0, 0);
@@ -120,7 +213,7 @@
             linkLabel11.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             linkLabel11.LinkBehavior = LinkBehavior.NeverUnderline;
             linkLabel11.LinkColor = Color.Black;
-            linkLabel11.Location = new Point(10, 387);
+            linkLabel11.Location = new Point(0, 357);
             linkLabel11.MinimumSize = new Size(375, 23);
             linkLabel11.Name = "linkLabel11";
             linkLabel11.Padding = new Padding(50, 0, 0, 0);
@@ -140,7 +233,7 @@
             linkLabel6.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             linkLabel6.LinkBehavior = LinkBehavior.NeverUnderline;
             linkLabel6.LinkColor = Color.Black;
-            linkLabel6.Location = new Point(10, 717);
+            linkLabel6.Location = new Point(0, 662);
             linkLabel6.MinimumSize = new Size(375, 23);
             linkLabel6.Name = "linkLabel6";
             linkLabel6.Padding = new Padding(50, 0, 0, 0);
@@ -160,7 +253,7 @@
             linkLabel15.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             linkLabel15.LinkBehavior = LinkBehavior.NeverUnderline;
             linkLabel15.LinkColor = Color.Black;
-            linkLabel15.Location = new Point(10, 254);
+            linkLabel15.Location = new Point(0, 243);
             linkLabel15.MinimumSize = new Size(375, 23);
             linkLabel15.Name = "linkLabel15";
             linkLabel15.Padding = new Padding(50, 0, 0, 0);
@@ -180,7 +273,7 @@
             linkLabel16.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             linkLabel16.LinkBehavior = LinkBehavior.NeverUnderline;
             linkLabel16.LinkColor = Color.Black;
-            linkLabel16.Location = new Point(10, 1009);
+            linkLabel16.Location = new Point(-2, 946);
             linkLabel16.MinimumSize = new Size(375, 23);
             linkLabel16.Name = "linkLabel16";
             linkLabel16.Padding = new Padding(50, 0, 0, 0);
@@ -200,7 +293,7 @@
             linkLabel14.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             linkLabel14.LinkBehavior = LinkBehavior.NeverUnderline;
             linkLabel14.LinkColor = Color.Black;
-            linkLabel14.Location = new Point(10, 978);
+            linkLabel14.Location = new Point(0, 919);
             linkLabel14.MinimumSize = new Size(375, 23);
             linkLabel14.Name = "linkLabel14";
             linkLabel14.Padding = new Padding(50, 0, 0, 0);
@@ -217,7 +310,7 @@
             label9.AutoSize = true;
             label9.BackColor = Color.DodgerBlue;
             label9.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label9.Location = new Point(0, 944);
+            label9.Location = new Point(-2, 886);
             label9.MinimumSize = new Size(375, 23);
             label9.Name = "label9";
             label9.Size = new Size(375, 23);
@@ -225,31 +318,12 @@
             label9.Text = "Competition Results";
             label9.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // linkLabel13
-            // 
-            linkLabel13.ActiveLinkColor = Color.MidnightBlue;
-            linkLabel13.AutoSize = true;
-            linkLabel13.DisabledLinkColor = Color.Black;
-            linkLabel13.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            linkLabel13.LinkBehavior = LinkBehavior.NeverUnderline;
-            linkLabel13.LinkColor = Color.Black;
-            linkLabel13.Location = new Point(10, 904);
-            linkLabel13.MinimumSize = new Size(375, 23);
-            linkLabel13.Name = "linkLabel13";
-            linkLabel13.Padding = new Padding(50, 0, 0, 0);
-            linkLabel13.Size = new Size(375, 23);
-            linkLabel13.TabIndex = 24;
-            linkLabel13.TabStop = true;
-            linkLabel13.Text = "Budget Summary";
-            linkLabel13.TextAlign = ContentAlignment.MiddleLeft;
-            linkLabel13.VisitedLinkColor = Color.Black;
-            // 
             // label7
             // 
             label7.AutoSize = true;
             label7.BackColor = Color.DodgerBlue;
             label7.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label7.Location = new Point(-2, 789);
+            label7.Location = new Point(0, 720);
             label7.MinimumSize = new Size(375, 23);
             label7.Name = "label7";
             label7.Size = new Size(375, 23);
@@ -266,7 +340,7 @@
             linkLabel12.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             linkLabel12.LinkBehavior = LinkBehavior.NeverUnderline;
             linkLabel12.LinkColor = Color.Black;
-            linkLabel12.Location = new Point(10, 747);
+            linkLabel12.Location = new Point(0, 685);
             linkLabel12.MinimumSize = new Size(375, 23);
             linkLabel12.Name = "linkLabel12";
             linkLabel12.Padding = new Padding(50, 0, 0, 0);
@@ -286,7 +360,7 @@
             linkLabel7.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             linkLabel7.LinkBehavior = LinkBehavior.NeverUnderline;
             linkLabel7.LinkColor = Color.Black;
-            linkLabel7.Location = new Point(10, 868);
+            linkLabel7.Location = new Point(0, 784);
             linkLabel7.MinimumSize = new Size(375, 23);
             linkLabel7.Name = "linkLabel7";
             linkLabel7.Padding = new Padding(50, 0, 0, 0);
@@ -303,7 +377,7 @@
             label3.AutoSize = true;
             label3.BackColor = Color.DodgerBlue;
             label3.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(-2, 677);
+            label3.Location = new Point(-2, 623);
             label3.MinimumSize = new Size(375, 23);
             label3.Name = "label3";
             label3.Size = new Size(375, 23);
@@ -319,7 +393,7 @@
             linkLabel10.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             linkLabel10.LinkBehavior = LinkBehavior.NeverUnderline;
             linkLabel10.LinkColor = Color.Black;
-            linkLabel10.Location = new Point(10, 833);
+            linkLabel10.Location = new Point(0, 758);
             linkLabel10.MinimumSize = new Size(375, 23);
             linkLabel10.Name = "linkLabel10";
             linkLabel10.Padding = new Padding(50, 0, 0, 0);
@@ -339,7 +413,7 @@
             linkLabel9.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             linkLabel9.LinkBehavior = LinkBehavior.NeverUnderline;
             linkLabel9.LinkColor = Color.Black;
-            linkLabel9.Location = new Point(10, 607);
+            linkLabel9.Location = new Point(0, 560);
             linkLabel9.MinimumSize = new Size(375, 23);
             linkLabel9.Name = "linkLabel9";
             linkLabel9.Padding = new Padding(50, 0, 0, 0);
@@ -359,7 +433,7 @@
             linkLabel8.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             linkLabel8.LinkBehavior = LinkBehavior.NeverUnderline;
             linkLabel8.LinkColor = Color.Black;
-            linkLabel8.Location = new Point(10, 640);
+            linkLabel8.Location = new Point(-2, 583);
             linkLabel8.MinimumSize = new Size(375, 23);
             linkLabel8.Name = "linkLabel8";
             linkLabel8.Padding = new Padding(50, 0, 0, 0);
@@ -376,7 +450,7 @@
             label2.AutoSize = true;
             label2.BackColor = Color.DodgerBlue;
             label2.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(-2, 572);
+            label2.Location = new Point(0, 526);
             label2.MinimumSize = new Size(375, 23);
             label2.Name = "label2";
             label2.Size = new Size(375, 23);
@@ -392,7 +466,7 @@
             linkLabel5.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             linkLabel5.LinkBehavior = LinkBehavior.NeverUnderline;
             linkLabel5.LinkColor = Color.Black;
-            linkLabel5.Location = new Point(11, 453);
+            linkLabel5.Location = new Point(0, 424);
             linkLabel5.MinimumSize = new Size(375, 23);
             linkLabel5.Name = "linkLabel5";
             linkLabel5.Padding = new Padding(50, 0, 0, 0);
@@ -412,7 +486,7 @@
             linkLabel4.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             linkLabel4.LinkBehavior = LinkBehavior.NeverUnderline;
             linkLabel4.LinkColor = Color.Black;
-            linkLabel4.Location = new Point(10, 510);
+            linkLabel4.Location = new Point(0, 470);
             linkLabel4.MinimumSize = new Size(375, 23);
             linkLabel4.Name = "linkLabel4";
             linkLabel4.Padding = new Padding(50, 0, 0, 0);
@@ -432,7 +506,7 @@
             linkLabel3.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             linkLabel3.LinkBehavior = LinkBehavior.NeverUnderline;
             linkLabel3.LinkColor = Color.Black;
-            linkLabel3.Location = new Point(10, 539);
+            linkLabel3.Location = new Point(0, 493);
             linkLabel3.MinimumSize = new Size(375, 23);
             linkLabel3.Name = "linkLabel3";
             linkLabel3.Padding = new Padding(50, 0, 0, 0);
@@ -452,7 +526,7 @@
             linkLabel2.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             linkLabel2.LinkBehavior = LinkBehavior.NeverUnderline;
             linkLabel2.LinkColor = Color.Black;
-            linkLabel2.Location = new Point(11, 357);
+            linkLabel2.Location = new Point(0, 334);
             linkLabel2.MinimumSize = new Size(375, 23);
             linkLabel2.Name = "linkLabel2";
             linkLabel2.Padding = new Padding(50, 0, 0, 0);
@@ -472,7 +546,7 @@
             linkLabel1.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             linkLabel1.LinkBehavior = LinkBehavior.NeverUnderline;
             linkLabel1.LinkColor = Color.Black;
-            linkLabel1.Location = new Point(10, 327);
+            linkLabel1.Location = new Point(0, 311);
             linkLabel1.MinimumSize = new Size(375, 23);
             linkLabel1.Name = "linkLabel1";
             linkLabel1.Padding = new Padding(50, 0, 0, 0);
@@ -489,7 +563,7 @@
             label4.AutoSize = true;
             label4.BackColor = Color.DodgerBlue;
             label4.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(-2, 418);
+            label4.Location = new Point(0, 391);
             label4.MinimumSize = new Size(375, 23);
             label4.Name = "label4";
             label4.Size = new Size(375, 23);
@@ -502,7 +576,7 @@
             label1.AutoSize = true;
             label1.BackColor = Color.DodgerBlue;
             label1.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(3, 289);
+            label1.Location = new Point(3, 278);
             label1.MinimumSize = new Size(375, 23);
             label1.Name = "label1";
             label1.Size = new Size(375, 23);
@@ -531,26 +605,6 @@
             pnlContent.Size = new Size(1002, 1164);
             pnlContent.TabIndex = 5;
             pnlContent.Paint += pnlContent_Paint;
-            // 
-            // linkLabel18
-            // 
-            linkLabel18.ActiveLinkColor = Color.MidnightBlue;
-            linkLabel18.AutoSize = true;
-            linkLabel18.DisabledLinkColor = Color.Black;
-            linkLabel18.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            linkLabel18.LinkBehavior = LinkBehavior.NeverUnderline;
-            linkLabel18.LinkColor = Color.Black;
-            linkLabel18.Location = new Point(10, 1057);
-            linkLabel18.MinimumSize = new Size(375, 23);
-            linkLabel18.Name = "linkLabel18";
-            linkLabel18.Padding = new Padding(50, 0, 0, 0);
-            linkLabel18.Size = new Size(375, 23);
-            linkLabel18.TabIndex = 36;
-            linkLabel18.TabStop = true;
-            linkLabel18.Text = "Generate Reports";
-            linkLabel18.TextAlign = ContentAlignment.MiddleLeft;
-            linkLabel18.VisitedLinkColor = Color.Black;
-            linkLabel18.LinkClicked += linkLabel18_LinkClicked;
             // 
             // AdminDashboard
             // 
@@ -591,7 +645,6 @@
         private LinkLabel linkLabel7;
         private Label label3;
         private Label label7;
-        private LinkLabel linkLabel13;
         private LinkLabel linkLabel16;
         private LinkLabel linkLabel14;
         private Label label9;
@@ -602,5 +655,8 @@
         private LinkLabel linkLabel11;
         private LinkLabel linkLabel17;
         private LinkLabel linkLabel18;
+        private Label label10;
+        private LinkLabel linkLabel19;
+        private LinkLabel linkLabel13;
     }
 }

@@ -83,7 +83,14 @@ namespace dbmid_project
 
         private void Duties_Load(object sender, EventArgs e)
         {
+            Form parentForm = this.TopLevelControl as Form;
 
+            if (parentForm is StudentDashboard)
+            {
+                button1.Visible = false;
+                button2.Visible = false;
+                contextMenuStrip1.Visible = false;
+            }
         }
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
