@@ -97,5 +97,10 @@ namespace dbmid_project
             a.OpenFormInPanel(new ParticipantCRUD("dlt"));
 
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

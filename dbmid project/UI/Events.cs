@@ -33,7 +33,6 @@ namespace dbmid_project
 
             if (parentForm is StudentDashboard)
             {
-                listView1.Columns[3].Width = 0;
                     button1.Visible = false;
                     button2.Visible = false;
                 

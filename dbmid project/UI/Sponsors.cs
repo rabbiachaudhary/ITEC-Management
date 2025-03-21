@@ -28,6 +28,8 @@ namespace dbmid_project
             string contact = textBox2.Text;
             SponsorBL v = new SponsorBL(name, contact);
             SponsorsDL.Adds(v);
+            LoadDataInListView();
+
         }
 
         private void LoadDataInListView()

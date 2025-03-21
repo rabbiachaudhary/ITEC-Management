@@ -13,7 +13,7 @@ namespace dbmid_project.DL
         public static void Adds(SponsorBL v)
         {
 
-            string query = "INSERT INTO sponsors(sponsor_name,contact) VALUES ('{0}',{1}')";
+            string query = "INSERT INTO sponsors(sponsor_name,contact) VALUES ('{0}','{1}')";
             query = string.Format(query, v.name, v.contact);
             SqlHelper.executeDML(query);
             MessageBox.Show("Sponsor added Successfully");

@@ -73,6 +73,7 @@
             textBox1.Size = new Size(446, 51);
             textBox1.TabIndex = 4;
             textBox1.TextAlign = HorizontalAlignment.Center;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // pictureBox1
             // 

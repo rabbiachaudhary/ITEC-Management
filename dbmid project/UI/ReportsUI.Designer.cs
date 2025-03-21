@@ -116,7 +116,7 @@
             listView1.Location = new Point(91, 206);
             listView1.MultiSelect = false;
             listView1.Name = "listView1";
-            listView1.Size = new Size(803, 630);
+            listView1.Size = new Size(803, 497);
             listView1.TabIndex = 22;
             listView1.UseCompatibleStateImageBehavior = false;
             listView1.View = View.Details;
@@ -151,7 +151,7 @@
             button1.FlatStyle = FlatStyle.Popup;
             button1.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.ForeColor = Color.White;
-            button1.Location = new Point(685, 884);
+            button1.Location = new Point(676, 752);
             button1.Name = "button1";
             button1.Size = new Size(209, 51);
             button1.TabIndex = 23;
@@ -166,7 +166,7 @@
             button2.FlatStyle = FlatStyle.Popup;
             button2.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button2.ForeColor = Color.White;
-            button2.Location = new Point(389, 884);
+            button2.Location = new Point(379, 752);
             button2.Name = "button2";
             button2.Size = new Size(209, 51);
             button2.TabIndex = 24;
@@ -181,7 +181,7 @@
             button3.FlatStyle = FlatStyle.Popup;
             button3.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button3.ForeColor = Color.White;
-            button3.Location = new Point(91, 884);
+            button3.Location = new Point(82, 752);
             button3.Name = "button3";
             button3.Size = new Size(209, 51);
             button3.TabIndex = 25;
@@ -197,7 +197,7 @@
             listView2.Location = new Point(105, 206);
             listView2.MultiSelect = false;
             listView2.Name = "listView2";
-            listView2.Size = new Size(780, 630);
+            listView2.Size = new Size(780, 488);
             listView2.TabIndex = 26;
             listView2.UseCompatibleStateImageBehavior = false;
             listView2.View = View.Details;
@@ -227,7 +227,7 @@
             listView3.Location = new Point(45, 206);
             listView3.MultiSelect = false;
             listView3.Name = "listView3";
-            listView3.Size = new Size(893, 630);
+            listView3.Size = new Size(893, 488);
             listView3.TabIndex = 27;
             listView3.UseCompatibleStateImageBehavior = false;
             listView3.View = View.Details;
@@ -275,7 +275,7 @@
             listView4.Location = new Point(56, 206);
             listView4.MultiSelect = false;
             listView4.Name = "listView4";
-            listView4.Size = new Size(867, 630);
+            listView4.Size = new Size(867, 488);
             listView4.TabIndex = 28;
             listView4.UseCompatibleStateImageBehavior = false;
             listView4.View = View.Details;
@@ -317,7 +317,7 @@
             listView5.Location = new Point(36, 206);
             listView5.MultiSelect = false;
             listView5.Name = "listView5";
-            listView5.Size = new Size(927, 630);
+            listView5.Size = new Size(927, 488);
             listView5.TabIndex = 29;
             listView5.UseCompatibleStateImageBehavior = false;
             listView5.View = View.Details;

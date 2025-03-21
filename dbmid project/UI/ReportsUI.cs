@@ -151,6 +151,8 @@ namespace dbmid_project
                 }
             }
 
+            ReportsUI_Load(sender, e);
+
         }
 
 
