@@ -36,7 +36,7 @@ namespace dbmid_project
         private void LoadEvents()
         {
             int year = ITECedi.GetItec_Year();
-            comboBox2.Items.Clear();
+            comboBox1.Items.Clear();
             string itecid = "select itec_id from itec_editions where year={0}";
             itecid = string.Format(itecid, year);
             int id = SqlHelper.GetRole(itecid);
@@ -46,7 +46,7 @@ namespace dbmid_project
 
             foreach (string category in categories)
             {
-                comboBox2.Items.Add(category);
+                comboBox1.Items.Add(category);
             }
 
 
@@ -95,5 +95,6 @@ namespace dbmid_project
         {
 
         }
+
     }
 }

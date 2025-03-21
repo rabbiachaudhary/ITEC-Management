@@ -53,6 +53,7 @@
             label1 = new Label();
             pictureBox1 = new PictureBox();
             pnlContent = new Panel();
+            linkLabel17 = new LinkLabel();
             sidebrpnl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -60,6 +61,7 @@
             // sidebrpnl
             // 
             sidebrpnl.BackColor = Color.SteelBlue;
+            sidebrpnl.Controls.Add(linkLabel17);
             sidebrpnl.Controls.Add(linkLabel11);
             sidebrpnl.Controls.Add(linkLabel6);
             sidebrpnl.Controls.Add(linkLabel15);
@@ -387,14 +389,14 @@
             linkLabel4.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             linkLabel4.LinkBehavior = LinkBehavior.NeverUnderline;
             linkLabel4.LinkColor = Color.Black;
-            linkLabel4.Location = new Point(10, 500);
+            linkLabel4.Location = new Point(10, 511);
             linkLabel4.MinimumSize = new Size(375, 23);
             linkLabel4.Name = "linkLabel4";
             linkLabel4.Padding = new Padding(50, 0, 0, 0);
             linkLabel4.Size = new Size(375, 23);
             linkLabel4.TabIndex = 15;
             linkLabel4.TabStop = true;
-            linkLabel4.Text = "Register to events";
+            linkLabel4.Text = "Induviual Registration";
             linkLabel4.TextAlign = ContentAlignment.MiddleLeft;
             linkLabel4.VisitedLinkColor = Color.Black;
             linkLabel4.LinkClicked += linkLabel4_LinkClicked;
@@ -507,6 +509,26 @@
             pnlContent.TabIndex = 5;
             pnlContent.Paint += pnlContent_Paint;
             // 
+            // linkLabel17
+            // 
+            linkLabel17.ActiveLinkColor = Color.MidnightBlue;
+            linkLabel17.AutoSize = true;
+            linkLabel17.DisabledLinkColor = Color.Black;
+            linkLabel17.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            linkLabel17.LinkBehavior = LinkBehavior.NeverUnderline;
+            linkLabel17.LinkColor = Color.Black;
+            linkLabel17.Location = new Point(10, 488);
+            linkLabel17.MinimumSize = new Size(375, 23);
+            linkLabel17.Name = "linkLabel17";
+            linkLabel17.Padding = new Padding(50, 0, 0, 0);
+            linkLabel17.Size = new Size(375, 23);
+            linkLabel17.TabIndex = 35;
+            linkLabel17.TabStop = true;
+            linkLabel17.Text = "Team Registration";
+            linkLabel17.TextAlign = ContentAlignment.MiddleLeft;
+            linkLabel17.VisitedLinkColor = Color.Black;
+            linkLabel17.LinkClicked += linkLabel17_LinkClicked;
+            // 
             // AdminDashboard
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -555,5 +577,6 @@
         private LinkLabel linkLabel15;
         private LinkLabel linkLabel6;
         private LinkLabel linkLabel11;
+        private LinkLabel linkLabel17;
     }
 }

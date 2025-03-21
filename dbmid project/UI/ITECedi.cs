@@ -53,7 +53,7 @@ namespace dbmid_project
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+
             int year = int.Parse(textBox2.Text);
             string theme = textBox1.Text;
             string description = textBox3.Text;
@@ -69,7 +69,7 @@ namespace dbmid_project
         {
             comboBox1.Items.Clear();
             string sql = "select year from itec_editions";
-            List<string> categories = SqlHelper.LoadIN_ComboBox(sql,"year");
+            List<string> categories = SqlHelper.LoadIN_ComboBox(sql, "year");
 
             foreach (string category in categories)
             {
@@ -79,7 +79,7 @@ namespace dbmid_project
 
         private void button2_Click(object sender, EventArgs e)
         {
-             year=int.Parse( comboBox1.SelectedItem.ToString());
+            year = int.Parse(comboBox1.SelectedItem.ToString());
             MessageBox.Show("edition selected " + year);
 
         }
@@ -89,5 +89,18 @@ namespace dbmid_project
             return year;
         }
 
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+            AdminDashboard a = (AdminDashboard)this.ParentForm;
+            a.OpenFormInPanel(new EditionsCRUD("update"));
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            AdminDashboard a = (AdminDashboard)this.ParentForm;
+            a.OpenFormInPanel(new EditionsCRUD("dlt"));
+
+        }
     }
 }

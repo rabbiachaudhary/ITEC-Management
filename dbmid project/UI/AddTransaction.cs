@@ -105,8 +105,8 @@ namespace dbmid_project
             string Finance = comboBox1.SelectedItem.ToString();
             float amount=float.Parse(textBox1.Text);
             string description = textBox2.Text;
-            string date = monthCalendar1.ToString();
-            string sname=textBox3.Text;
+            string date = monthCalendar1.SelectionStart.ToString("yyyy-MM-dd");
+            string sname =textBox3.Text;
             string stype=comboBox3.SelectedItem.ToString();
             string rname=textBox4.Text;
             string rtype=comboBox4.Text;

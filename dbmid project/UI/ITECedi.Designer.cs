@@ -41,6 +41,8 @@
             label3 = new Label();
             label4 = new Label();
             button2 = new Button();
+            button3 = new Button();
+            button4 = new Button();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -63,7 +65,7 @@
             label2.AutoSize = true;
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(253, 105);
+            label2.Location = new Point(159, 100);
             label2.Name = "label2";
             label2.Size = new Size(213, 31);
             label2.TabIndex = 2;
@@ -72,7 +74,7 @@
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(499, 105);
+            comboBox1.Location = new Point(163, 163);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(209, 28);
             comboBox1.TabIndex = 3;
@@ -88,7 +90,7 @@
             panel1.Controls.Add(label6);
             panel1.Controls.Add(label5);
             panel1.Controls.Add(label3);
-            panel1.Location = new Point(203, 375);
+            panel1.Location = new Point(198, 427);
             panel1.Name = "panel1";
             panel1.Size = new Size(561, 664);
             panel1.TabIndex = 4;
@@ -185,7 +187,7 @@
             label4.AutoSize = true;
             label4.BackColor = Color.SteelBlue;
             label4.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(-8, 255);
+            label4.Location = new Point(-15, 324);
             label4.Margin = new Padding(7, 0, 7, 0);
             label4.MinimumSize = new Size(1002, 70);
             label4.Name = "label4";
@@ -201,13 +203,43 @@
             button2.FlatStyle = FlatStyle.Popup;
             button2.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button2.ForeColor = Color.White;
-            button2.Location = new Point(374, 172);
+            button2.Location = new Point(159, 228);
             button2.Name = "button2";
             button2.Size = new Size(209, 51);
             button2.TabIndex = 17;
             button2.Text = "Select";
             button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
+            // 
+            // button3
+            // 
+            button3.AutoEllipsis = true;
+            button3.BackColor = Color.Navy;
+            button3.FlatStyle = FlatStyle.Popup;
+            button3.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button3.ForeColor = Color.White;
+            button3.Location = new Point(656, 190);
+            button3.Name = "button3";
+            button3.Size = new Size(209, 51);
+            button3.TabIndex = 18;
+            button3.Text = "Delete";
+            button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
+            // 
+            // button4
+            // 
+            button4.AutoEllipsis = true;
+            button4.BackColor = Color.Navy;
+            button4.FlatStyle = FlatStyle.Popup;
+            button4.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button4.ForeColor = Color.White;
+            button4.Location = new Point(656, 118);
+            button4.Name = "button4";
+            button4.Size = new Size(209, 51);
+            button4.TabIndex = 19;
+            button4.Text = "Update";
+            button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // ITECedi
             // 
@@ -217,6 +249,8 @@
             BackgroundImage = Properties.Resources.OIP__4_;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(984, 997);
+            Controls.Add(button4);
+            Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(label4);
             Controls.Add(panel1);
@@ -224,6 +258,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "ITECedi";
+            Padding = new Padding(0, 0, 0, 100);
             Text = "ITECedi";
             Load += ITECedi_Load_1;
             panel1.ResumeLayout(false);
@@ -247,5 +282,7 @@
         private TextBox textBox3;
         private Button button1;
         private Button button2;
+        private Button button3;
+        private Button button4;
     }
 }

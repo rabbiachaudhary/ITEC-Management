@@ -143,6 +143,7 @@
             button1.TabIndex = 27;
             button1.Text = "Done";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // TeamParticipant_FeeDialog
             // 
@@ -161,6 +162,7 @@
             Controls.Add(label1);
             Name = "TeamParticipant_FeeDialog";
             Text = "TeamParticipant_FeeDialog";
+            Load += TeamParticipant_FeeDialog_Load;
             ResumeLayout(false);
             PerformLayout();
         }

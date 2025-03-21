@@ -102,14 +102,8 @@ namespace dbmid_project
 
         private void linkLabel15_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            if (ITECedi.GetItec_Year() == 0)
-            {
-                MessageBox.Show("Select ITEC edition first");
-            }
-            else
-            {
-                OpenFormInPanel(new TeamParticipant());
-            }
+                OpenFormInPanel(new ITECedi());
+            
         }
 
         private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -209,6 +203,18 @@ namespace dbmid_project
         private void pnlContent_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void linkLabel17_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            if (ITECedi.GetItec_Year() == 0)
+            {
+                MessageBox.Show("Select ITEC edition first");
+            }
+            else
+            {
+                OpenFormInPanel(new TeamParticipant());
+            }
         }
     }
 }

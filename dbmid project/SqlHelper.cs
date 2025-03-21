@@ -68,22 +68,74 @@ namespace sqlhelper
             connection.Close();
             return items;
         }
-
+        public static void ExecuteTransaction(List<string> queries)
+        {
+            using (var conn = new MySqlConnection(constring))
+            {
+                conn.Open();
+                using (var transaction = conn.BeginTransaction())
+                {
+                    try
+                    {
+                        foreach (var query in queries)
+                        {
+                            using (var cmd = new MySqlCommand(query, conn, transaction))
+                            {
+                                cmd.ExecuteNonQuery();
+                            }
+                        }
+                        transaction.Commit();
+                    }
+                    catch (Exception ex)
+                    {
+                        transaction.Rollback();
+                        throw new Exception("Transaction failed: " + ex.Message);
+                    }
+                }
+            }
+        }
 
         public static void InitializeRoles()
         {
-            string query = "INSERT INTO Roles(role_name) SELECT value from lookup WHERE category='UserRoles'";
-            executeDML(query);
+            try
+            {
+                List<string> queries = new List<string>
+                {
+                    "SET FOREIGN_KEY_CHECKS = 0",
+                    "DELETE FROM Roles",
+                    "ALTER TABLE Roles AUTO_INCREMENT = 1",
+                    "INSERT INTO Roles(role_name) SELECT DISTINCT value FROM lookup WHERE category='UserRoles' OR category='ParticipantRoles'",
+                    "SET FOREIGN_KEY_CHECKS = 1" 
+                };
 
+                ExecuteTransaction(queries);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error initializing roles: " + ex.Message);
+            }
         }
 
         public static void InitializeEventCategories()
         {
-            string query = "INSERT INTO Event_categories(category_name) SELECT value from lookup WHERE category='EventCategories'";
-            executeDML(query);
+            try
+            {
+                List<string> queries = new List<string>
+                {
+                    "SET FOREIGN_KEY_CHECKS = 0",
+                    "DELETE FROM Event_categories",
+                    "ALTER TABLE Event_categories AUTO_INCREMENT = 1", 
+                    "INSERT INTO Event_categories(category_name) SELECT value FROM lookup WHERE category='EventCategories'", 
+                    "SET FOREIGN_KEY_CHECKS = 1" 
+                };
 
+                ExecuteTransaction(queries);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error initializing event categories: " + ex.Message);
+            }
         }
-
 
         public static int CountRows(string query)
         {

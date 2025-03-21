@@ -44,7 +44,6 @@ namespace dbmid_project.DL
             string exist = " select Count(*) From users where username='{0}'";
             exist = string.Format(exist, user.username);
             int count = SqlHelper.CountRows(exist);
-            MessageBox.Show(exist + count);
             if (count > 0)
             {
                 MessageBox.Show("This username already exits try a different one");
@@ -60,8 +59,10 @@ namespace dbmid_project.DL
                     if (user.password == user.cpass)
                     {
                         int id = GetId(user.role);
-                        string query = "INSERT INTO users (username, email, password_hash, role_id) VALUES ('{0}', '{1}', '{2}', '{3}')";
-                        query = string.Format(query, user.username, user.email, user.password, id);
+                        string query = "INSERT INTO users (username, email, password_hash, role_id) VALUES ('{0}', '{1}', '{2}', (select role_id from roles where role_name='{3}'))";
+                        query = string.Format(query, user.username, user.email, user.password, user.role);
+                        MessageBox.Show(query);
+
                         SqlHelper.executeDML(query);
                         MessageBox.Show("User registered successfully!");
                         if (id == 1)

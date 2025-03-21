@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("dbmid project")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2c6258049c42179406c5b430e93d52bef03e0145")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f93078392961ecf44328c36dca27d6ebfa68347d")]
 [assembly: System.Reflection.AssemblyProductAttribute("dbmid project")]
 [assembly: System.Reflection.AssemblyTitleAttribute("dbmid project")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

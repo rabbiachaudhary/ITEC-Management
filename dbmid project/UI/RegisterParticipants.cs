@@ -19,13 +19,28 @@ namespace dbmid_project
         public RegisterParticipants()
         {
             InitializeComponent();
+
+            LoadRoless();   
         }
 
         private void label3_Click(object sender, EventArgs e)
         {
 
         }
+        private void LoadRoless()
+        {
+            comboBox1.Items.Clear();
+            string sql = "select value from lookup where category='ParticipantRoles'";
+            sql = string.Format(sql);
+            List<string> categories = SqlHelper.LoadIN_ComboBox(sql, "value");
 
+            foreach (string category in categories)
+            {
+                comboBox1.Items.Add(category);
+            }
+
+
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             string name = textBox1.Text;
@@ -47,6 +62,11 @@ namespace dbmid_project
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

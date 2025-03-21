@@ -14,16 +14,26 @@ namespace dbmid_project.DL
         {
             int year = ITECedi.GetItec_Year();
 
-            string query = "INSERT INTO finances (itec_id , event_id, type_id, amount, from_entity_type, from_entity_id, to_entity_type, to_entity_id, description, date_recorded)" +
-                " VALUES ((select itec_id from itec_editions where year={0}) , (select event_id from itec_events where event_name='{1}'), (select lookup_id from lookup where category='FinanceType' and value='{2}')" +
-                "  ,{3}, '{4}'  ," +
-                " ( CASE when from_entity_type='User' THEN (Select user_id from users where username='{5}')   when from_entity_type='Sponsor' THEN (select sponsor_id form sponsors where sponsor_name='{5}')  " +
-                "  when from_entity_type='Committee' then (select committee_id from committees where committee_name='{5}')    when from_entity_type='Vendor' then (select vendor_id from vendors where vendor_name='{5}')" +
-                ")," +
-                "'{6}',(CASE when to_entity_type='User' THEN (Select user_id from users where username='{7}')     when to_entity_type='Sponsor' THEN (select sponsor_id form sponsors where sponsor_name='{7}')" +
-                "    when to_entity_type='Committee' then (select committee_id from committees where committee_name='{7}')     when to_entity_type='Vendor' then (select vendor_id from vendors where vendor_name='{7}')) ," +
-                "'{8}', '{9}' )";
-            query = string.Format(query, year, b.eventn, b.FinanceType, b.amount, b.stype,b.sname, b.rtype, b.rname, b.rname, b.description, b.date);
+            string query = "INSERT INTO finances ( itec_id,     event_id,     type_id,    amount,    from_entity_type,     from_entity_id,     to_entity_type,   to_entity_id,     description,   date_recorded) " +
+                "VALUES (" +
+                "(SELECT itec_id FROM itec_editions WHERE year = {0}), " +
+                " (SELECT event_id FROM itec_events WHERE event_name = '{1}')," +
+                "(SELECT lookup_id FROM lookup WHERE category = 'FinanceTypes' AND value = '{2}'),{3},   '{4}'," +
+                "   CASE WHEN '{4}' = 'User' THEN (SELECT user_id FROM users WHERE username = '{5}') " +
+                "       WHEN '{4}' = 'Sponsor' THEN (SELECT sponsor_id FROM sponsors WHERE sponsor_name = '{5}') " +
+                "        WHEN '{4}' = 'Committee' THEN (SELECT committee_id FROM committees WHERE committee_name = '{5}') " +
+                "        WHEN '{4}' = 'Vendor' THEN (SELECT vendor_id FROM vendors WHERE vendor_name = '{5}')                 ELSE NULL END,'{6}', " +
+                "   CASE " +
+                " WHEN '{6}' = 'User' THEN (SELECT user_id FROM users WHERE username = '{7}') " +
+                "        WHEN '{6}' = 'Sponsor' THEN (SELECT sponsor_id FROM sponsors WHERE sponsor_name = '{7}') " +
+                "        WHEN '{6}' = 'Committee' THEN (SELECT committee_id FROM committees WHERE committee_name = '{7}') " +
+                "        WHEN '{6}' = 'Vendor' THEN (SELECT vendor_id FROM vendors WHERE vendor_name = '{7}') " +
+                "        ELSE NULL     END,     '{8}',     '{9}')";
+
+            query = string.Format(query, year, b.eventn, b.FinanceType, b.amount, b.stype,b.sname, b.rtype, b.rname, b.description, b.date);
+            
+            MessageBox.Show(query);
+            
             SqlHelper.executeDML(query);
             MessageBox.Show("Transaction added successfully");
         }

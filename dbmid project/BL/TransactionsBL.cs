@@ -26,7 +26,7 @@ namespace dbmid_project.BL
             this.date = e;
             this.sname = f;
             this.stype = g;
-            this.rtype = h;
+            this.rname = h;
             this.rtype = i;
         }
     }

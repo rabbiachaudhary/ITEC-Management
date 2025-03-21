@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using dbmid_project.BL;
+using dbmid_project.DL;
 using sqlhelper;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
@@ -54,29 +56,28 @@ namespace dbmid_project
         }
         private void LoadParticipants()
         {
-            // Clear existing items in the CheckedListBox
             checkedListBox1.Items.Clear();
             int year = ITECedi.GetItec_Year();
             string itecid = "select itec_id from itec_editions where year={0}";
             itecid = string.Format(itecid, year);
             int id = SqlHelper.GetRole(itecid);
-            // SQL query to fetch participant names
+
+
+
             string query = "SELECT Name FROM Participants where itec_id={0}";
             query = string.Format(query, id);
-            // Use SqlHelper to get the data table
+
+
             DataTable dt = SqlHelper.getDataTable(query);
 
-            // Create a list to store participant names
             List<string> participantNames = new List<string>();
 
-            // Loop through the data table and add names to the list
             foreach (DataRow row in dt.Rows)
             {
                 string name = row["Name"].ToString();
                 participantNames.Add(name);
             }
 
-            // Add the list of names to the CheckedListBox
             checkedListBox1.Items.AddRange(participantNames.ToArray());
         }
 
@@ -90,37 +91,57 @@ namespace dbmid_project
 
         }
 
+
+
         private void button1_Click(object sender, EventArgs e)
         {
-            string team=textBox3.Text;
-            string eventn = comboBox1.SelectedItem.ToString();
-            int year = ITECedi.GetItec_Year();
-            string itecid = "select itec_id from itec_editions where year={0}";
-            itecid = string.Format(itecid, year);
-            int id = SqlHelper.GetRole(itecid);
-            // SQL query to fetch participant names
-            string query = "SELECT Name FROM Participants where itec_id={0}";
-            query = string.Format(query, id);
-            // Use SqlHelper to get the data table
-            DataTable dt = SqlHelper.getDataTable(query);
-
-            // Create a list to store participant names
-            List<string> participantNames = new List<string>();
-
-            // Loop through the data table and add names to the list
-            foreach (DataRow row in dt.Rows)
+            try
             {
-                string name = row["Name"].ToString();
-                participantNames.Add(name);
+                if (string.IsNullOrEmpty(textBox3.Text))
+                {
+                    MessageBox.Show("Please enter a team name.");
+                    return;
+                }
 
-                TeamParticipant_FeeDialog f=new TeamParticipant_FeeDialog();
-                this.Hide();
-                f.ShowDialog();
+                if (comboBox1.SelectedItem == null)
+                {
+                    MessageBox.Show("Please select an event.");
+                    return;
+                }
+
+                string team = textBox3.Text;
+                string eventn = comboBox1.SelectedItem.ToString();
+
+                List<string> participantNames = new List<string>();
+                foreach (var item in checkedListBox1.CheckedItems)
+                {
+                    participantNames.Add(item.ToString());
+                }
+
+                if (participantNames.Count == 0)
+                {
+                    MessageBox.Show("Please select at least one participant.");
+                    return;
+                }
+                teams t = new teams(team, eventn, participantNames);
+                teamsDL.AddTeam(t);
+                teamsDL.RegisterAsTeam(t);
+
+                foreach (string name in participantNames)
+                {
+                    TeamParticipant_FeeDialog f = new TeamParticipant_FeeDialog();
+                    f.SetParticipantName(name);
+                    this.Hide();
+                    f.ShowDialog();
+                }
+
+                MessageBox.Show("Team and participants registered successfully.");
             }
-
-
-
-            
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
         }
+
     }
 }

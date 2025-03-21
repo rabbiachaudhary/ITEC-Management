@@ -24,8 +24,9 @@ namespace dbmid_project.DL
 
             else
             {
-                string query = "INSERT INTO event_participants (event_id,participant_id,payment_status_id,fee_amount) SELECT (select event_id from itec_events where event_name='{0}'),(select participant_id from participants where name='{1}'), (select lookup_id from lookup where value='{2}'), {3}";
-                query = string.Format(query, b.eventn, b.participant, b.status, b.fees);
+                string query = "INSERT INTO event_participants (event_id,participant_id,payment_status_id,fee_amount) SELECT (select event_id from itec_events where event_name='{0}'),(select participant_id from participants where name='{1}'), (select lookup_id from lookup where value='{2}' and category ='PaymentStatus'), {3}";
+                query = string.Format(query, b.participant, b.eventn, b.status, b.fees);
+                MessageBox.Show(query);
                 SqlHelper.executeDML(query);
                 MessageBox.Show("Participant Registered To Event Successfully");
             }
