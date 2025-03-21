@@ -3,40 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\This PC\\Desktop\\dbrepo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9FE57561-147B-4A74-A4F8-C6BD7F8B4D3F}|dbmid project\\dbmid project.csproj|c:\\users\\this pc\\desktop\\dbrepo\\dbmid project\\dl\\teamsdl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FE57561-147B-4A74-A4F8-C6BD7F8B4D3F}|dbmid project\\dbmid project.csproj|solutionrelative:dbmid project\\dl\\teamsdl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9FE57561-147B-4A74-A4F8-C6BD7F8B4D3F}|dbmid project\\dbmid project.csproj|c:\\users\\this pc\\desktop\\dbrepo\\dbmid project\\ui\\reportsui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9FE57561-147B-4A74-A4F8-C6BD7F8B4D3F}|dbmid project\\dbmid project.csproj|solutionrelative:dbmid project\\ui\\reportsui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9FE57561-147B-4A74-A4F8-C6BD7F8B4D3F}|dbmid project\\dbmid project.csproj|c:\\users\\this pc\\desktop\\dbrepo\\dbmid project\\bl\\teams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FE57561-147B-4A74-A4F8-C6BD7F8B4D3F}|dbmid project\\dbmid project.csproj|solutionrelative:dbmid project\\bl\\teams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9FE57561-147B-4A74-A4F8-C6BD7F8B4D3F}|dbmid project\\dbmid project.csproj|c:\\users\\this pc\\desktop\\dbrepo\\dbmid project\\dl\\reportsdl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FE57561-147B-4A74-A4F8-C6BD7F8B4D3F}|dbmid project\\dbmid project.csproj|solutionrelative:dbmid project\\dl\\reportsdl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9FE57561-147B-4A74-A4F8-C6BD7F8B4D3F}|dbmid project\\dbmid project.csproj|c:\\users\\this pc\\desktop\\dbrepo\\dbmid project\\ui\\teamparticipant_feedialog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FE57561-147B-4A74-A4F8-C6BD7F8B4D3F}|dbmid project\\dbmid project.csproj|solutionrelative:dbmid project\\ui\\teamparticipant_feedialog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FE57561-147B-4A74-A4F8-C6BD7F8B4D3F}|dbmid project\\dbmid project.csproj|c:\\users\\this pc\\desktop\\dbrepo\\dbmid project\\ui\\teamparticipant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FE57561-147B-4A74-A4F8-C6BD7F8B4D3F}|dbmid project\\dbmid project.csproj|solutionrelative:dbmid project\\ui\\teamparticipant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FE57561-147B-4A74-A4F8-C6BD7F8B4D3F}|dbmid project\\dbmid project.csproj|c:\\users\\this pc\\desktop\\dbrepo\\dbmid project\\ui\\teamparticipant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9FE57561-147B-4A74-A4F8-C6BD7F8B4D3F}|dbmid project\\dbmid project.csproj|solutionrelative:dbmid project\\ui\\teamparticipant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FE57561-147B-4A74-A4F8-C6BD7F8B4D3F}|dbmid project\\dbmid project.csproj|c:\\users\\this pc\\desktop\\dbrepo\\dbmid project\\dl\\registerparticipantdl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FE57561-147B-4A74-A4F8-C6BD7F8B4D3F}|dbmid project\\dbmid project.csproj|solutionrelative:dbmid project\\dl\\registerparticipantdl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FE57561-147B-4A74-A4F8-C6BD7F8B4D3F}|dbmid project\\dbmid project.csproj|c:\\users\\this pc\\desktop\\dbrepo\\dbmid project\\ui\\teamparticipant_feedialog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9FE57561-147B-4A74-A4F8-C6BD7F8B4D3F}|dbmid project\\dbmid project.csproj|solutionrelative:dbmid project\\ui\\teamparticipant_feedialog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FE57561-147B-4A74-A4F8-C6BD7F8B4D3F}|dbmid project\\dbmid project.csproj|c:\\users\\this pc\\desktop\\dbrepo\\dbmid project\\dl\\participantsdl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FE57561-147B-4A74-A4F8-C6BD7F8B4D3F}|dbmid project\\dbmid project.csproj|solutionrelative:dbmid project\\dl\\participantsdl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FE57561-147B-4A74-A4F8-C6BD7F8B4D3F}|dbmid project\\dbmid project.csproj|c:\\users\\this pc\\desktop\\dbrepo\\dbmid project\\bl\\partcipants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FE57561-147B-4A74-A4F8-C6BD7F8B4D3F}|dbmid project\\dbmid project.csproj|solutionrelative:dbmid project\\bl\\partcipants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9FE57561-147B-4A74-A4F8-C6BD7F8B4D3F}|dbmid project\\dbmid project.csproj|c:\\users\\this pc\\desktop\\dbrepo\\dbmid project\\ui\\reportsui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FE57561-147B-4A74-A4F8-C6BD7F8B4D3F}|dbmid project\\dbmid project.csproj|solutionrelative:dbmid project\\ui\\reportsui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,124 +22,44 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "teams.cs",
-              "DocumentMoniker": "C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\BL\\teams.cs",
-              "RelativeDocumentMoniker": "dbmid project\\BL\\teams.cs",
-              "ToolTip": "C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\BL\\teams.cs",
-              "RelativeToolTip": "dbmid project\\BL\\teams.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T20:45:36.925Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "teamsDL.cs",
-              "DocumentMoniker": "C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\DL\\teamsDL.cs",
-              "RelativeDocumentMoniker": "dbmid project\\DL\\teamsDL.cs",
-              "ToolTip": "C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\DL\\teamsDL.cs*",
-              "RelativeToolTip": "dbmid project\\DL\\teamsDL.cs*",
-              "ViewState": "AgIAABcAAAAAAAAAAAA6wDIAAACwAQAAAAAAAA==",
+              "Title": "ReportsUI.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\UI\\ReportsUI.cs",
+              "RelativeDocumentMoniker": "dbmid project\\UI\\ReportsUI.cs",
+              "ToolTip": "C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\UI\\ReportsUI.cs [Design]*",
+              "RelativeToolTip": "dbmid project\\UI\\ReportsUI.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T20:45:28.185Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TeamParticipant.cs",
-              "DocumentMoniker": "C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\UI\\TeamParticipant.cs",
-              "RelativeDocumentMoniker": "dbmid project\\UI\\TeamParticipant.cs",
-              "ToolTip": "C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\UI\\TeamParticipant.cs",
-              "RelativeToolTip": "dbmid project\\UI\\TeamParticipant.cs",
-              "ViewState": "AgIAAFkAAAAAAAAAAAAmwJYAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T20:42:59.13Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "TeamParticipant.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\UI\\TeamParticipant.cs",
-              "RelativeDocumentMoniker": "dbmid project\\UI\\TeamParticipant.cs",
-              "ToolTip": "C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\UI\\TeamParticipant.cs [Design]",
-              "RelativeToolTip": "dbmid project\\UI\\TeamParticipant.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T23:47:06.087Z",
+              "WhenOpened": "2025-03-21T11:46:04.279Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ReportsDL.cs",
+              "DocumentMoniker": "C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\DL\\ReportsDL.cs",
+              "RelativeDocumentMoniker": "dbmid project\\DL\\ReportsDL.cs",
+              "ToolTip": "C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\DL\\ReportsDL.cs",
+              "RelativeToolTip": "dbmid project\\DL\\ReportsDL.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABoAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T11:36:02.993Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "TeamParticipant_FeeDialog.cs",
-              "DocumentMoniker": "C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\UI\\TeamParticipant_FeeDialog.cs",
-              "RelativeDocumentMoniker": "dbmid project\\UI\\TeamParticipant_FeeDialog.cs",
-              "ToolTip": "C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\UI\\TeamParticipant_FeeDialog.cs",
-              "RelativeToolTip": "dbmid project\\UI\\TeamParticipant_FeeDialog.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAmwDoAAAAJAAAAAAAAAA==",
+              "Title": "ReportsUI.cs",
+              "DocumentMoniker": "C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\UI\\ReportsUI.cs",
+              "RelativeDocumentMoniker": "dbmid project\\UI\\ReportsUI.cs",
+              "ToolTip": "C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\UI\\ReportsUI.cs*",
+              "RelativeToolTip": "dbmid project\\UI\\ReportsUI.cs*",
+              "ViewState": "AgIAADcAAAAAAAAAAAAYwFAAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T23:35:49.722Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "TeamParticipant_FeeDialog.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\UI\\TeamParticipant_FeeDialog.cs",
-              "RelativeDocumentMoniker": "dbmid project\\UI\\TeamParticipant_FeeDialog.cs",
-              "ToolTip": "C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\UI\\TeamParticipant_FeeDialog.cs [Design]",
-              "RelativeToolTip": "dbmid project\\UI\\TeamParticipant_FeeDialog.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T23:33:30.867Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "RegisterParticipantDL.cs",
-              "DocumentMoniker": "C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\DL\\RegisterParticipantDL.cs",
-              "RelativeDocumentMoniker": "dbmid project\\DL\\RegisterParticipantDL.cs",
-              "ToolTip": "C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\DL\\RegisterParticipantDL.cs",
-              "RelativeToolTip": "dbmid project\\DL\\RegisterParticipantDL.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAABGAQAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T23:28:18.37Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ParticipantsDL.cs",
-              "DocumentMoniker": "C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\DL\\ParticipantsDL.cs",
-              "RelativeDocumentMoniker": "dbmid project\\DL\\ParticipantsDL.cs",
-              "ToolTip": "C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\DL\\ParticipantsDL.cs",
-              "RelativeToolTip": "dbmid project\\DL\\ParticipantsDL.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T23:26:56.39Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Partcipants.cs",
-              "DocumentMoniker": "C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\BL\\Partcipants.cs",
-              "RelativeDocumentMoniker": "dbmid project\\BL\\Partcipants.cs",
-              "ToolTip": "C:\\Users\\This PC\\Desktop\\dbrepo\\dbmid project\\BL\\Partcipants.cs",
-              "RelativeToolTip": "dbmid project\\BL\\Partcipants.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T23:24:05.54Z",
+              "WhenOpened": "2025-03-21T11:33:14.094Z",
               "EditorCaption": ""
             }
           ]

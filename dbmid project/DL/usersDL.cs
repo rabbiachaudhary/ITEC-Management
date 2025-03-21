@@ -8,6 +8,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 using dbmid_project.BL;
 using MySql.Data.MySqlClient;
+using System.Data;
 
 namespace dbmid_project.DL
 {
@@ -59,8 +60,9 @@ namespace dbmid_project.DL
                     if (user.password == user.cpass)
                     {
                         int id = GetId(user.role);
+                        string hashedPassword = BCrypt.Net.BCrypt.HashPassword(user.password);
                         string query = "INSERT INTO users (username, email, password_hash, role_id) VALUES ('{0}', '{1}', '{2}', (select role_id from roles where role_name='{3}'))";
-                        query = string.Format(query, user.username, user.email, user.password, user.role);
+                        query = string.Format(query, user.username, user.email, hashedPassword, user.role);
                         MessageBox.Show(query);
 
                         SqlHelper.executeDML(query);
@@ -91,10 +93,25 @@ namespace dbmid_project.DL
 
         public static int Role(string name, string pass)
         {
-            string query = "select role_id from users where username='{0}' and password_hash='{1}'";
-            query= string.Format(query, name, pass);
-            int idstr=SqlHelper.GetRole(query);
-            return idstr;
+            int roleId = -1;
+            string storedHash = "";
+
+            string query = $"SELECT role_id, password_hash FROM users WHERE username = '{name}'";
+            DataTable dt = SqlHelper.getDataTable(query);
+
+            if (dt.Rows.Count > 0)
+            {
+                roleId = Convert.ToInt32(dt.Rows[0]["role_id"]);
+                storedHash = dt.Rows[0]["password_hash"].ToString();
+            }
+
+            // Check if entered password matches the hashed password
+            if (!string.IsNullOrEmpty(storedHash) && BCrypt.Net.BCrypt.Verify(pass, storedHash))
+            {
+                return roleId; // Login successful
+            }
+
+            return -1; // Login failed
         }
     }
 }

@@ -8,18 +8,29 @@
     ".NETCoreApp,Version=v8.0": {
       "dbmid project/1.0.0": {
         "dependencies": {
-          "Microsoft.ReportingServices.ReportViewerControl.Winforms": "150.1357.0",
-          "MySql.Data": "9.2.0"
+          "BCrypt.Net-Next": "4.0.3",
+          "MySql.Data": "9.2.0",
+          "ReportViewerCore.NETCore": "15.1.26",
+          "ReportViewerCore.WinForms": "15.1.26",
+          "iTextSharp": "5.5.13.4"
         },
         "runtime": {
           "dbmid project.dll": {}
         }
       },
-      "BouncyCastle.Cryptography/2.3.1": {
+      "BCrypt.Net-Next/4.0.3": {
+        "runtime": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
+            "assemblyVersion": "4.0.3.0",
+            "fileVersion": "4.0.3.0"
+          }
+        }
+      },
+      "BouncyCastle.Cryptography/2.4.0": {
         "runtime": {
           "lib/net6.0/BouncyCastle.Cryptography.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.3.1.17862"
+            "fileVersion": "2.4.0.33771"
           }
         }
       },
@@ -28,6 +39,17 @@
           "lib/net5.0/Google.Protobuf.dll": {
             "assemblyVersion": "3.26.1.0",
             "fileVersion": "3.26.1.0"
+          }
+        }
+      },
+      "iTextSharp/5.5.13.4": {
+        "dependencies": {
+          "BouncyCastle.Cryptography": "2.4.0"
+        },
+        "runtime": {
+          "lib/net461/itextsharp.dll": {
+            "assemblyVersion": "5.5.13.4",
+            "fileVersion": "5.5.13.4"
           }
         }
       },
@@ -60,156 +82,128 @@
           }
         }
       },
-      "Microsoft.NETCore.Platforms/1.1.0": {},
-      "Microsoft.NETCore.Targets/1.1.0": {},
-      "Microsoft.ReportingServices.ReportViewerControl.Winforms/150.1357.0": {
+      "Microsoft.CodeAnalysis.Analyzers/3.3.4": {},
+      "Microsoft.CodeAnalysis.Common/4.8.0": {
         "dependencies": {
-          "Microsoft.SqlServer.Types": "14.0.314.76"
+          "Microsoft.CodeAnalysis.Analyzers": "3.3.4",
+          "System.Collections.Immutable": "7.0.0",
+          "System.Reflection.Metadata": "7.0.0",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
         },
         "runtime": {
-          "lib/net40/Microsoft.ReportViewer.Common.dll": {
-            "assemblyVersion": "15.0.0.0",
-            "fileVersion": "15.0.1357.0"
-          },
-          "lib/net40/Microsoft.ReportViewer.WinForms.dll": {
-            "assemblyVersion": "15.0.0.0",
-            "fileVersion": "15.0.1357.0"
+          "lib/net7.0/Microsoft.CodeAnalysis.dll": {
+            "assemblyVersion": "4.8.0.0",
+            "fileVersion": "4.800.23.55801"
           }
         },
         "resources": {
-          "lib/net40/de/Microsoft.ReportViewer.Common.resources.dll": {
+          "lib/net7.0/cs/Microsoft.CodeAnalysis.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/net7.0/de/Microsoft.CodeAnalysis.resources.dll": {
             "locale": "de"
           },
-          "lib/net40/de/Microsoft.ReportViewer.DataVisualization.resources.dll": {
-            "locale": "de"
-          },
-          "lib/net40/de/Microsoft.ReportViewer.Design.resources.dll": {
-            "locale": "de"
-          },
-          "lib/net40/de/Microsoft.ReportViewer.WinForms.resources.dll": {
-            "locale": "de"
-          },
-          "lib/net40/es/Microsoft.ReportViewer.Common.resources.dll": {
+          "lib/net7.0/es/Microsoft.CodeAnalysis.resources.dll": {
             "locale": "es"
           },
-          "lib/net40/es/Microsoft.ReportViewer.DataVisualization.resources.dll": {
-            "locale": "es"
-          },
-          "lib/net40/es/Microsoft.ReportViewer.Design.resources.dll": {
-            "locale": "es"
-          },
-          "lib/net40/es/Microsoft.ReportViewer.WinForms.resources.dll": {
-            "locale": "es"
-          },
-          "lib/net40/fr/Microsoft.ReportViewer.Common.resources.dll": {
+          "lib/net7.0/fr/Microsoft.CodeAnalysis.resources.dll": {
             "locale": "fr"
           },
-          "lib/net40/fr/Microsoft.ReportViewer.DataVisualization.resources.dll": {
-            "locale": "fr"
-          },
-          "lib/net40/fr/Microsoft.ReportViewer.Design.resources.dll": {
-            "locale": "fr"
-          },
-          "lib/net40/fr/Microsoft.ReportViewer.WinForms.resources.dll": {
-            "locale": "fr"
-          },
-          "lib/net40/it/Microsoft.ReportViewer.Common.resources.dll": {
+          "lib/net7.0/it/Microsoft.CodeAnalysis.resources.dll": {
             "locale": "it"
           },
-          "lib/net40/it/Microsoft.ReportViewer.DataVisualization.resources.dll": {
-            "locale": "it"
-          },
-          "lib/net40/it/Microsoft.ReportViewer.Design.resources.dll": {
-            "locale": "it"
-          },
-          "lib/net40/it/Microsoft.ReportViewer.WinForms.resources.dll": {
-            "locale": "it"
-          },
-          "lib/net40/ja/Microsoft.ReportViewer.Common.resources.dll": {
+          "lib/net7.0/ja/Microsoft.CodeAnalysis.resources.dll": {
             "locale": "ja"
           },
-          "lib/net40/ja/Microsoft.ReportViewer.DataVisualization.resources.dll": {
-            "locale": "ja"
-          },
-          "lib/net40/ja/Microsoft.ReportViewer.Design.resources.dll": {
-            "locale": "ja"
-          },
-          "lib/net40/ja/Microsoft.ReportViewer.WinForms.resources.dll": {
-            "locale": "ja"
-          },
-          "lib/net40/ko/Microsoft.ReportViewer.Common.resources.dll": {
+          "lib/net7.0/ko/Microsoft.CodeAnalysis.resources.dll": {
             "locale": "ko"
           },
-          "lib/net40/ko/Microsoft.ReportViewer.DataVisualization.resources.dll": {
-            "locale": "ko"
+          "lib/net7.0/pl/Microsoft.CodeAnalysis.resources.dll": {
+            "locale": "pl"
           },
-          "lib/net40/ko/Microsoft.ReportViewer.Design.resources.dll": {
-            "locale": "ko"
+          "lib/net7.0/pt-BR/Microsoft.CodeAnalysis.resources.dll": {
+            "locale": "pt-BR"
           },
-          "lib/net40/ko/Microsoft.ReportViewer.WinForms.resources.dll": {
-            "locale": "ko"
-          },
-          "lib/net40/pt/Microsoft.ReportViewer.Common.resources.dll": {
-            "locale": "pt"
-          },
-          "lib/net40/pt/Microsoft.ReportViewer.DataVisualization.resources.dll": {
-            "locale": "pt"
-          },
-          "lib/net40/pt/Microsoft.ReportViewer.Design.resources.dll": {
-            "locale": "pt"
-          },
-          "lib/net40/pt/Microsoft.ReportViewer.WinForms.resources.dll": {
-            "locale": "pt"
-          },
-          "lib/net40/ru/Microsoft.ReportViewer.Common.resources.dll": {
+          "lib/net7.0/ru/Microsoft.CodeAnalysis.resources.dll": {
             "locale": "ru"
           },
-          "lib/net40/ru/Microsoft.ReportViewer.DataVisualization.resources.dll": {
-            "locale": "ru"
+          "lib/net7.0/tr/Microsoft.CodeAnalysis.resources.dll": {
+            "locale": "tr"
           },
-          "lib/net40/ru/Microsoft.ReportViewer.Design.resources.dll": {
-            "locale": "ru"
+          "lib/net7.0/zh-Hans/Microsoft.CodeAnalysis.resources.dll": {
+            "locale": "zh-Hans"
           },
-          "lib/net40/ru/Microsoft.ReportViewer.WinForms.resources.dll": {
-            "locale": "ru"
-          },
-          "lib/net40/zh-CHS/Microsoft.ReportViewer.Common.resources.dll": {
-            "locale": "zh-CHS"
-          },
-          "lib/net40/zh-CHS/Microsoft.ReportViewer.DataVisualization.resources.dll": {
-            "locale": "zh-CHS"
-          },
-          "lib/net40/zh-CHS/Microsoft.ReportViewer.Design.resources.dll": {
-            "locale": "zh-CHS"
-          },
-          "lib/net40/zh-CHS/Microsoft.ReportViewer.WinForms.resources.dll": {
-            "locale": "zh-CHS"
-          },
-          "lib/net40/zh-CHT/Microsoft.ReportViewer.Common.resources.dll": {
-            "locale": "zh-CHT"
-          },
-          "lib/net40/zh-CHT/Microsoft.ReportViewer.DataVisualization.resources.dll": {
-            "locale": "zh-CHT"
-          },
-          "lib/net40/zh-CHT/Microsoft.ReportViewer.Design.resources.dll": {
-            "locale": "zh-CHT"
-          },
-          "lib/net40/zh-CHT/Microsoft.ReportViewer.WinForms.resources.dll": {
-            "locale": "zh-CHT"
+          "lib/net7.0/zh-Hant/Microsoft.CodeAnalysis.resources.dll": {
+            "locale": "zh-Hant"
           }
         }
       },
-      "Microsoft.SqlServer.Types/14.0.314.76": {
+      "Microsoft.CodeAnalysis.VisualBasic/4.8.0": {
+        "dependencies": {
+          "Microsoft.CodeAnalysis.Common": "4.8.0"
+        },
         "runtime": {
-          "lib/net40/Microsoft.SqlServer.Types.dll": {
-            "assemblyVersion": "14.0.0.0",
-            "fileVersion": "2016.140.100.187"
+          "lib/net7.0/Microsoft.CodeAnalysis.VisualBasic.dll": {
+            "assemblyVersion": "4.8.0.0",
+            "fileVersion": "4.800.23.55801"
+          }
+        },
+        "resources": {
+          "lib/net7.0/cs/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/net7.0/de/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net7.0/es/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net7.0/fr/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net7.0/it/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net7.0/ja/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net7.0/ko/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net7.0/pl/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/net7.0/pt-BR/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net7.0/ru/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net7.0/tr/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net7.0/zh-Hans/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/net7.0/zh-Hant/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
+            "locale": "zh-Hant"
           }
         }
       },
+      "Microsoft.Extensions.ObjectPool/8.0.10": {
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.ObjectPool.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.1024.46804"
+          }
+        }
+      },
+      "Microsoft.NETCore.Platforms/1.1.0": {},
+      "Microsoft.NETCore.Targets/1.1.0": {},
+      "Microsoft.Win32.SystemEvents/8.0.0": {},
       "MySql.Data/9.2.0": {
         "dependencies": {
-          "BouncyCastle.Cryptography": "2.3.1",
+          "BouncyCastle.Cryptography": "2.4.0",
           "Google.Protobuf": "3.26.1",
           "K4os.Compression.LZ4.Streams": "1.3.8",
           "System.Buffers": "4.5.1",
@@ -257,7 +251,53 @@
           }
         }
       },
+      "ReportViewerCore.NETCore/15.1.26": {
+        "dependencies": {
+          "Microsoft.CodeAnalysis.VisualBasic": "4.8.0",
+          "System.CodeDom": "8.0.0",
+          "System.Drawing.Common": "8.0.0",
+          "System.IO.Packaging": "8.0.1",
+          "System.Resources.Extensions": "6.0.0",
+          "System.ServiceModel.Http": "8.1.0"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.ReportViewer.Common.dll": {
+            "assemblyVersion": "15.0.0.0",
+            "fileVersion": "15.0.1404.0"
+          },
+          "lib/net8.0/Microsoft.ReportViewer.DataVisualization.dll": {
+            "assemblyVersion": "15.0.0.0",
+            "fileVersion": "15.0.1404.0"
+          },
+          "lib/net8.0/Microsoft.ReportViewer.NETCore.dll": {
+            "assemblyVersion": "15.1.26.0",
+            "fileVersion": "15.1.26.0"
+          },
+          "lib/net8.0/Microsoft.ReportViewer.ProcessingObjectModel.dll": {
+            "assemblyVersion": "15.0.0.0",
+            "fileVersion": "15.0.1404.0"
+          }
+        }
+      },
+      "ReportViewerCore.WinForms/15.1.26": {
+        "dependencies": {
+          "Microsoft.CodeAnalysis.VisualBasic": "4.8.0",
+          "System.CodeDom": "8.0.0",
+          "System.Drawing.Common": "8.0.0",
+          "System.IO.Packaging": "8.0.1",
+          "System.Resources.Extensions": "6.0.0",
+          "System.ServiceModel.Http": "8.1.0"
+        },
+        "runtime": {
+          "lib/net8.0-windows7/Microsoft.ReportViewer.WinForms.dll": {
+            "assemblyVersion": "15.1.26.0",
+            "fileVersion": "15.1.26.0"
+          }
+        }
+      },
       "System.Buffers/4.5.1": {},
+      "System.CodeDom/8.0.0": {},
+      "System.Collections.Immutable/7.0.0": {},
       "System.Configuration.ConfigurationManager/8.0.0": {
         "dependencies": {
           "System.Diagnostics.EventLog": "8.0.0",
@@ -266,6 +306,11 @@
       },
       "System.Diagnostics.DiagnosticSource/8.0.1": {},
       "System.Diagnostics.EventLog/8.0.0": {},
+      "System.Drawing.Common/8.0.0": {
+        "dependencies": {
+          "Microsoft.Win32.SystemEvents": "8.0.0"
+        }
+      },
       "System.IO/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -273,6 +318,14 @@
           "System.Runtime": "4.3.0",
           "System.Text.Encoding": "4.3.0",
           "System.Threading.Tasks": "4.3.0"
+        }
+      },
+      "System.IO.Packaging/8.0.1": {
+        "runtime": {
+          "lib/net8.0/System.IO.Packaging.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.1024.46610"
+          }
         }
       },
       "System.IO.Pipelines/9.0.0": {
@@ -292,6 +345,11 @@
           "System.Runtime": "4.3.0"
         }
       },
+      "System.Reflection.Metadata/7.0.0": {
+        "dependencies": {
+          "System.Collections.Immutable": "7.0.0"
+        }
+      },
       "System.Reflection.Primitives/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -299,6 +357,7 @@
           "System.Runtime": "4.3.0"
         }
       },
+      "System.Resources.Extensions/6.0.0": {},
       "System.Runtime/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -313,10 +372,154 @@
           "System.Runtime": "4.3.0"
         }
       },
+      "System.Security.Cryptography.Pkcs/8.0.1": {
+        "runtime": {
+          "lib/net8.0/System.Security.Cryptography.Pkcs.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.1024.46610"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net8.0/System.Security.Cryptography.Pkcs.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.1024.46610"
+          }
+        }
+      },
       "System.Security.Cryptography.ProtectedData/8.0.0": {},
+      "System.Security.Cryptography.Xml/8.0.2": {
+        "dependencies": {
+          "System.Security.Cryptography.Pkcs": "8.0.1"
+        },
+        "runtime": {
+          "lib/net8.0/System.Security.Cryptography.Xml.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.1024.46610"
+          }
+        }
+      },
       "System.Security.Permissions/8.0.0": {
         "dependencies": {
           "System.Windows.Extensions": "8.0.0"
+        }
+      },
+      "System.ServiceModel.Http/8.1.0": {
+        "dependencies": {
+          "System.ServiceModel.Primitives": "8.1.0"
+        },
+        "runtime": {
+          "lib/net8.0/System.ServiceModel.Http.dll": {
+            "assemblyVersion": "8.1.0.0",
+            "fileVersion": "8.100.24.56201"
+          }
+        },
+        "resources": {
+          "lib/net8.0/cs/System.ServiceModel.Http.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/net8.0/de/System.ServiceModel.Http.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net8.0/es/System.ServiceModel.Http.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net8.0/fr/System.ServiceModel.Http.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net8.0/it/System.ServiceModel.Http.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net8.0/ja/System.ServiceModel.Http.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net8.0/ko/System.ServiceModel.Http.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net8.0/pl/System.ServiceModel.Http.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/net8.0/pt-BR/System.ServiceModel.Http.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net8.0/ru/System.ServiceModel.Http.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net8.0/tr/System.ServiceModel.Http.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net8.0/zh-Hans/System.ServiceModel.Http.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/net8.0/zh-Hant/System.ServiceModel.Http.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
+      "System.ServiceModel.Primitives/8.1.0": {
+        "dependencies": {
+          "Microsoft.Extensions.ObjectPool": "8.0.10",
+          "System.Security.Cryptography.Xml": "8.0.2"
+        },
+        "runtime": {
+          "lib/net8.0/System.ServiceModel.Duplex.dll": {
+            "assemblyVersion": "8.1.0.0",
+            "fileVersion": "8.100.24.56201"
+          },
+          "lib/net8.0/System.ServiceModel.Primitives.dll": {
+            "assemblyVersion": "8.1.0.0",
+            "fileVersion": "8.100.24.56201"
+          },
+          "lib/net8.0/System.ServiceModel.Security.dll": {
+            "assemblyVersion": "8.1.0.0",
+            "fileVersion": "8.100.24.56201"
+          },
+          "lib/net8.0/System.ServiceModel.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "8.100.24.56201"
+          }
+        },
+        "resources": {
+          "lib/net8.0/cs/System.ServiceModel.Primitives.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/net8.0/de/System.ServiceModel.Primitives.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net8.0/es/System.ServiceModel.Primitives.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net8.0/fr/System.ServiceModel.Primitives.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net8.0/it/System.ServiceModel.Primitives.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net8.0/ja/System.ServiceModel.Primitives.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net8.0/ko/System.ServiceModel.Primitives.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net8.0/pl/System.ServiceModel.Primitives.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/net8.0/pt-BR/System.ServiceModel.Primitives.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net8.0/ru/System.ServiceModel.Primitives.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net8.0/tr/System.ServiceModel.Primitives.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net8.0/zh-Hans/System.ServiceModel.Primitives.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/net8.0/zh-Hant/System.ServiceModel.Primitives.resources.dll": {
+            "locale": "zh-Hant"
+          }
         }
       },
       "System.Text.Encoding/4.3.0": {
@@ -380,12 +583,19 @@
       "serviceable": false,
       "sha512": ""
     },
-    "BouncyCastle.Cryptography/2.3.1": {
+    "BCrypt.Net-Next/4.0.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-buwoISwecYke3CmgG1AQSg+sNZjJeIb93vTAtJiHZX35hP/teYMxsfg0NDXGUKjGx6BKBTNKc77O2M3vKvlXZQ==",
-      "path": "bouncycastle.cryptography/2.3.1",
-      "hashPath": "bouncycastle.cryptography.2.3.1.nupkg.sha512"
+      "sha512": "sha512-W+U9WvmZQgi5cX6FS5GDtDoPzUCV4LkBLkywq/kRZhuDwcbavOzcDAr3LXJFqHUi952Yj3LEYoWW0jbEUQChsA==",
+      "path": "bcrypt.net-next/4.0.3",
+      "hashPath": "bcrypt.net-next.4.0.3.nupkg.sha512"
+    },
+    "BouncyCastle.Cryptography/2.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-SwXsAV3sMvAU/Nn31pbjhWurYSjJ+/giI/0n6tCrYoupEK34iIHCuk3STAd9fx8yudM85KkLSVdn951vTng/vQ==",
+      "path": "bouncycastle.cryptography/2.4.0",
+      "hashPath": "bouncycastle.cryptography.2.4.0.nupkg.sha512"
     },
     "Google.Protobuf/3.26.1": {
       "type": "package",
@@ -393,6 +603,13 @@
       "sha512": "sha512-CHZX8zXqhF/fdUtd+AYzew8T2HFkAoe5c7lbGxZY/qryAlQXckDvM5BfOJjXlMS7kyICqQTMszj4w1bX5uBJ/w==",
       "path": "google.protobuf/3.26.1",
       "hashPath": "google.protobuf.3.26.1.nupkg.sha512"
+    },
+    "iTextSharp/5.5.13.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/cvCNv8AJ+XuD99u4NfHSSxkBJKTdvP36wcfQF9V1Cjzi1ycyFSa4vJ64a3DhFVUTKVO60WF8OmAqngQDTHgYA==",
+      "path": "itextsharp/5.5.13.4",
+      "hashPath": "itextsharp.5.5.13.4.nupkg.sha512"
     },
     "K4os.Compression.LZ4/1.3.8": {
       "type": "package",
@@ -415,6 +632,34 @@
       "path": "k4os.hash.xxhash/1.0.8",
       "hashPath": "k4os.hash.xxhash.1.0.8.nupkg.sha512"
     },
+    "Microsoft.CodeAnalysis.Analyzers/3.3.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-AxkxcPR+rheX0SmvpLVIGLhOUXAKG56a64kV9VQZ4y9gR9ZmPXnqZvHJnmwLSwzrEP6junUF11vuc+aqo5r68g==",
+      "path": "microsoft.codeanalysis.analyzers/3.3.4",
+      "hashPath": "microsoft.codeanalysis.analyzers.3.3.4.nupkg.sha512"
+    },
+    "Microsoft.CodeAnalysis.Common/4.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/jR+e/9aT+BApoQJABlVCKnnggGQbvGh7BKq2/wI1LamxC+LbzhcLj4Vj7gXCofl1n4E521YfF9w0WcASGg/KA==",
+      "path": "microsoft.codeanalysis.common/4.8.0",
+      "hashPath": "microsoft.codeanalysis.common.4.8.0.nupkg.sha512"
+    },
+    "Microsoft.CodeAnalysis.VisualBasic/4.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kfHPh/etcWypMDYfHxgfitgJMhi986OFCICb76RPcA1Toordf6bBYEJytWr2L5CNdkXFWuw5qTkrlsktBav4VA==",
+      "path": "microsoft.codeanalysis.visualbasic/4.8.0",
+      "hashPath": "microsoft.codeanalysis.visualbasic.4.8.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.ObjectPool/8.0.10": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-u7gAG7JgxF8VSJUGPSudAcPxOt+ymJKQCSxNRxiuKV+klCQbHljQR75SilpedCTfhPWDhtUwIJpnDVtspr9nMg==",
+      "path": "microsoft.extensions.objectpool/8.0.10",
+      "hashPath": "microsoft.extensions.objectpool.8.0.10.nupkg.sha512"
+    },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",
       "serviceable": true,
@@ -429,19 +674,12 @@
       "path": "microsoft.netcore.targets/1.1.0",
       "hashPath": "microsoft.netcore.targets.1.1.0.nupkg.sha512"
     },
-    "Microsoft.ReportingServices.ReportViewerControl.Winforms/150.1357.0": {
+    "Microsoft.Win32.SystemEvents/8.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-RyZtRCTq+Gd1cpzmvtE0w/0rPD4p2bOvVKpm6m9I/rax4EnS4n1cIHjkt+UoRlTu0X/cmmhA8sgSp+OYOaeYlw==",
-      "path": "microsoft.reportingservices.reportviewercontrol.winforms/150.1357.0",
-      "hashPath": "microsoft.reportingservices.reportviewercontrol.winforms.150.1357.0.nupkg.sha512"
-    },
-    "Microsoft.SqlServer.Types/14.0.314.76": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-gAekCmSfjtRBaiuuRIqJJV6cfEsEbYY5vI7Ssoc5sYI04JcyPrZ4C8RC3z7K9xfpr9ejQAQ1AtfvtgqEnjmwOw==",
-      "path": "microsoft.sqlserver.types/14.0.314.76",
-      "hashPath": "microsoft.sqlserver.types.14.0.314.76.nupkg.sha512"
+      "sha512": "sha512-9opKRyOKMCi2xJ7Bj7kxtZ1r9vbzosMvRrdEhVhDz8j8MoBGgB+WmC94yH839NPH+BclAjtQ/pyagvi/8gDLkw==",
+      "path": "microsoft.win32.systemevents/8.0.0",
+      "hashPath": "microsoft.win32.systemevents.8.0.0.nupkg.sha512"
     },
     "MySql.Data/9.2.0": {
       "type": "package",
@@ -450,12 +688,40 @@
       "path": "mysql.data/9.2.0",
       "hashPath": "mysql.data.9.2.0.nupkg.sha512"
     },
+    "ReportViewerCore.NETCore/15.1.26": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-++dE5lildQKId9/jAc8DLRAPpQEzpNGsuVNCZmOIMr1mlEew3LXeRS/+Fz70BtA7cUsI2dCMbt34Xuzi7Ka4Pg==",
+      "path": "reportviewercore.netcore/15.1.26",
+      "hashPath": "reportviewercore.netcore.15.1.26.nupkg.sha512"
+    },
+    "ReportViewerCore.WinForms/15.1.26": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9pF1ZjF1fXp6y+Z2QQXVU7GEvFYuBIwnZGdYP5anR4fkW4S6KNAKeJ6NO+ra1ue7S85HNYeR1CskLqEH7yMdBw==",
+      "path": "reportviewercore.winforms/15.1.26",
+      "hashPath": "reportviewercore.winforms.15.1.26.nupkg.sha512"
+    },
     "System.Buffers/4.5.1": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-Rw7ijyl1qqRS0YQD/WycNst8hUUMgrMH4FCn1nNm27M4VxchZ1js3fVjQaANHO5f3sN4isvP4a+Met9Y4YomAg==",
       "path": "system.buffers/4.5.1",
       "hashPath": "system.buffers.4.5.1.nupkg.sha512"
+    },
+    "System.CodeDom/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-WTlRjL6KWIMr/pAaq3rYqh0TJlzpouaQ/W1eelssHgtlwHAH25jXTkUphTYx9HaIIf7XA6qs/0+YhtLEQRkJ+Q==",
+      "path": "system.codedom/8.0.0",
+      "hashPath": "system.codedom.8.0.0.nupkg.sha512"
+    },
+    "System.Collections.Immutable/7.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dQPcs0U1IKnBdRDBkrCTi1FoajSTBzLcVTpjO4MBCMC7f4pDOIPzgBoX8JjG7X6uZRJ8EBxsi8+DR1JuwjnzOQ==",
+      "path": "system.collections.immutable/7.0.0",
+      "hashPath": "system.collections.immutable.7.0.0.nupkg.sha512"
     },
     "System.Configuration.ConfigurationManager/8.0.0": {
       "type": "package",
@@ -478,12 +744,26 @@
       "path": "system.diagnostics.eventlog/8.0.0",
       "hashPath": "system.diagnostics.eventlog.8.0.0.nupkg.sha512"
     },
+    "System.Drawing.Common/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JkbHJjtI/dWc5dfmEdJlbe3VwgZqCkZRtfuWFh5GOv0f+gGCfBtzMpIVkmdkj2AObO9y+oiOi81UGwH3aBYuqA==",
+      "path": "system.drawing.common/8.0.0",
+      "hashPath": "system.drawing.common.8.0.0.nupkg.sha512"
+    },
     "System.IO/4.3.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-3qjaHvxQPDpSOYICjUoTsmoq5u6QJAFRUITgeT/4gqkF1bajbSmb1kwSxEA8AHlofqgcKJcM8udgieRNhaJ5Cg==",
       "path": "system.io/4.3.0",
       "hashPath": "system.io.4.3.0.nupkg.sha512"
+    },
+    "System.IO.Packaging/8.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KYkIOAvPexQOLDxPO2g0BVoWInnQhPpkFzRqvNrNrMhVT6kqhVr0zEb6KCHlptLFukxnZrjuMVAnxK7pOGUYrw==",
+      "path": "system.io.packaging/8.0.1",
+      "hashPath": "system.io.packaging.8.0.1.nupkg.sha512"
     },
     "System.IO.Pipelines/9.0.0": {
       "type": "package",
@@ -499,12 +779,26 @@
       "path": "system.reflection/4.3.0",
       "hashPath": "system.reflection.4.3.0.nupkg.sha512"
     },
+    "System.Reflection.Metadata/7.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-MclTG61lsD9sYdpNz9xsKBzjsmsfCtcMZYXz/IUr2zlhaTaABonlr1ESeompTgM+Xk+IwtGYU7/voh3YWB/fWw==",
+      "path": "system.reflection.metadata/7.0.0",
+      "hashPath": "system.reflection.metadata.7.0.0.nupkg.sha512"
+    },
     "System.Reflection.Primitives/4.3.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-5RXItQz5As4xN2/YUDxdpsEkMhvw3e6aNveFXUn4Hl/udNTCNhnKp8lT9fnc3MhvGKh1baak5CovpuQUXHAlIA==",
       "path": "system.reflection.primitives/4.3.0",
       "hashPath": "system.reflection.primitives.4.3.0.nupkg.sha512"
+    },
+    "System.Resources.Extensions/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pBnVzNQYd0OHqh0VLu/hi0zFOTtyF8QwtziQBmzX/ZtVOea4+JEVOGu29DHeSOA0a9SFrYjQorBrOLuKLhcMNQ==",
+      "path": "system.resources.extensions/6.0.0",
+      "hashPath": "system.resources.extensions.6.0.0.nupkg.sha512"
     },
     "System.Runtime/4.3.0": {
       "type": "package",
@@ -527,6 +821,13 @@
       "path": "system.runtime.loader/4.3.0",
       "hashPath": "system.runtime.loader.4.3.0.nupkg.sha512"
     },
+    "System.Security.Cryptography.Pkcs/8.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CoCRHFym33aUSf/NtWSVSZa99dkd0Hm7OCZUxORBjRB16LNhIEOf8THPqzIYlvKM0nNDAPTRBa1FxEECrgaxxA==",
+      "path": "system.security.cryptography.pkcs/8.0.1",
+      "hashPath": "system.security.cryptography.pkcs.8.0.1.nupkg.sha512"
+    },
     "System.Security.Cryptography.ProtectedData/8.0.0": {
       "type": "package",
       "serviceable": true,
@@ -534,12 +835,33 @@
       "path": "system.security.cryptography.protecteddata/8.0.0",
       "hashPath": "system.security.cryptography.protecteddata.8.0.0.nupkg.sha512"
     },
+    "System.Security.Cryptography.Xml/8.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-aDM/wm0ZGEZ6ZYJLzgqjp2FZdHbDHh6/OmpGfb7AdZ105zYmPn/83JRU2xLIbwgoNz9U1SLUTJN0v5th3qmvjA==",
+      "path": "system.security.cryptography.xml/8.0.2",
+      "hashPath": "system.security.cryptography.xml.8.0.2.nupkg.sha512"
+    },
     "System.Security.Permissions/8.0.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-v/BBylw7XevuAsHXoX9dDUUfmBIcUf7Lkz8K3ZXIKz3YRKpw8YftpSir4n4e/jDTKFoaK37AsC3xnk+GNFI1Ow==",
       "path": "system.security.permissions/8.0.0",
       "hashPath": "system.security.permissions.8.0.0.nupkg.sha512"
+    },
+    "System.ServiceModel.Http/8.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xGyo7hO2S7tRVvCDpWiQYeuSQZ0DcuDPHfX7JC3ncAjwsqCOqTATRAylGCxU0lW1iE4fjDACYT8hHo/hin9csA==",
+      "path": "system.servicemodel.http/8.1.0",
+      "hashPath": "system.servicemodel.http.8.1.0.nupkg.sha512"
+    },
+    "System.ServiceModel.Primitives/8.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/NGnzQSp2lmTlCfKzcD2PVKRnx6bQCbEqlb5sXo31TA2C7oA8g5I7Wfjk8dNRNUo1uSqZUcj3htED6tWA/mX9w==",
+      "path": "system.servicemodel.primitives/8.1.0",
+      "hashPath": "system.servicemodel.primitives.8.1.0.nupkg.sha512"
     },
     "System.Text.Encoding/4.3.0": {
       "type": "package",

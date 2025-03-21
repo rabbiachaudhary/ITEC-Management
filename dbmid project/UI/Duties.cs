@@ -16,6 +16,8 @@ namespace dbmid_project
         public Duties()
         {
             InitializeComponent();
+
+            LoadDataInListView();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -51,23 +53,63 @@ namespace dbmid_project
         {
             if (listView1.SelectedItems.Count > 0)
             {
-                ListViewItem selectedItem = listView1.SelectedItems[0];
-                string committeeName = selectedItem.SubItems[0].Text; // Assuming Committee Name is the unique identifier
-                string newStatus = e.ClickedItem.Text; // Get the new status from the clicked menu item
+                try
+                {
+                    ListViewItem selectedItem = listView1.SelectedItems[0];
 
-                // Update the status in the ListView
-                selectedItem.SubItems[2].Text = newStatus;
+                    string committeeName = selectedItem.SubItems[0].Text; 
+                    string newStatus = e.ClickedItem.Text; 
+                    selectedItem.SubItems[3].Text = newStatus; 
+                    string query = @"
+            UPDATE duties 
+            SET status_id = (SELECT lookup_id FROM lookup WHERE value = '{0}') 
+            WHERE committee_id = (SELECT committee_id FROM committees WHERE committee_name = '{1}')";
+                    query = string.Format(query, newStatus, committeeName);
 
-                // Update the status in the database
-                string query = $"UPDATE duties SET status_id = (select lookup_id from lookup where value='{0}') WHERE committee_id=(select committee_id from committees where committee_name='{1}'";
-                query = string.Format(query, newStatus, committeeName);
-                SqlHelper.executeDML(query);
+                    SqlHelper.executeDML(query);
 
-                MessageBox.Show($"Status updated to {newStatus} for {committeeName}");
+                    MessageBox.Show($"Status updated to {newStatus} for {committeeName}");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("An error occurred: " + ex.Message);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please select a committee to update.");
             }
         }
 
         private void Duties_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LoadDataInListView()
+        {
+            string query = "select committee_name, assigned_to, task_description, deadline, value from duties d join committees c on d.committee_id=c.committee_id join lookup l on l.lookup_id=d.status_id";
+            query = string.Format(query);
+            DataTable dt = SqlHelper.getDataTable(query);
+            listView1.Items.Clear();
+            foreach (DataRow row in dt.Rows)
+            {
+                ListViewItem item = new ListViewItem(row["committee_name"].ToString());
+
+                item.SubItems.Add(row["assigned_to"].ToString());
+                item.SubItems.Add(row["deadline"].ToString());
+                item.SubItems.Add(row["value"].ToString());
+                listView1.Items.Add(item);
+
+            }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

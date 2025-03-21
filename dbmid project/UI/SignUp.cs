@@ -14,6 +14,7 @@ using MySql.Data.MySqlClient;
 using static System.Net.Mime.MediaTypeNames;
 using System.Text.RegularExpressions;
 using System.Xml.Linq;
+using BCrypt.Net;
 
 namespace dbmid_project
 {

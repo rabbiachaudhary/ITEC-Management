@@ -11,6 +11,7 @@ namespace dbmid_project.BL
         public string name;
         public string location;
         public int capacity;
+        
         public venueBL(string a, string b, int c)
         {
             this.name = a;

@@ -102,8 +102,8 @@ namespace dbmid_project
 
         private void linkLabel15_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
         {
-                OpenFormInPanel(new ITECedi());
-            
+            OpenFormInPanel(new ITECedi());
+
         }
 
         private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -174,7 +174,7 @@ namespace dbmid_project
             }
             else
             {
-                OpenFormInPanel(new AddResults());
+                OpenFormInPanel(new ITECedi());
             }
         }
 
@@ -214,6 +214,31 @@ namespace dbmid_project
             else
             {
                 OpenFormInPanel(new TeamParticipant());
+            }
+        }
+
+        private void linkLabel7_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            if (ITECedi.GetItec_Year() == 0)
+            {
+                MessageBox.Show("Select ITEC edition first");
+            }
+            else
+            {
+                OpenFormInPanel(new TrackFees());
+            }
+        }
+
+        private void linkLabel18_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+            if (ITECedi.GetItec_Year() == 0)
+            {
+                MessageBox.Show("Select ITEC edition first");
+            }
+            else
+            {
+                OpenFormInPanel(new ReportsUI());
             }
         }
     }

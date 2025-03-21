@@ -35,21 +35,38 @@ namespace dbmid_project.DL
             sqlVenue = string.Format(sqlVenue, e.venue);
             int venue_id=SqlHelper.GetRole(sqlVenue);
 
-
-
-            string exist = " SELECT Count(*) From Itec_events where itec_id={0} and event_name='{1}'";
-            exist = string.Format(exist, itec_id, e.eventName);
-            int count = SqlHelper.CountRows(exist);
-            if (count > 0)
+            string venue = "select count(*) from itec_events i join venues v on v.venue_id=i.venue_id where venue_name='{0}' and event_date='{1}'";
+            venue = string.Format(venue, e.venue, e.Date); 
+            int c=SqlHelper.CountRows(venue);
+            if (c > 0)
             {
-                MessageBox.Show("This Event Already Exists");
+                MessageBox.Show("This venue at this time is occupied");
             }
             else
             {
-                string query = "INSERT INTO itec_events (itec_id,event_name,event_category_id,description,event_date,venue_id,committee_id) VALUES ({0}, '{1}', {2},'{3}','{4}',{5},{6})";
-                query = string.Format(query, itec_id, e.eventName, category_id, e.description, e.Date, venue_id, com_id);
-                SqlHelper.executeDML(query);
-                MessageBox.Show("Event added successfully");
+                string exist = " SELECT Count(*) From Itec_events where itec_id={0} and event_name='{1}'";
+                exist = string.Format(exist, itec_id, e.eventName);
+                int count = SqlHelper.CountRows(exist);
+                if (count > 0)
+                {
+                    MessageBox.Show("This Event Already Exists");
+                }
+                else
+                {
+                    string query = "INSERT INTO itec_events (itec_id,event_name,event_category_id,description,event_date,venue_id,committee_id) VALUES ({0}, '{1}', {2},'{3}','{4}',{5},{6})";
+                    query = string.Format(query, itec_id, e.eventName, category_id, e.description, e.Date, venue_id, com_id);
+                    SqlHelper.executeDML(query);
+
+
+                    string venueall = "INSERT into venue_allocations (event_id,venue_id, assigned_date, assigned_time) VALUES ((select event_id from itec_events where event_name='{0}'), (select venue_id from venues where venue_name='{1}'), '{2}', NOW()   )";
+
+                    venueall = string.Format(venueall, e.eventName, e.venue, e.Date);
+
+                    SqlHelper.executeDML(venueall);
+                    
+
+                    MessageBox.Show("Event added successfully");
+                }
             }
         }
         

@@ -62,6 +62,7 @@
             label1.TabIndex = 4;
             label1.Text = "Duties";
             label1.TextAlign = ContentAlignment.MiddleCenter;
+            label1.Click += label1_Click;
             // 
             // listView1
             // 
@@ -77,6 +78,7 @@
             listView1.TabIndex = 5;
             listView1.UseCompatibleStateImageBehavior = false;
             listView1.View = View.Details;
+            listView1.SelectedIndexChanged += listView1_SelectedIndexChanged;
             // 
             // cname
             // 

@@ -23,29 +23,33 @@ namespace dbmid_project
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            SignUp s=new SignUp();
+            SignUp s = new SignUp();
             this.Hide();
             s.Show();
         }
 
         private void Button_click(object sender, EventArgs e)
         {
-            string name=textBox1.Text;
-            string pass=textBox2.Text;  
-            int id=usersDL.Role(name, pass);
+            string name = textBox1.Text;
+            string pass = textBox2.Text; 
+            int id = usersDL.Role(name, pass);
             if (id == 1)
             {
-                AdminDashboard a=new AdminDashboard();
+                AdminDashboard a = new AdminDashboard();
                 this.Hide();
-                a.Show();   
+                a.Show();
             }
-            if(id==2 || id==3 || id == 4)
+            if (id == 2 || id == 3 || id == 4)
             {
-                StudentDashboard a=new StudentDashboard();
+                StudentDashboard a = new StudentDashboard();
                 this.Hide(); a.Show();
             }
         }
 
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
 

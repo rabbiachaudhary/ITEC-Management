@@ -44,7 +44,7 @@ namespace dbmid_project
             string itecid = "select itec_id from itec_editions where year={0}";
             itecid = string.Format(itecid, year);
             int id = SqlHelper.GetRole(itecid);
-            string query = "select event_name, event_date, venue_id from itec_events where itec_id={0}";
+            string query = "select event_name, event_date, venue_name from itec_events i join venues v on i.venue_id=v.venue_id where itec_id={0}";
             query = string.Format(query, id);
             DataTable dt = SqlHelper.getDataTable(query);
             listView1.Items.Clear();
@@ -53,7 +53,7 @@ namespace dbmid_project
                 ListViewItem item = new ListViewItem(row["event_name"].ToString());
 
                 item.SubItems.Add(row["event_date"].ToString());
-                item.SubItems.Add(row["venue_id"].ToString());
+                item.SubItems.Add(row["venue_name"].ToString());
                 listView1.Items.Add(item);
 
             }
