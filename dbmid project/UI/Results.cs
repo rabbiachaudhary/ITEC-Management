@@ -24,11 +24,14 @@ namespace dbmid_project
         {
             int year = ITECedi.GetItec_Year();
 
-            string query = "select event_name, name ,position ,score , remarks from event_results r" +
+            string query = "select event_name, name ,value ,score , remarks from event_results r" +
                 " join itec_events e on e.event_id=r.event_id " +
                 " join itec_editions ie on ie.itec_id=e.itec_id " +
                 "join participants p on r.participant_id=p.participant_id " +
-                "where year={0} ";
+                "join lookup l on l.lookup_id=r.position " +
+
+                "where year={0} " +
+                "order by event_name ASC, FIELD(Position, 'Winner', 'Runner-up', 'Finalist', 'Participant')";
             query = string.Format(query, year);
             DataTable dt = SqlHelper.getDataTable(query);
             listView1.Items.Clear();
@@ -38,13 +41,18 @@ namespace dbmid_project
 
                 item.SubItems.Add(row["name"].ToString());
 
-                item.SubItems.Add(row["position"].ToString());
+                item.SubItems.Add(row["value"].ToString());
                 item.SubItems.Add(row["score"].ToString());
                 item.SubItems.Add(row["remarks"].ToString());
 
                 listView1.Items.Add(item);
 
             }
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

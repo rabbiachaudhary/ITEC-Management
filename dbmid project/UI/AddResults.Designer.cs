@@ -30,6 +30,8 @@
         {
             label1 = new Label();
             panel1 = new Panel();
+            comboBox3 = new ComboBox();
+            label7 = new Label();
             textBox3 = new TextBox();
             textBox2 = new TextBox();
             label6 = new Label();
@@ -41,8 +43,6 @@
             label3 = new Label();
             comboBox2 = new ComboBox();
             button1 = new Button();
-            label7 = new Label();
-            comboBox3 = new ComboBox();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -80,6 +80,33 @@
             panel1.Padding = new Padding(30, 30, 30, 100);
             panel1.Size = new Size(561, 619);
             panel1.TabIndex = 21;
+            // 
+            // comboBox3
+            // 
+            comboBox3.AllowDrop = true;
+            comboBox3.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            comboBox3.FormattingEnabled = true;
+            comboBox3.Items.AddRange(new object[] { "Winner", "Finalist", "Runner-Up", "Participant" });
+            comboBox3.Location = new Point(151, 350);
+            comboBox3.MaximumSize = new Size(250, 0);
+            comboBox3.MinimumSize = new Size(250, 0);
+            comboBox3.Name = "comboBox3";
+            comboBox3.Size = new Size(250, 36);
+            comboBox3.TabIndex = 27;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.BackColor = Color.Transparent;
+            label7.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label7.Location = new Point(175, 316);
+            label7.MinimumSize = new Size(200, 30);
+            label7.Name = "label7";
+            label7.Padding = new Padding(20, 0, 0, 0);
+            label7.Size = new Size(200, 31);
+            label7.TabIndex = 26;
+            label7.Text = "Team:";
+            label7.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // textBox3
             // 
@@ -206,6 +233,7 @@
             comboBox2.Name = "comboBox2";
             comboBox2.Size = new Size(250, 36);
             comboBox2.TabIndex = 18;
+            comboBox2.SelectedIndexChanged += comboBox2_SelectedIndexChanged;
             // 
             // button1
             // 
@@ -221,33 +249,6 @@
             button1.Text = "Save";
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.BackColor = Color.Transparent;
-            label7.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label7.Location = new Point(175, 316);
-            label7.MinimumSize = new Size(200, 30);
-            label7.Name = "label7";
-            label7.Padding = new Padding(20, 0, 0, 0);
-            label7.Size = new Size(200, 31);
-            label7.TabIndex = 26;
-            label7.Text = "Team:";
-            label7.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // comboBox3
-            // 
-            comboBox3.AllowDrop = true;
-            comboBox3.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            comboBox3.FormattingEnabled = true;
-            comboBox3.Items.AddRange(new object[] { "Winner", "Finalist", "Runner-Up", "Participant" });
-            comboBox3.Location = new Point(151, 350);
-            comboBox3.MaximumSize = new Size(250, 0);
-            comboBox3.MinimumSize = new Size(250, 0);
-            comboBox3.Name = "comboBox3";
-            comboBox3.Size = new Size(250, 36);
-            comboBox3.TabIndex = 27;
             // 
             // AddResults
             // 

@@ -295,6 +295,25 @@ namespace dbmid_project
                 OpenFormInPanel(new Sponsors());
             }
         }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            Login a = new Login();
+            this.Hide();
+            a.Show();
+        }
+
+        private void linkLabel20_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            if (ITECedi.GetItec_Year() == 0)
+            {
+                MessageBox.Show("Select ITEC edition first");
+            }
+            else
+            {
+                OpenFormInPanel(new Venue_Allocation());
+            }
+        }
     }
 }
 

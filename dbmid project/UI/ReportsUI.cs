@@ -274,6 +274,7 @@ namespace dbmid_project
 
                     if (sfd.ShowDialog() == DialogResult.OK)
                     {
+
                         Document doc = new Document();
                         PdfWriter.GetInstance(doc, new FileStream(sfd.FileName, FileMode.Create));
                         doc.Open();

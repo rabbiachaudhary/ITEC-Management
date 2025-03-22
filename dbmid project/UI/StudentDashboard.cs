@@ -107,5 +107,13 @@ namespace dbmid_project
         {
 
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+            Login a = new Login();
+            this.Hide();
+            a.Show();
+        }
     }
 }

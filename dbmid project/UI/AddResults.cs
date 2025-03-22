@@ -23,6 +23,7 @@ namespace dbmid_project
             LoadPositions();
             LoadEvents();
         }
+        string eventn = "";
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -33,12 +34,12 @@ namespace dbmid_project
         {
 
             string eventn = comboBox2.SelectedItem.ToString();
-            string participant=textBox1.Text;
+            string participant = textBox1.Text;
             string team = comboBox3.SelectedItem.ToString();
             string position = comboBox1.SelectedItem.ToString();
-            float score=float.Parse(textBox2.Text);
-            string remarks=textBox3.Text;
-            ResultsBL r=new ResultsBL(eventn,participant,team, position, score, remarks);
+            float score = float.Parse(textBox2.Text);
+            string remarks = textBox3.Text;
+            ResultsBL r = new ResultsBL(eventn, participant, team, position, score, remarks);
             ResultsDL.AddResults(r);
         }
 
@@ -48,7 +49,7 @@ namespace dbmid_project
             int year = ITECedi.GetItec_Year();
 
 
-            string sql = "select event_name from itec_events where itec_id=(select itec_id from itec_editions where itec_year={0})";
+            string sql = "select event_name from itec_events where itec_id=(select itec_id from itec_editions where year={0})";
             sql = string.Format(sql, year);
             List<string> categories = SqlHelper.LoadIN_ComboBox(sql, "event_name");
 
@@ -82,8 +83,9 @@ namespace dbmid_project
 
             comboBox3.Items.Clear();
 
-            string eventn = comboBox2.SelectedItem.ToString();
             string sql = "select team_name from teams where event_id =(select event_id from itec_events where event_name='{0}')";
+
+
             sql = string.Format(sql, eventn);
             List<string> categories = SqlHelper.LoadIN_ComboBox(sql, "team_name");
 
@@ -94,5 +96,10 @@ namespace dbmid_project
 
         }
 
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            eventn = comboBox2.SelectedItem.ToString();
+            LoadTeams();
+        }
     }
 }

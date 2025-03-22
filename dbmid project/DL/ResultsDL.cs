@@ -28,7 +28,8 @@ namespace dbmid_project.DL
                     "(select event_id from itec_events where event_name='{0}')," +
                     "(select participant_id from participants where name='{1}')," +
                     "(select team_id from teams where team_name='{2}')," +
-                    "'{3}',{4},'{5}'    )";
+                    "(select lookup_id from lookup where category='EventPositions' and value='{3}') " +
+                    ",{4},'{5}'    )";
                 query = string.Format(query, r.event_name, r.participant, r.team, r.position, r.score, r.remarks);
                 SqlHelper.executeDML(query);
                 MessageBox.Show("Result added successfully");

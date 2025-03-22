@@ -33,7 +33,7 @@ namespace dbmid_project
         private void LoadDataInListView()
         {
             int year = ITECedi.GetItec_Year();
-            string query = "select committee_name from  committees where year={0}";
+            string query = "select committee_name from  committees c JOIN itec_editions i on i.itec_id=c.itec_id where year={0} ";
             query = string.Format(query,year);
             DataTable dt = SqlHelper.getDataTable(query);
             listView1.Items.Clear();

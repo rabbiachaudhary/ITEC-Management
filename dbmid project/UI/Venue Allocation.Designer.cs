@@ -1,6 +1,6 @@
 ﻿namespace dbmid_project
 {
-    partial class Results
+    partial class Venue_Allocation
     {
         /// <summary>
         /// Required designer variable.
@@ -29,12 +29,10 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            listView1 = new ListView();
-            mname = new ColumnHeader();
-            cap = new ColumnHeader();
-            Location = new ColumnHeader();
+            listView2 = new ListView();
             columnHeader1 = new ColumnHeader();
             columnHeader2 = new ColumnHeader();
+            columnHeader5 = new ColumnHeader();
             SuspendLayout();
             // 
             // label1
@@ -42,65 +40,57 @@
             label1.AutoSize = true;
             label1.BackColor = Color.SteelBlue;
             label1.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(-12, -4);
+            label1.Location = new Point(-11, -6);
             label1.Margin = new Padding(7, 0, 7, 0);
             label1.MinimumSize = new Size(1002, 70);
             label1.Name = "label1";
             label1.Size = new Size(1002, 70);
-            label1.TabIndex = 3;
-            label1.Text = "LeaderBoard";
+            label1.TabIndex = 4;
+            label1.Text = "Venue Allocation";
             label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // listView1
+            // listView2
             // 
-            listView1.Columns.AddRange(new ColumnHeader[] { mname, cap, Location, columnHeader1, columnHeader2 });
-            listView1.Location = new Point(57, 131);
-            listView1.Name = "listView1";
-            listView1.Size = new Size(856, 599);
-            listView1.TabIndex = 7;
-            listView1.UseCompatibleStateImageBehavior = false;
-            listView1.View = View.Details;
-            // 
-            // mname
-            // 
-            mname.Text = "Event";
-            mname.Width = 150;
-            // 
-            // cap
-            // 
-            cap.Text = "Participant";
-            cap.TextAlign = HorizontalAlignment.Center;
-            cap.Width = 200;
-            // 
-            // Location
-            // 
-            Location.Text = "Position";
-            Location.TextAlign = HorizontalAlignment.Center;
-            Location.Width = 150;
+            listView2.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2, columnHeader5 });
+            listView2.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            listView2.FullRowSelect = true;
+            listView2.Location = new Point(94, 149);
+            listView2.MultiSelect = false;
+            listView2.Name = "listView2";
+            listView2.Size = new Size(788, 663);
+            listView2.TabIndex = 27;
+            listView2.UseCompatibleStateImageBehavior = false;
+            listView2.View = View.Details;
+            listView2.SelectedIndexChanged += listView2_SelectedIndexChanged;
             // 
             // columnHeader1
             // 
-            columnHeader1.Text = "Score";
-            columnHeader1.TextAlign = HorizontalAlignment.Center;
-            columnHeader1.Width = 150;
+            columnHeader1.Text = "Event";
+            columnHeader1.Width = 250;
             // 
             // columnHeader2
             // 
-            columnHeader2.Text = "Remarks";
+            columnHeader2.Text = "Venue";
             columnHeader2.TextAlign = HorizontalAlignment.Center;
-            columnHeader2.Width = 200;
+            columnHeader2.Width = 250;
             // 
-            // Results
+            // columnHeader5
+            // 
+            columnHeader5.Text = "Assigned Date And Time";
+            columnHeader5.TextAlign = HorizontalAlignment.Center;
+            columnHeader5.Width = 280;
+            // 
+            // Venue_Allocation
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.OIP__4_;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(984, 997);
-            Controls.Add(listView1);
+            Controls.Add(listView2);
             Controls.Add(label1);
-            Name = "Results";
-            Text = "RecordResults";
+            Name = "Venue_Allocation";
+            Text = "Venue_Allocation";
             ResumeLayout(false);
             PerformLayout();
         }
@@ -108,11 +98,9 @@
         #endregion
 
         private Label label1;
-        private ListView listView1;
-        private ColumnHeader mname;
-        private ColumnHeader cap;
-        private ColumnHeader Location;
+        private ListView listView2;
         private ColumnHeader columnHeader1;
         private ColumnHeader columnHeader2;
+        private ColumnHeader columnHeader5;
     }
 }

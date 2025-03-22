@@ -248,3 +248,4 @@ C:\Users\This PC\Desktop\dbrepo\dbmid project\obj\Debug\net8.0-windows\dbmid_pro
 C:\Users\This PC\Desktop\dbrepo\dbmid project\obj\Debug\net8.0-windows\dbmid_project.Sponsors.resources
 C:\Users\This PC\Desktop\dbrepo\dbmid project\obj\Debug\net8.0-windows\dbmid_project.SponsorsCRUD.resources
 C:\Users\This PC\Desktop\dbrepo\dbmid project\obj\Debug\net8.0-windows\dbmid_project.Results.resources
+C:\Users\This PC\Desktop\dbrepo\dbmid project\obj\Debug\net8.0-windows\dbmid_project.Venue_Allocation.resources
